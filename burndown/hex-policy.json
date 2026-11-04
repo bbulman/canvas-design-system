@@ -1,0 +1,5 @@
+{
+  "_comment": "How far the unattended burn-down may move a hardcoded hex onto a token without Bill's approval. max_delta_e is CIEDE2000: 0 = exact matches only, 1 = not perceptible, 2 = perceptible only on close side-by-side comparison, 3.5+ = a visible change. Bill approved unattended hex swaps on 20 Oct 2026. pages_per_run caps one run's commit so it stays readable.",
+  "max_delta_e": 2,
+  "pages_per_run": 30
+}

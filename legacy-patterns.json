@@ -1,0 +1,61 @@
+{
+    "_comment": "Hand-curated. Patterns that look like the design system but predate it, and what replaces each. An agent copying a neighbouring page copies these, and no drift check can tell a legacy lookalike from a component, so they are listed here and read by ds:find and the design-system-enforcer MCP through components.generated.json. Add an entry when a legacy pattern is found being copied; delete one when its last use is gone.",
+    "classes": [
+        {
+            "pattern": ".modal-overlay",
+            "match": "\\bmodal-overlay\\b",
+            "use": "ws_modal",
+            "why": "The hand-rolled overlay has no focus trap, no Escape handling and no shared sizes. ws_modal / ws_modal_start render .ws-modal with all three."
+        },
+        {
+            "pattern": ".template-card",
+            "match": "\\btemplate-card\\b",
+            "use": "ws_card",
+            "why": "A per-page card copy that drifts in padding and radius. ws_card draws from --card-padding and --card-radius."
+        },
+        {
+            "pattern": ".activity-card",
+            "match": "\\bactivity-card\\b",
+            "use": "ws_planner_card",
+            "why": "The old agenda activity card. ws_planner_card is the shared planner card with the sanctioned activity-type colours."
+        },
+        {
+            "pattern": ".btn-primary",
+            "match": "(?<![\\w-])btn-(primary|secondary)\\b",
+            "use": "ws_button",
+            "why": "Bootstrap-era button classes. ws_button renders .ws-btn with the brand gradient, sizes, loading and disabled states."
+        },
+        {
+            "pattern": ".form-group",
+            "match": "(?<![\\w-])form-group\\b",
+            "use": "ws_form_row",
+            "why": "A hand-built label and field pair. ws_form_row (or ws_input with a label) ties the label, hint and error to the field for screen readers."
+        },
+        {
+            "pattern": ".empty-state",
+            "match": "(?<![\\w-])empty-state\\b",
+            "use": "ws_empty_state",
+            "why": "A per-page empty message. ws_empty_state renders .ws-empty-state with the shared icon, title and action layout."
+        }
+    ],
+    "tokens": [
+        {
+            "pattern": "--phase-*",
+            "match": "^--phase-(learn|plan|facilitate|reflect)",
+            "use": "--brand*",
+            "why": "Phases are naming only since Red Unification (D1). Every --phase-* colour is an alias of a --brand* token; use the brand token its `use` names."
+        },
+        {
+            "pattern": "--mainsite-*",
+            "match": "^--mainsite-(primary|dark|light|very-light)$",
+            "use": "--brand*",
+            "why": "Per-app reds were unified under the five brand tokens."
+        },
+        {
+            "pattern": "--coach-*, --planner-*, --tips-*, --podcasts-*, --intervention-*, --facilitator-*, --dna-*, --training-*, --companion-*",
+            "match": "^--(coach|planner|tips|podcasts|intervention|facilitator|dna|training|companion)-(primary|dark|light|very-light)$",
+            "use": "--brand*",
+            "why": "Per-app reds were unified under the five brand tokens. Category and mode tint ramps (-cat-N, -mode-*) are not aliases and stay."
+        }
+    ]
+}

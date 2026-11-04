@@ -1,0 +1,31 @@
+{
+  "mode": "unattended",
+  "before": 3410,
+  "after": 3403,
+  "stage": [
+    "planner/templates.php",
+    "design-system/page-baseline.json"
+  ],
+  "reverted": [],
+  "skipped": [],
+  "passed": [
+    "planner/templates.php"
+  ],
+  "extras": [],
+  "by_rule_after": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 1899,
+    "raw-component": 1359,
+    "uncachebusted-asset": 72
+  },
+  "batch_before": 38,
+  "batch_after": 31,
+  "by_rule_before": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 1906,
+    "raw-component": 1359,
+    "uncachebusted-asset": 72
+  },
+  "agent_cost_usd": 0.3581621,
+  "at": "2026-10-20T04:50:39.167Z"
+}

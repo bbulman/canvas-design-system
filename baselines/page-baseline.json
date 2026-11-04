@@ -1,0 +1,1117 @@
+{
+  "about/index.php": {
+    "hardcoded-hex": 4
+  },
+  "academy/check-email.php": {
+    "hardcoded-hex": 7
+  },
+  "academy/components/css/letter-cta.php": {
+    "hardcoded-hex": 11
+  },
+  "academy/components/letter-cta.php": {
+    "raw-component": 4
+  },
+  "academy/includes/footer.php": {
+    "raw-component": 2
+  },
+  "academy/index.php": {
+    "doctype-outside-layout": 1
+  },
+  "academy/learn/1/book1.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 29,
+    "raw-component": 30
+  },
+  "academy/learn/1/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 19
+  },
+  "academy/learn/2/book2.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 22,
+    "raw-component": 1
+  },
+  "academy/learn/2/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 14
+  },
+  "academy/learn/3/book3.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 29,
+    "raw-component": 9
+  },
+  "academy/learn/3/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 14
+  },
+  "academy/learn/4/book4.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 28,
+    "raw-component": 1
+  },
+  "academy/learn/4/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 21
+  },
+  "academy/learn/5/book5.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 25,
+    "raw-component": 22
+  },
+  "academy/learn/5/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 15
+  },
+  "academy/learn/download.php": {
+    "hardcoded-hex": 2,
+    "raw-component": 3
+  },
+  "academy/learning-paths/header.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 9,
+    "raw-component": 2
+  },
+  "academy/modules/detail.php": {
+    "raw-component": 1
+  },
+  "academy/profile/index.php": {
+    "raw-component": 1
+  },
+  "academy/training/bootcamp.php": {
+    "hardcoded-hex": 31
+  },
+  "academy/training/curriculum.php": {
+    "hardcoded-hex": 1,
+    "raw-component": 1
+  },
+  "academy/training/faq.php": {
+    "raw-component": 3
+  },
+  "academy/training/header.php": {
+    "hardcoded-hex": 9,
+    "raw-component": 2,
+    "uncachebusted-asset": 3
+  },
+  "academy/training/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 13,
+    "raw-component": 2
+  },
+  "academy/training/modules/3-preparation-planning.php": {
+    "hardcoded-hex": 4
+  },
+  "academy/training/modules/4-communication-essentials.php": {
+    "hardcoded-hex": 6
+  },
+  "academy/training/modules/5-creating-participation.php": {
+    "hardcoded-hex": 6
+  },
+  "academy/training/modules/6-managing-time-energy.php": {
+    "hardcoded-hex": 5
+  },
+  "academy/training/modules/7-group-dynamics.php": {
+    "hardcoded-hex": 6
+  },
+  "academy/training/modules/8-closing-growing.php": {
+    "hardcoded-hex": 5
+  },
+  "admin/add-user.php": {
+    "hardcoded-hex": 1,
+    "raw-component": 9
+  },
+  "admin/admin-accounts.php": {
+    "raw-component": 3
+  },
+  "admin/analytics/analytics.php": {
+    "hardcoded-hex": 23
+  },
+  "admin/analytics/card-downloads.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 76,
+    "raw-component": 3
+  },
+  "admin/analytics/dna-analytics.php": {
+    "hardcoded-hex": 47
+  },
+  "admin/analytics/ebook-analytics.php": {
+    "hardcoded-hex": 51
+  },
+  "admin/analytics/hybrid-kit-analytics.php": {
+    "hardcoded-hex": 32
+  },
+  "admin/analytics/index.php": {
+    "hardcoded-hex": 1
+  },
+  "admin/analytics/signup-sources.php": {
+    "hardcoded-hex": 30
+  },
+  "admin/analytics/site-health.php": {
+    "hardcoded-hex": 21,
+    "raw-component": 10
+  },
+  "admin/analytics/survey-analytics.php": {
+    "hardcoded-hex": 19
+  },
+  "admin/backstage-style-web/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 11,
+    "raw-component": 1
+  },
+  "admin/banners.php": {
+    "hardcoded-hex": 7,
+    "raw-component": 50
+  },
+  "admin/bulk-status.php": {
+    "hardcoded-hex": 2,
+    "raw-component": 9
+  },
+  "admin/cache.php": {
+    "hardcoded-hex": 12,
+    "raw-component": 6
+  },
+  "admin/collection-items.php": {
+    "hardcoded-hex": 66,
+    "raw-component": 13
+  },
+  "admin/collections.php": {
+    "hardcoded-hex": 22,
+    "raw-component": 12
+  },
+  "admin/comments.php": {
+    "hardcoded-hex": 16,
+    "raw-component": 5
+  },
+  "admin/content/bulk-status.php": {
+    "hardcoded-hex": 2,
+    "raw-component": 9
+  },
+  "admin/content/collection-items.php": {
+    "hardcoded-hex": 66,
+    "raw-component": 13
+  },
+  "admin/content/collections.php": {
+    "hardcoded-hex": 22,
+    "raw-component": 12
+  },
+  "admin/content/comments.php": {
+    "hardcoded-hex": 16,
+    "raw-component": 5
+  },
+  "admin/content/exercise-edit.php": {
+    "raw-component": 12
+  },
+  "admin/content/exercises.php": {
+    "hardcoded-hex": 5,
+    "raw-component": 5
+  },
+  "admin/content/goals.php": {
+    "raw-component": 11
+  },
+  "admin/content/icebreaker-edit.php": {
+    "hardcoded-hex": 3,
+    "raw-component": 11
+  },
+  "admin/content/icebreakers.php": {
+    "hardcoded-hex": 2,
+    "raw-component": 5
+  },
+  "admin/content/index.php": {
+    "hardcoded-hex": 1
+  },
+  "admin/content/tip-categories.php": {
+    "raw-component": 10
+  },
+  "admin/content/tip-edit.php": {
+    "raw-component": 8
+  },
+  "admin/content/tips.php": {
+    "hardcoded-hex": 3,
+    "raw-component": 7
+  },
+  "admin/content/workshop-edit.php": {
+    "raw-component": 8
+  },
+  "admin/content/workshops.php": {
+    "raw-component": 4
+  },
+  "admin/contributions.php": {
+    "hardcoded-hex": 39,
+    "raw-component": 19
+  },
+  "admin/email-logs.php": {
+    "hardcoded-hex": 11,
+    "raw-component": 6
+  },
+  "admin/embeddings.php": {
+    "hardcoded-hex": 21,
+    "raw-component": 9
+  },
+  "admin/exercise-edit.php": {
+    "raw-component": 13
+  },
+  "admin/exercises.php": {
+    "hardcoded-hex": 5,
+    "raw-component": 5
+  },
+  "admin/goals.php": {
+    "raw-component": 11
+  },
+  "admin/icebreaker-edit.php": {
+    "hardcoded-hex": 3,
+    "raw-component": 12
+  },
+  "admin/icebreakers.php": {
+    "hardcoded-hex": 2,
+    "raw-component": 5
+  },
+  "admin/includes/admin-auth.php": {
+    "raw-component": 7,
+    "uncachebusted-asset": 2
+  },
+  "admin/includes/admin-helpers.php": {
+    "raw-component": 1
+  },
+  "admin/includes/admin-nav.php": {
+    "raw-component": 1
+  },
+  "admin/index.php": {
+    "hardcoded-hex": 16
+  },
+  "admin/personalize/feedback.php": {
+    "hardcoded-hex": 11
+  },
+  "admin/personalize/index.php": {
+    "hardcoded-hex": 10
+  },
+  "admin/personalize/preview.php": {
+    "hardcoded-hex": 15,
+    "raw-component": 5
+  },
+  "admin/personalize/types.php": {
+    "hardcoded-hex": 2
+  },
+  "admin/preview-emails.php": {
+    "hardcoded-hex": 46,
+    "raw-component": 2
+  },
+  "admin/saved-workshops.php": {
+    "hardcoded-hex": 6,
+    "raw-component": 9
+  },
+  "admin/security-events.php": {
+    "hardcoded-hex": 43,
+    "raw-component": 6
+  },
+  "admin/subscriber-lists.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 34,
+    "uncachebusted-asset": 1
+  },
+  "admin/system/banners.php": {
+    "hardcoded-hex": 15,
+    "raw-component": 53
+  },
+  "admin/system/cache.php": {
+    "hardcoded-hex": 12,
+    "raw-component": 6
+  },
+  "admin/system/email-logs.php": {
+    "hardcoded-hex": 11,
+    "raw-component": 6
+  },
+  "admin/system/embeddings.php": {
+    "hardcoded-hex": 21,
+    "raw-component": 10
+  },
+  "admin/system/index.php": {
+    "hardcoded-hex": 1
+  },
+  "admin/system/preview-emails.php": {
+    "hardcoded-hex": 46,
+    "raw-component": 2
+  },
+  "admin/system/saved-workshops.php": {
+    "hardcoded-hex": 6,
+    "raw-component": 9
+  },
+  "admin/system/workshop-agenda.php": {
+    "hardcoded-hex": 3,
+    "raw-component": 18
+  },
+  "admin/tip-categories.php": {
+    "raw-component": 10
+  },
+  "admin/tip-digest-analytics.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 14,
+    "uncachebusted-asset": 1
+  },
+  "admin/tip-digest-subscribers.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 17,
+    "raw-component": 4,
+    "uncachebusted-asset": 1
+  },
+  "admin/tip-edit.php": {
+    "raw-component": 8
+  },
+  "admin/tip-generate-run.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 12
+  },
+  "admin/tips.php": {
+    "hardcoded-hex": 3,
+    "raw-component": 9
+  },
+  "admin/users.php": {
+    "hardcoded-hex": 8,
+    "raw-component": 13
+  },
+  "admin/users/add-user.php": {
+    "hardcoded-hex": 1,
+    "raw-component": 9
+  },
+  "admin/users/contributions.php": {
+    "hardcoded-hex": 39,
+    "raw-component": 20
+  },
+  "admin/users/index.php": {
+    "hardcoded-hex": 1
+  },
+  "admin/users/notify-signups.php": {
+    "hardcoded-hex": 19,
+    "raw-component": 1
+  },
+  "admin/users/security-events.php": {
+    "hardcoded-hex": 43,
+    "raw-component": 6
+  },
+  "admin/users/unconverted-leads.php": {
+    "hardcoded-hex": 42,
+    "raw-component": 4
+  },
+  "admin/users/users.php": {
+    "hardcoded-hex": 8,
+    "raw-component": 13
+  },
+  "admin/workshop-agenda.php": {
+    "hardcoded-hex": 3,
+    "raw-component": 18
+  },
+  "admin/workshop-edit.php": {
+    "raw-component": 8
+  },
+  "admin/workshops.php": {
+    "raw-component": 4
+  },
+  "agenda-check/index.php": {
+    "uncachebusted-asset": 1
+  },
+  "agents/workshopr-uxdrift/fixtures/sample/coach/coach-page.php": {
+    "hardcoded-hex": 1,
+    "raw-component": 1
+  },
+  "agents/workshopr-uxdrift/fixtures/sample/planner/dashboard.php": {
+    "hardcoded-hex": 1,
+    "raw-component": 2
+  },
+  "app/includes/workshop-list 2.php": {
+    "raw-component": 6
+  },
+  "app/includes/workshop-list.php": {
+    "raw-component": 6
+  },
+  "app/views/facilitate/run 2.php": {
+    "raw-component": 41,
+    "uncachebusted-asset": 1
+  },
+  "app/views/facilitate/run.php": {
+    "raw-component": 41,
+    "uncachebusted-asset": 1
+  },
+  "app/views/plan/home 2.php": {
+    "raw-component": 4
+  },
+  "app/views/plan/home.php": {
+    "raw-component": 4
+  },
+  "app/views/synthesize/make.php": {
+    "raw-component": 2
+  },
+  "app/views/synthesize/recap.php": {
+    "raw-component": 8
+  },
+  "app/views/team.php": {
+    "raw-component": 6
+  },
+  "beta/includes/footer-beta 2.php": {
+    "hardcoded-hex": 10,
+    "raw-component": 3
+  },
+  "beta/includes/footer-beta 3.php": {
+    "hardcoded-hex": 10,
+    "raw-component": 3
+  },
+  "beta/includes/footer-beta 4.php": {
+    "hardcoded-hex": 10,
+    "raw-component": 3
+  },
+  "beta/includes/footer-beta.php": {
+    "hardcoded-hex": 10,
+    "raw-component": 3
+  },
+  "beta/includes/header-beta 3.php": {
+    "raw-component": 3
+  },
+  "beta/includes/header-beta 4.php": {
+    "raw-component": 3
+  },
+  "beta/includes/header-beta.php": {
+    "raw-component": 3
+  },
+  "beta/index 2.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 6
+  },
+  "beta/index 3.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 6
+  },
+  "beta/index 4.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 6
+  },
+  "beta/index.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 6
+  },
+  "beta/signedin 2.php": {
+    "doctype-outside-layout": 1
+  },
+  "beta/signedin 3.php": {
+    "doctype-outside-layout": 1
+  },
+  "beta/signedin 4.php": {
+    "doctype-outside-layout": 1
+  },
+  "beta/signedin.php": {
+    "doctype-outside-layout": 1
+  },
+  "bettermeetings/index 2.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 13,
+    "raw-component": 4
+  },
+  "bettermeetings/index 3.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 13,
+    "raw-component": 4
+  },
+  "bettermeetings/index 4.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 13,
+    "raw-component": 4
+  },
+  "bettermeetings/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 13,
+    "raw-component": 4
+  },
+  "canvas/index.php": {
+    "raw-component": 7
+  },
+  "changelog/index.php": {
+    "hardcoded-hex": 3
+  },
+  "coach/coming-soon.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 10,
+    "raw-component": 2
+  },
+  "coach/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 12,
+    "raw-component": 1,
+    "uncachebusted-asset": 2
+  },
+  "coach/landing.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 10
+  },
+  "coach/src/Coach/Export/HtmlExporter.php": {
+    "doctype-outside-layout": 1
+  },
+  "coach/tests/Unit/Export/HtmlExporterTest.php": {
+    "doctype-outside-layout": 1
+  },
+  "coach/vendor/phpunit/phpunit/src/Logging/TestDox/HtmlRenderer.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 5
+  },
+  "content/articles/content/icewbreaker wheel/slides.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 54
+  },
+  "dna/about.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 5,
+    "raw-component": 6
+  },
+  "dna/coming-soon.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 2,
+    "uncachebusted-asset": 2
+  },
+  "dna/email-gate.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 10,
+    "raw-component": 6
+  },
+  "dna/includes/coming-soon-header.php": {
+    "raw-component": 4
+  },
+  "dna/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 2
+  },
+  "dna/profile.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 3,
+    "raw-component": 1
+  },
+  "dna/quiz.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 2
+  },
+  "dna/results.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 15,
+    "raw-component": 24
+  },
+  "dna/shared-result.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 4,
+    "uncachebusted-asset": 1
+  },
+  "dna/tip-rating-thanks.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 18,
+    "raw-component": 1,
+    "uncachebusted-asset": 1
+  },
+  "facilitator/app.php": {
+    "raw-component": 42,
+    "uncachebusted-asset": 1
+  },
+  "facilitator/facilitator-home 3.php": {
+    "hardcoded-hex": 7
+  },
+  "facilitator/facilitator-home 4.php": {
+    "hardcoded-hex": 7
+  },
+  "facilitator/facilitator-home.php": {
+    "hardcoded-hex": 7
+  },
+  "facilitator/feedback 2.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 2,
+    "uncachebusted-asset": 1
+  },
+  "facilitator/feedback.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 2,
+    "uncachebusted-asset": 1
+  },
+  "facilitator/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 47
+  },
+  "facilitator/loading-states 2.php": {
+    "doctype-outside-layout": 1
+  },
+  "facilitator/loading-states 3.php": {
+    "doctype-outside-layout": 1
+  },
+  "facilitator/loading-states 4.php": {
+    "doctype-outside-layout": 1
+  },
+  "facilitator/loading-states.php": {
+    "doctype-outside-layout": 1
+  },
+  "facilitator/participant.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 24,
+    "uncachebusted-asset": 1
+  },
+  "facilitator/summary/index.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 1,
+    "uncachebusted-asset": 4
+  },
+  "from/export/index.php": {
+    "hardcoded-hex": 4,
+    "raw-component": 1
+  },
+  "from/facilitator/index.php": {
+    "hardcoded-hex": 4,
+    "raw-component": 1
+  },
+  "help-center/adapting-remote.php": {
+    "raw-component": 3
+  },
+  "help-center/contribute-workshops.php": {
+    "raw-component": 2
+  },
+  "help-center/creating-account.php": {
+    "raw-component": 3
+  },
+  "help-center/deleting-account.php": {
+    "raw-component": 2
+  },
+  "help-center/find-right-workshop.php": {
+    "raw-component": 2
+  },
+  "help-center/group-size.php": {
+    "raw-component": 3
+  },
+  "help-center/index.php": {
+    "raw-component": 1
+  },
+  "help-center/is-workshopr-free.php": {
+    "raw-component": 2
+  },
+  "help-center/managing-profile.php": {
+    "raw-component": 2
+  },
+  "help-center/notification-preferences.php": {
+    "raw-component": 2
+  },
+  "help-center/preparing-session.php": {
+    "raw-component": 9
+  },
+  "help-center/privacy-settings.php": {
+    "raw-component": 2
+  },
+  "help-center/report-issue.php": {
+    "raw-component": 2
+  },
+  "help-center/request-feature.php": {
+    "raw-component": 2
+  },
+  "help-center/saving-favorites.php": {
+    "raw-component": 2
+  },
+  "help-center/understanding-timelines.php": {
+    "raw-component": 3
+  },
+  "help-center/using-ai-assistant.php": {
+    "raw-component": 3
+  },
+  "includes/comments.php": {
+    "hardcoded-hex": 28,
+    "raw-component": 9
+  },
+  "includes/content-gating.php": {
+    "hardcoded-hex": 2,
+    "raw-component": 1
+  },
+  "includes/css/footer.php": {
+    "hardcoded-hex": 6
+  },
+  "includes/daily-reading.php": {
+    "hardcoded-hex": 1
+  },
+  "includes/data.php": {
+    "raw-component": 2
+  },
+  "includes/footer/auth-init.php": {
+    "uncachebusted-asset": 1
+  },
+  "includes/footer/intervention-drawer.php": {
+    "hardcoded-hex": 8,
+    "raw-component": 15
+  },
+  "includes/footer/modals-inline.php": {
+    "raw-component": 35,
+    "uncachebusted-asset": 1
+  },
+  "includes/footer/modals.php": {
+    "hardcoded-hex": 6,
+    "raw-component": 81
+  },
+  "includes/footer/notes-modal.php": {
+    "hardcoded-hex": 24,
+    "raw-component": 11
+  },
+  "includes/footer/scripts.php": {
+    "uncachebusted-asset": 5
+  },
+  "includes/footer/toast-inline.php": {
+    "raw-component": 2
+  },
+  "includes/nav-example.php": {
+    "hardcoded-hex": 9
+  },
+  "includes/partials/listing-card.php": {
+    "raw-component": 3
+  },
+  "includes/partials/listing-filters.php": {
+    "raw-component": 7
+  },
+  "includes/ratings-ui.php": {
+    "hardcoded-hex": 6,
+    "raw-component": 15
+  },
+  "includes/search-overlay.php": {
+    "hardcoded-hex": 10,
+    "raw-component": 2
+  },
+  "index.php": {
+    "doctype-outside-layout": 1
+  },
+  "intervention/card.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 13,
+    "raw-component": 6
+  },
+  "intervention/category.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 15
+  },
+  "intervention/check-email.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 15,
+    "uncachebusted-asset": 1
+  },
+  "intervention/download.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 12,
+    "raw-component": 1
+  },
+  "intervention/includes/how-cards-work.php": {
+    "hardcoded-hex": 12
+  },
+  "intervention/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 6,
+    "raw-component": 4
+  },
+  "library/collections/index.php": {
+    "raw-component": 4
+  },
+  "library/exercises/detail/index.php": {
+    "raw-component": 18
+  },
+  "library/goals/index.php": {
+    "uncachebusted-asset": 2
+  },
+  "library/icebreakers/detail/index.php": {
+    "raw-component": 19
+  },
+  "library/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 8
+  },
+  "library/workshops/detail/index.php": {
+    "raw-component": 17
+  },
+  "library/workshops/popular.php": {
+    "hardcoded-hex": 5
+  },
+  "myworkshopr/record 2.php": {
+    "raw-component": 1
+  },
+  "newsletter/index.php": {
+    "hardcoded-hex": 20,
+    "raw-component": 2
+  },
+  "participant/index.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 14,
+    "uncachebusted-asset": 2
+  },
+  "planner/agenda.php": {
+    "hardcoded-hex": 14
+  },
+  "planner/analytics.php": {
+    "raw-component": 4
+  },
+  "planner/before-the-agenda/prework/index.php": {
+    "doctype-outside-layout": 1,
+    "uncachebusted-asset": 6
+  },
+  "planner/brief/index.php": {
+    "raw-component": 4
+  },
+  "planner/brief/pages/get-the-yes.php": {
+    "raw-component": 19
+  },
+  "planner/brief/pages/goals.php": {
+    "raw-component": 17
+  },
+  "planner/brief/pages/mandate.php": {
+    "raw-component": 16
+  },
+  "planner/brief/pages/participants.php": {
+    "raw-component": 18
+  },
+  "planner/brief/pages/workshop-brief.php": {
+    "raw-component": 4
+  },
+  "planner/briefing-view.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 1,
+    "uncachebusted-asset": 4
+  },
+  "planner/briefing.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 25,
+    "uncachebusted-asset": 3
+  },
+  "planner/edit.php": {
+    "raw-component": 36,
+    "uncachebusted-asset": 3
+  },
+  "planner/email-preview.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 37
+  },
+  "planner/includes/data.php": {
+    "raw-component": 3
+  },
+  "planner/includes/footer.php": {
+    "uncachebusted-asset": 2
+  },
+  "planner/includes/generator-modal.php": {
+    "raw-component": 7,
+    "uncachebusted-asset": 2
+  },
+  "planner/includes/header.php": {
+    "uncachebusted-asset": 5
+  },
+  "planner/includes/modal-planner.php": {
+    "raw-component": 3
+  },
+  "planner/includes/modals.php": {
+    "raw-component": 17
+  },
+  "planner/includes/templates/agenda-item.php": {
+    "raw-component": 20
+  },
+  "planner/includes/views/saved-body 2.php": {
+    "raw-component": 5
+  },
+  "planner/includes/views/saved-body.php": {
+    "raw-component": 5
+  },
+  "planner/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 18,
+    "raw-component": 6
+  },
+  "planner/join.php": {
+    "hardcoded-hex": 31
+  },
+  "planner/landing.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 11,
+    "raw-component": 1
+  },
+  "planner/live/index.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 3
+  },
+  "planner/planner-home.php": {
+    "hardcoded-hex": 9,
+    "raw-component": 4
+  },
+  "planner/planner.php": {
+    "raw-component": 49
+  },
+  "planner/prep.php": {
+    "raw-component": 16
+  },
+  "planner/templates.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 23,
+    "raw-component": 7
+  },
+  "planner/view.php": {
+    "hardcoded-hex": 6
+  },
+  "podcasts/episode.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 1,
+    "uncachebusted-asset": 1
+  },
+  "podcasts/index.php": {
+    "doctype-outside-layout": 1,
+    "uncachebusted-asset": 3
+  },
+  "roi/calculator.php": {
+    "raw-component": 12
+  },
+  "roi/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 10,
+    "raw-component": 2,
+    "uncachebusted-asset": 3
+  },
+  "search/index.php": {
+    "raw-component": 3,
+    "uncachebusted-asset": 1
+  },
+  "sidekick/ecosystem.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 12,
+    "uncachebusted-asset": 2
+  },
+  "sidekick/includes/oauth-callback.php": {
+    "hardcoded-hex": 6
+  },
+  "sidekick/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 9,
+    "raw-component": 1
+  },
+  "sidekick/marketing/install.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 14,
+    "raw-component": 2
+  },
+  "sidekick/platforms.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 7
+  },
+  "solutions/byrole/coaches-facilitators/index.php": {
+    "hardcoded-hex": 1
+  },
+  "solutions/byrole/design-leads/index.php": {
+    "hardcoded-hex": 1
+  },
+  "solutions/byrole/first-time-facilitators/index.php": {
+    "hardcoded-hex": 1
+  },
+  "solutions/byrole/ld-managers/index.php": {
+    "hardcoded-hex": 1
+  },
+  "strategist/app 3.php": {
+    "raw-component": 6
+  },
+  "strategist/brief-view.php": {
+    "uncachebusted-asset": 3
+  },
+  "strategist/includes/workbench 2.php": {
+    "raw-component": 7
+  },
+  "strategist/includes/workbench.php": {
+    "raw-component": 7
+  },
+  "survey/index.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 7,
+    "uncachebusted-asset": 1
+  },
+  "synthesize/index.php": {
+    "hardcoded-hex": 1,
+    "uncachebusted-asset": 1
+  },
+  "tips/all.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 2,
+    "uncachebusted-asset": 2
+  },
+  "tips/category.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 1,
+    "uncachebusted-asset": 2
+  },
+  "tips/custom/_chrome.php": {
+    "hardcoded-hex": 9
+  },
+  "tips/custom/_foot.php": {
+    "hardcoded-hex": 1
+  },
+  "tips/custom/index.php": {
+    "raw-component": 2
+  },
+  "tips/custom/profile.php": {
+    "raw-component": 2
+  },
+  "tips/custom/quiz.php": {
+    "raw-component": 3
+  },
+  "tips/custom/v2/_foot.php": {
+    "hardcoded-hex": 1
+  },
+  "tips/custom/v2/cadence.php": {
+    "raw-component": 4
+  },
+  "tips/custom/v2/dna.php": {
+    "raw-component": 2
+  },
+  "tips/custom/v2/extras.php": {
+    "raw-component": 3
+  },
+  "tips/custom/v2/index.php": {
+    "raw-component": 2
+  },
+  "tips/daily.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 9,
+    "raw-component": 6
+  },
+  "tips/index.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 4,
+    "raw-component": 8,
+    "uncachebusted-asset": 2
+  },
+  "tips/preferences.php": {
+    "doctype-outside-layout": 1,
+    "raw-component": 9
+  },
+  "tips/saved.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 4,
+    "raw-component": 3,
+    "uncachebusted-asset": 2
+  },
+  "tips/tip.php": {
+    "doctype-outside-layout": 1,
+    "hardcoded-hex": 8,
+    "raw-component": 9,
+    "uncachebusted-asset": 2
+  },
+  "tips/unsubscribe.php": {
+    "doctype-outside-layout": 1
+  },
+  "tips/vote-confirm.php": {
+    "doctype-outside-layout": 1
+  },
+  "toolkits/hybrid/equity-audit.php": {
+    "hardcoded-hex": 3,
+    "raw-component": 31
+  },
+  "toolkits/hybrid/index.php": {
+    "hardcoded-hex": 4,
+    "raw-component": 6
+  },
+  "toolkits/index.php": {
+    "hardcoded-hex": 8
+  },
+  "toolkits/post-workshop/get.php": {
+    "hardcoded-hex": 5,
+    "raw-component": 3
+  },
+  "toolkits/post-workshop/index.php": {
+    "hardcoded-hex": 1
+  },
+  "toolkits/pre-read/get.php": {
+    "hardcoded-hex": 3,
+    "raw-component": 3
+  },
+  "toolkits/pre-read/index.php": {
+    "hardcoded-hex": 7
+  }
+}

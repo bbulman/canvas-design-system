@@ -1,0 +1,4 @@
+{
+  "_comment": "Files held by a pending review batch (reports/ds-burndown/batch-NN). The queue skips them and neither run touches them until the batch is approved or rejected.",
+  "files": {}
+}

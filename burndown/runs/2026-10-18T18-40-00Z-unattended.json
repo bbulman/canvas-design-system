@@ -1,0 +1,31 @@
+{
+  "mode": "unattended",
+  "before": 3432,
+  "after": 3431,
+  "stage": [
+    "content/articles/content/icewbreaker wheel/slides.php",
+    "design-system/page-baseline.json"
+  ],
+  "reverted": [],
+  "skipped": [],
+  "passed": [
+    "content/articles/content/icewbreaker wheel/slides.php"
+  ],
+  "extras": [],
+  "by_rule_after": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 1923,
+    "raw-component": 1359,
+    "uncachebusted-asset": 76
+  },
+  "batch_before": 56,
+  "batch_after": 55,
+  "by_rule_before": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 1924,
+    "raw-component": 1359,
+    "uncachebusted-asset": 76
+  },
+  "agent_cost_usd": 0.2568016,
+  "at": "2026-10-18T18:40:00.519Z"
+}

@@ -1,0 +1,973 @@
+/**
+ * WORKSHOPR PLATFORM DESIGN TOKENS
+ * Single source of truth for all app colors
+ *
+ * Architecture: LEARN → PLAN → FACILITATE → REFLECT
+ * COLOR DECISION (July 2026, D1 in token-audit-2026-07.md): the ENTIRE
+ * platform is red. Phases are an organizational grouping, not a color
+ * system — every --phase-* and --<app>-* family resolves to the mainsite
+ * red family. Differentiation comes from category tint ramps, not accents.
+ *
+ * Import this file in any app:
+ * @import '/design-system/platform-tokens.css';
+ *
+ * DEPRECATED — the D3 list was executed July 29 2026. All 21 zero-consumer
+ * tokens (--podcasts-* brand/gradient/shadow, --planner-blue-dark/-light,
+ * --tips-cat-6, --tips-gradient/-shadow, --text-cool-*, --color-purple-200,
+ * --color-orange-200, --training-*, --dna-*, --intervention-* gradients and
+ * shadows, --coach-gradient) are now deleted. Remaining deprecation:
+ *   --transition-fast --transition-base --transition-slow (use --duration-* + --ease-*)
+ * Those three still have ~35 consuming files; they go once that migration lands.
+ *
+ * The semantic component layer (--button-*, --card-*, --modal-*, --toast-*,
+ * --tooltip-*, --badge-*, --input-*) is the theming contract described in
+ * theming.md. It is being wired into components.css progressively — buttons,
+ * cards, inputs, modals, badges, toasts and tooltips now consume it; anything
+ * still reading a primitive directly is a migration target, not a pattern.
+ */
+
+/* Global text-size scale. Font sizes are rem (text), spacing is px (layout),
+   so scaling the root font-size shrinks all text to 80% while leaving layout
+   intact. This is the default for apps that don't set their own html base;
+   apps that do (mainsite, planner, academy, participant) scale their base by
+   the same 0.8 so the 80% is uniform platform-wide. */
+html { font-size: 80%; }
+
+:root {
+
+  /* ============================================
+     BRAND RED (Red Unification, D1)
+     The five reds the platform uses. Every phase and app red below points
+     here, so the red is changed in one place. Error colours and chart or
+     category colours keep their own values: they mean something else.
+     ============================================ */
+  --brand: #E54D4D;       /* buttons, the mark, fills that carry white text */
+  --brand-ink: #C73E3E;   /* red text on white (5.02:1), headings, emphasis */
+  --brand-line: #FECACA;  /* borders and rules on a soft red fill */
+  --brand-soft: #FEE2E2;  /* chips, soft fills, the underline band */
+  --brand-tint: #FEF2F2;  /* the lightest wash: page bands, hover backgrounds */
+
+  /* ============================================
+     PHASE COLOR (Contextual accent)
+     Set --phase-color on any container to theme
+     interactive elements (e.g. secondary buttons).
+     Defaults to Learn (red) — the main site phase.
+     ============================================ */
+  --phase-color: var(--brand);
+
+  /* ============================================
+     PHASE: LEARN (Red)
+     "Get excited, dive in"
+     ============================================ */
+  --phase-learn: var(--brand);
+  --phase-learn-dark: var(--brand-ink);
+  --phase-learn-light: var(--brand-soft);
+  --phase-learn-very-light: var(--brand-tint);
+
+
+  /* ============================================
+     APP: WORKSHOPR.IO (Main Site)
+     Phase: Learn
+     Brand red - the anchor color
+     ============================================ */
+  --mainsite-primary: var(--brand);
+  --mainsite-dark: var(--brand-ink);
+  --mainsite-light: var(--brand-soft);
+  --mainsite-very-light: var(--brand-tint);
+  /* The light stop is #D13A3A, not the brand #E54D4D. White on #E54D4D is
+     3.82:1, and this gradient backs --button-bg-primary, whose label is
+     --text-small (11.2px at the 80% root, so normal text with a 4.5:1 bar).
+     #D13A3A measures 4.80:1 and the dark stop 5.02:1, so the whole sweep now
+     passes AA. Do not "restore" the light stop to #E54D4D: that reintroduces
+     a Level AA failure on every primary button. Flat brand red is unchanged
+     and still lives in --mainsite-primary. See AUDIT-2026-08-23-system-audit.md P1-2. */
+  --mainsite-gradient: linear-gradient(135deg, #D13A3A 0%, #C73E3E 100%);
+  --mainsite-shadow: 0 4px 14px rgba(229, 77, 77, 0.25);
+
+
+  /* ============================================
+     APP: WORKSHOPR.IO TIPS
+     Phase: Facilitate (naming-only)
+     Red like the rest of the platform (July 2026 D1). The category tint ramp
+     below was unified to a brand-red ramp too — no purple remains (D1 completion).
+     ============================================ */
+  --tips-primary: var(--brand);
+  --tips-dark: var(--brand-ink);
+  --tips-light: var(--brand-line);
+  --tips-very-light: var(--brand-soft);
+
+  /* Tips Category Colors (5 Red Tints — unified to brand per D1)
+     ⚠️ SURFACE-ONLY BELOW 4.5:1. These are a tint ramp for fills, chips and
+     left-borders — not a text palette. Contrast on white:
+       cat-1 #7F1D1D 10.5:1 · cat-2 #991B1B 8.6:1 · cat-3 #C73E3E 5.0:1  → safe as text
+       cat-4 #E54D4D 3.8:1                                              → large text only
+       cat-5 #F87171 2.8:1                                              → never text
+     For category text on white use --color-primary-on-white or cat-1/2/3. */
+  --tips-cat-1: #7F1D1D;  /* Fundamentals */
+  --tips-cat-2: #991B1B;  /* Engagement */
+  --tips-cat-3: #C73E3E;  /* Facilitation */
+  --tips-cat-4: #E54D4D;  /* Difficult Moments */
+  --tips-cat-5: #F87171;  /* Activities */
+
+
+  /* ============================================
+     APP: WORKSHOPR.IO PODCASTS
+     Phase: Learn
+     Crimson red - deeper, richer
+     ============================================ */
+  --podcasts-primary: var(--brand);
+  --podcasts-dark: var(--brand-ink);
+  --podcasts-light: var(--brand-line);
+  --podcasts-very-light: var(--brand-soft);
+
+
+  /* ============================================
+     PHASE: PLAN (Red — phases are naming-only, see D1)
+     "Focus, structure your thoughts"
+     ============================================ */
+  --phase-plan: var(--brand);
+  --phase-plan-dark: var(--brand-ink);
+  --phase-plan-light: var(--brand-line);
+  --phase-plan-very-light: var(--brand-soft);
+
+
+  /* ============================================
+     APP: WORKSHOPR.IO PLANNER
+     Phase: Plan
+     Recolored from plan-phase blue to mainsite/Learn RED in June 2026 —
+     since D1 (July 2026) the whole platform is red, so this is no longer an
+     exception. Do NOT "fix" this back to blue.
+     ============================================ */
+  --planner-primary: var(--brand);
+  --planner-dark: var(--brand-ink);
+  --planner-light: var(--brand-soft);
+  --planner-very-light: var(--brand-tint);
+  --planner-accent: var(--brand-tint);
+  /* Aliased rather than restated: this was a byte-identical copy of
+     --mainsite-gradient, so it silently kept the 3.82:1 light stop when that
+     one was corrected. One definition, one place to fix. */
+  --planner-gradient: var(--mainsite-gradient);
+  --planner-shadow: 0 4px 14px rgba(229, 77, 77, 0.25);
+  /* Legacy "plan blue" aliases — retired under Red Unification. Repointed to the
+     Learn Red family so any component still theming off --planner-blue renders red
+     (planner pages already override these in css/planner/base/_variables.css; this
+     keeps pages that load only the platform tokens, e.g. planner/index.php, in step). */
+  --planner-blue: var(--brand);
+
+
+  /* ============================================
+     PHASE: FACILITATE (Red — phases are naming-only, see D1)
+     "Trust yourself, guide others"
+     ============================================ */
+  --phase-facilitate: var(--brand);
+  --phase-facilitate-dark: var(--brand-ink);
+  --phase-facilitate-light: var(--brand-line);
+  --phase-facilitate-very-light: var(--brand-soft);
+
+
+  /* ============================================
+     APP: WORKSHOPR.IO COACH
+     Phase: Facilitate (naming-only)
+     Red with 4 red mode tints (July 2026 D1)
+     ============================================ */
+  --coach-primary: var(--brand);
+  --coach-dark: var(--brand-ink);
+  --coach-light: var(--brand-line);
+  --coach-very-light: var(--brand-soft);
+  --coach-shadow: 0 4px 14px rgba(229, 77, 77, 0.25);
+
+  /* Coach Mode Colors (4 Red Tints)
+     ⚠️ SURFACE-ONLY at the light end. On white: prep #F87171 2.8:1 (never text),
+     facilitate #EF4444 3.8:1 (large text only), synthesize #DC2626 4.8:1 and
+     debrief #B91C1C 6.9:1 are safe as text. */
+  --coach-mode-prep: #F87171;       /* Prep - lightest, planning */
+  --coach-mode-facilitate: #EF4444; /* Facilitate - active */
+  --coach-mode-synthesize: #DC2626; /* Synthesize - processing */
+  --coach-mode-debrief: #B91C1C;    /* Debrief - deepest reflection */
+
+  /* Shared Coach UI Colors */
+  --coach-bg: #FFFBF8;
+  --coach-surface: #FFFFFF;
+  --coach-border: #E8ECF1;
+
+
+  /* ============================================
+     APP: WORKSHOPR.IO INTERVENTION
+     Phase: Facilitate
+     Red (Learn red) with 6 category tints — intervention sits in the Facilitate
+     phase but uses RED, not facilitate purple, as its accent.
+     ============================================ */
+  --intervention-primary: var(--brand);
+  --intervention-dark: var(--brand-ink);
+  --intervention-light: var(--brand-soft);
+  --intervention-very-light: var(--brand-tint);
+  /* Intervention Category Colors (6 Red Tints)
+     ⚠️ SURFACE-ONLY at the light end. On white: cat-1..cat-4 are safe as text
+     (10.5:1 → 5.0:1), cat-5 #E54D4D is large-text only (3.8:1), cat-6 #F87171
+     must never carry text (2.8:1). */
+  --intervention-cat-1: #7F1D1D;  /* Energy & Engagement - darkest/urgent */
+  --intervention-cat-2: #991B1B;  /* Conflict & Tension */
+  --intervention-cat-3: #B91C1C;  /* Participation */
+  --intervention-cat-4: #C73E3E;  /* Time & Pacing */
+  --intervention-cat-5: #E54D4D;  /* Focus & Clarity */
+  --intervention-cat-6: #F87171;  /* Connection & Trust - lightest/soft */
+
+  /* Facilitator app tokens — red via the phase aliases (everything is red per
+     D1). The app's CSS additionally resolves its legacy --fac-purple* names to
+     red; see apps.facilitator.colorNote in workshopr-design-system.json. */
+  --facilitator-primary: var(--phase-facilitate);        /* #E54D4D */
+  --facilitator-dark: var(--phase-facilitate-dark);      /* #C73E3E */
+  --facilitator-light: var(--phase-facilitate-light);    /* #FECACA */
+  --facilitator-very-light: var(--phase-facilitate-very-light); /* #FEE2E2 */
+  --facilitator-gradient: linear-gradient(160deg, #1A0404 0%, #3B0A0A 40%, #7F1D1D 100%);
+  --facilitator-shadow: 0 4px 14px rgba(229, 77, 77, 0.25);
+
+
+  /* ============================================
+     PHASE: REFLECT (Red — phases are naming-only, see D1)
+     "You're growing, keep going"
+     ============================================ */
+  --phase-reflect: var(--brand);
+  --phase-reflect-dark: var(--brand-ink);
+  --phase-reflect-light: var(--brand-line);
+  --phase-reflect-very-light: var(--brand-soft);
+
+
+  /* ============================================
+     APP: WORKSHOPR.IO FACILITATOR'S DNA
+     Phase: Reflect
+     Recolored from reflect-phase emerald to mainsite/Learn RED in June 2026 —
+     since D1 (July 2026) the whole platform is red, so this is no longer an
+     exception. Do NOT "fix" DNA back to green.
+     ============================================ */
+  --dna-primary: var(--brand);
+  --dna-dark: var(--brand-ink);
+  --dna-light: #FCA5A5;
+  --dna-very-light: var(--brand-soft);
+  /* DNA Category Colors (5 Red Tints)
+     ⚠️ SURFACE-ONLY at the light end. On white: cat-1..cat-3 are safe as text,
+     cat-4 #E54D4D is large-text only (3.8:1), cat-5 #FCA5A5 must never carry
+     text (1.9:1 — the weakest value in the system). */
+  --dna-cat-1: #7F1D1D;  /* Strengths - deepest */
+  --dna-cat-2: #B91C1C;  /* Growth Areas */
+  --dna-cat-3: #C73E3E;  /* Style */
+  --dna-cat-4: #E54D4D;  /* History */
+  --dna-cat-5: #FCA5A5;  /* Goals - lightest */
+
+
+  /* ============================================
+     APP: WORKSHOPR.IO TRAINING / ACADEMY
+     Phase: Learn
+     Learn phase red - matches library, podcasts
+     ============================================ */
+  --training-primary: var(--brand);
+  --training-dark: var(--brand-ink);
+  --training-light: var(--brand-soft);
+  --training-very-light: var(--brand-tint);
+
+
+  /* ============================================
+     SHARED: EXTENDED UTILITY COLORS
+     Values the app was hardcoding with no token (see AUDIT-2026-07-01).
+     Promoted here so they stop being magic numbers.
+     ============================================ */
+  /* Status / icon accents (used in styles.css, admin, _modals.css) */
+  --color-orange-600: #ea580c;
+  --color-green-700: #15803d;
+  /* Auth / login UI reds (auth-modal.css, styles.css, admin.css) */
+  --color-auth-primary: #b02a37;
+  --color-auth-gradient-dark: #c82333;
+  /* Pastel card-header gradient stops (styles.css, _modals.css).
+     The -200 steps were deleted July 2026 (D3) — zero consumers. */
+  --color-purple-100: #f3e8ff;
+  --color-orange-100: #ffedd5;
+
+
+  /* ============================================
+     SHARED: SEMANTIC COLORS
+     ============================================ */
+  --color-success: #22C55E;  /* Success status for icons, dots and fills that carry no text. 2.28:1 on white, so success text uses --color-success-ink or --color-success-darker */
+  --color-success-dark: #16A34A;  /* Heavier success icon or border. 3.30:1 on white: large text and icons only */
+  --color-success-light: #BBF7D0;  /* Mid success tint for fills and glows. Text on it uses --color-success-ink (6.34:1) */
+  --color-success-very-light: #DCFCE7;  /* Palest success fill, a success row or panel. Text on it uses --color-success-ink (7.0:1) */
+
+  --color-warning: #F59E0B;  /* Warning status for icons, dots and fills that carry no text. 2.15:1 on white, so warning text uses --color-warning-ink */
+  --color-warning-dark: #D97706;  /* Heavier warning icon or border. 3.19:1 on white: large text and icons only */
+  --color-warning-light: #FDE68A;  /* Mid warning tint for fills and borders. Text on it uses --color-warning-ink (5.69:1) */
+  --color-warning-very-light: #F9EEC3;   /* The highlight fill. Was #FEF3C7 (amber-100) until Sep 2026. Text on it uses --color-warning-ink; --color-warning-darker falls to 4.32:1 and fails AA. */
+
+  --color-error: #EF4444;  /* Error status for icons, invalid-field borders and fills. 3.76:1 on white, so error text uses --color-error-dark or --color-error-ink */
+  --color-error-dark: #DC2626;  /* Error text on white (4.83:1) and the heavier error border. Only 3.95:1 on --color-error-very-light; use --color-error-ink there */
+  --color-error-light: #FECACA;  /* Mid error tint for fills and the glow round an invalid field. Text on it uses --color-error-ink (5.57:1) */
+  --color-error-very-light: #FEE2E2;  /* Palest error fill, an error row or panel. Text on it uses --color-error-ink (6.6:1) */
+
+  --color-info: #3B82F6;  /* Info status for icons and fills that carry no text. 3.68:1 on white, so info text uses --color-info-dark */
+  --color-info-dark: #2563EB;  /* Info text and icons on white (5.17:1). Only 4.24:1 on --color-info-very-light; use --color-info-strong there */
+  --color-info-light: #BFDBFE;  /* Mid info tint for fills and borders */
+  --color-info-very-light: #DBEAFE;  /* Palest info fill, an info row or panel. Text on it uses --color-info-strong (7.15:1) */
+
+  /* ============================================
+     SEMANTIC: ACTIVITY TYPES
+     Exercises blue, icebreakers green: the activity-type exception to Red
+     Unification. Use them only to mark an exercise or an icebreaker, never
+     as decoration; the Field Guide's section theming is the one wider use,
+     pending Bill. Each step takes the OKLCH lightness and chroma of
+     --brand-line and --brand-soft, at hues 120 degrees either side of the
+     red (triadic), so beside those reds the three types read as one set.
+     These are not the planner's steps: --planner-exercise-light is nearer
+     this --exercise-very-light.
+     ============================================ */
+  --exercise-light: #C2DBFF;  /* Mid exercise fill and border; clipped into sRGB, so about 4% less saturated than its red. Text on it uses --color-info-strong (6.18:1) */
+  --exercise-very-light: #DDEBFF;  /* Palest exercise fill, an exercise row or panel. Text on it uses --color-info-strong (7.23:1) */
+  --icebreaker-light: #C7E3BD;  /* Mid icebreaker fill and border. Text on it uses --color-success-ink (5.54:1) */
+  --icebreaker-very-light: #E0EFDB;  /* Palest icebreaker fill, an icebreaker row or panel. Text on it uses --color-success-ink (6.42:1) */
+
+
+  /* ============================================
+     SHARED: NEUTRAL PALETTE (Warm)
+     ============================================ */
+
+  /* Ink - Warm near-black */
+  --color-ink: #2C2416;
+  --color-ink-secondary: #5C5242;
+  --color-ink-muted: #706965;       /* Stone hue (25deg, 5% saturation) at the lightest step that clears AA on every surface it sits on: 5.39:1 on white, 5.16:1 on --bg-page, 5.04:1 on --bg-paper, 4.80:1 on --card-bg, 4.54:1 on --bg-paper-dark / --header-bg. Was #78716C (4.28:1 on --card-bg) until Oct 2026 */
+  --color-ink-faint: #A8A29E;       /* ⚠️ 2.52:1 on white, 2.41:1 on --bg-page — decorative only, never essential text */
+
+  /* Accessible Contrast Tokens
+     Use these when placing text on brand-colored backgrounds.
+     All pass WCAG AA (4.5:1) for normal text on white.           */
+  --color-primary-on-white: var(--brand-ink);   /* 5.02:1 — use instead of --mainsite-primary for text on white */
+  --color-ink-faint-accessible: var(--color-ink-muted); /* 5.39:1 on white, 4.80:1 on --card-bg: use instead of --color-ink-faint for essential text */
+
+  /* Backgrounds */
+  /* --bg-page is deliberately #FAFAF9, not the legacy warm cream #FEF7F1 —
+     don't "restore" it. See DESIGN.md §7. */
+  --bg-page: #FAFAF9;
+  --bg-page-alt: #FFFBF8;
+  --bg-surface: #FFFFFF;
+  --bg-muted: #F5F5F4;
+  --bg-subtle: #FAFAF9;
+  /* The global header (ws_header) sits a step deeper than the page cream so
+     the chrome reads as a distinct band rather than bleeding into content.
+     Same value the apps already call --color-paper-dark. */
+  --header-bg: #F0EBE3;
+
+  /* Gray Scale */
+  --gray-50: #FAFAF9;
+  --gray-100: #F5F5F4;
+  --gray-200: #E7E5E4;
+  --gray-300: #D6D3D1;
+  --gray-400: #A8A29E;
+  --gray-500: #78716C;
+  --gray-600: #57534E;
+  --gray-700: #44403C;
+  --gray-800: #292524;
+  --gray-900: #1C1917;
+
+  /* Navy (Headers, Dark UI) */
+  --color-navy: #1A2744;
+  --color-navy-light: #2E3D5C;
+
+  /* Cool Gray (Navigation, Drawers, Overlays)
+     The --text-cool-* pair was deleted July 2026 (audit M8/D3): both were named
+     as text tokens but measured 4.34:1 and 2.40:1 on white — below AA — and had
+     zero consumers. Use --text-muted / --text-default for cool-surface text. */
+  --bg-cool: #F5F7FA;
+  --border-cool: #E8ECF1;
+
+  /* Semantic status inks + warm backgrounds moved to the SEMANTIC: COMPONENT
+     TOKENS section below (audit F2 — they were defined twice). */
+
+  /* ============================================
+     EXTENDED ACCENTS (normalized from hardcoded UI)
+     Exact values preserved — these tokenize colors that
+     recurred in app CSS but had no prior token.
+     ============================================ */
+
+  /* Teal — planner secondary action (e.g. launchpad button) */
+  --color-teal: #0D9488;
+  --color-teal-dark: #0F766E;
+
+  /* Extra warning/error/info shades used by toasts, badges, hovers */
+  --color-warning-darker: #B45309;   /* amber-700 — hover on warning-dark */
+  --color-error-strong: #B91C1C;     /* red-700 — error toast/badge */
+  --color-error-darker: #991B1B;     /* red-800 — error text */
+  --color-info-strong: #1E40AF;      /* blue-800 — info toast */
+  --planner-accent-dark: #0369A1;    /* sky-700 — planner button hover */
+
+  /* Warning note surface (soft orange callout) */
+  --color-warning-surface: #FFF7ED;
+  --color-warning-surface-border: #FED7AA;  /* Border of a --color-warning-surface panel */
+  --color-warning-surface-ink: #9A3412;  /* Text on a --color-warning-surface panel (6.88:1) */
+
+  /* Cool slate (dark tooltip / chip on light UI) */
+  --color-slate-900: #111827; /* ds-lint-disable-line — intentional cool slate, not a warm-stone gray candidate */
+
+  /* Success surface + deeper success text */
+  --color-success-surface: #F0FDF4;  /* green-50 — score/status surface */
+  --color-success-darker: #166534;   /* green-800 — success text */
+
+  /* ============================================
+     PLATFORM BRAND: MEETING TOOLS
+     Brand identity colors for meeting-location chips.
+     (Mirrors the podcast platform brand tokens above.)
+     ============================================ */
+  --platform-meet: #4CAF50;          /* Google Meet green */
+  --platform-meet-ink: #2E7D32;
+  --platform-zoom: #2196F3;          /* Zoom blue */
+  --platform-zoom-ink: #1565C0;
+  --platform-zoom-bg: #E3F2FD;
+  --platform-inperson: #FF9800;      /* In-person orange */
+  --platform-inperson-ink: #E65100;
+  --platform-inperson-bg: #FFF3E0;
+
+
+  /* ============================================
+     SHARED: TYPOGRAPHY - Font Families
+     ============================================ */
+  --font-heading: 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+
+  /* ============================================
+     SHARED: TYPOGRAPHY - Type Scale
+     H1-H3: Fraunces (heading)
+     H4, Text: Inter (body)
+     ============================================ */
+
+  /* ---------------------------------------------------------------
+     READ THIS BEFORE SWAPPING A px LITERAL FOR A TOKEN.
+     `html { font-size: 80% }` above makes the root 12.8px, platform-wide
+     and by design. Every rem token therefore PAINTS at 0.8x its nominal
+     value: --text-small is 0.875rem, nominally 14px, and renders 11.2px.
+     A 14px literal in a stylesheet is NOT --text-small. The px in each
+     comment below is the rendered size; the nominal 16px-root size is in
+     brackets after it.
+     --------------------------------------------------------------- */
+  /* Headings - Fraunces */
+  --text-display: 2.875rem;  /* paints 36.8px (nominal 46px) - Hero/display text */
+  --text-display-lg: 3.5rem;  /* paints 44.8px (nominal 56px) - large hero headings */
+  --text-display-xl: 4.5rem;  /* paints 57.6px (nominal 72px) - extra-large hero headings */
+
+  /* Timer / countdown numerals (live & run mode) - responsive bespoke sizes */
+  --text-timer-sm: 4rem;  /* paints 51.2px (nominal 64px) - mobile countdown */
+  --text-timer-md: 5rem;  /* paints 64px (nominal 80px) - tablet countdown */
+  --text-timer-lg: 6rem;  /* paints 76.8px (nominal 96px) - desktop countdown */
+
+  /*
+   * DISPLAY TEXT PATTERN:
+   * - All text: bold (--font-bold)
+   * - First part: --text-default color
+   * - Second part: italic, --phase-learn-dark color, 8px --phase-learn-light underline (flush)
+   *
+   * Example markup:
+   * <h1 class="display-text">
+   *   Transform Your <em>Facilitation</em>
+   * </h1>
+   */
+  --text-h1: 2rem;  /* paints 25.6px (nominal 32px) */
+  --text-h2: 1.5rem;  /* paints 19.2px (nominal 24px) */
+  --text-h3: 1.25rem;  /* paints 16px (nominal 20px) */
+
+  /* UI Text - Inter */
+  --text-h4: 1.125rem;  /* paints 14.4px (nominal 18px) */
+  --text-body: 1rem;  /* paints 12.8px (nominal 16px) */
+  --text-ui: 0.9375rem;  /* paints 12px (nominal 15px) */
+  --text-small: 0.875rem;  /* paints 11.2px (nominal 14px) */
+  --text-meta: 0.8125rem;  /* paints 10.4px (nominal 13px) */
+  --text-caption: 0.75rem;  /* paints 9.6px (nominal 12px) */
+  --text-micro: 0.6875rem;  /* paints 8.8px (nominal 11px) */
+  --text-nano: 0.625rem;  /* paints 8px (nominal 10px) */
+
+
+  /* ============================================
+     SHARED: TYPOGRAPHY - Font Weights
+     ============================================ */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+
+  /* ============================================
+     SHARED: TYPOGRAPHY - Line Heights
+     ============================================ */
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+
+
+  /* ============================================
+     SHARED: TYPOGRAPHY - Letter Spacing
+     ============================================ */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+
+
+  /* ============================================
+     SHARED: TYPOGRAPHY - Text Colors
+     ============================================ */
+  --text-dark: var(--color-ink);  /* Headings and primary text: titles, labels, the main line of a card. 15.3:1 on white */
+  --text-default: var(--color-ink-secondary);  /* Body copy and descriptions. 7.66:1 on white */
+  --text-muted: var(--color-ink-muted);  /* Secondary text: meta lines, hints, timestamps. AA on every surface: 5.39:1 on white, 5.16:1 on --bg-page, 5.04:1 on --bg-paper, 4.80:1 on --card-bg, 4.54:1 on --bg-paper-dark */
+  --text-faint: var(--color-ink-faint);  /* Decorative only: placeholders and disabled text, never information. 2.52:1 on white; prefers-contrast: more swaps in the accessible value */
+  --text-inverse: #FFFFFF;
+
+
+  /* ============================================
+     SHARED: SHADOWS
+     ============================================ */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.10);
+
+
+  /* ============================================
+     SHARED: BORDER RADIUS
+     ============================================ */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-full: 9999px;
+
+
+  /* ============================================
+     SHARED: SPACING (4px base)
+     ============================================ */
+  --space-0-5: 2px;
+  --space-1: 4px;
+  --space-1-5: 6px;
+  --space-2: 8px;
+  --space-2-5: 10px;
+  --space-3: 12px;
+  --space-3-5: 14px;
+  --space-4: 16px;
+  --space-4-5: 18px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;   /* added Sep 2026: 5 call sites across app-shell, stsh-shell
+                        and components.css already referenced it with a 28px
+                        fallback, so the step existed in practice but not in the scale */
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+
+  /* ============================================
+     SHARED: TRANSITIONS
+     @deprecated (motion P3) — use --duration-* + an explicit --ease-* curve.
+     Kept for existing consumers; do not use in new code.
+     ============================================ */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+
+
+  /* ============================================
+     SHARED: ANIMATION TOKENS
+     Centralized durations & easings to prevent
+     drift across components.
+     ============================================ */
+
+  /* Durations */
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --duration-slow: 300ms;
+  --duration-enter: 300ms;   /* Elements appearing */
+  --duration-exit: 200ms;    /* Elements disappearing */
+
+  /* Easing curves */
+  --ease-default: ease;
+  --ease-in: cubic-bezier(0.4, 0, 1, 0.2);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);    /* Organic settle — pure deceleration, does NOT overshoot despite the name */
+  /* --ease-bounce removed July 2026 (motion P2): overshoot violates the motion
+     principles and it had zero consumers. Use --ease-spring. */
+
+  /* Composed transitions (shorthand) */
+  --animate-fade-in: var(--duration-enter) var(--ease-out);
+  --animate-fade-out: var(--duration-exit) var(--ease-in);  /* Duration and easing for an exit fade, as in transition: opacity var(--animate-fade-out). See motion.md */
+  --animate-slide-up: var(--duration-enter) var(--ease-spring);  /* Duration and spring easing for an entrance that rises into place. See motion.md */
+  --animate-scale: var(--duration-base) var(--ease-spring);  /* Duration and spring easing for a scale-in, such as a popover opening. See motion.md */
+
+  /* The shared stateful-component transition (hover/selected/disabled).
+     One definition so component interaction timing can never drift.
+     Composed from the current motion system, not the deprecated
+     --transition-* trio; reduced motion is enforced by the universal
+     transition-duration gate below. */
+  --transition-interactive: transform var(--duration-fast) var(--ease-default), box-shadow var(--duration-fast) var(--ease-default), background-color var(--duration-fast) var(--ease-default), border-color var(--duration-fast) var(--ease-default), color var(--duration-fast) var(--ease-default), opacity var(--duration-fast) var(--ease-default), visibility var(--duration-fast) var(--ease-default);
+
+  /* Page-reveal regime (motion P1) — /motion.md's canonical values, tokenized.
+     For landing/marketing scroll reveals and hero sequences ONLY; UI
+     micro-motion uses the durations above. See motion-system.md. */
+  --ease-reveal: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-reveal: 800ms;
+  --duration-reveal-lg: 1200ms;
+  --stagger-reveal: 120ms;
+
+
+  /* ============================================
+     SHARED: CONTAINER MAX-WIDTHS
+     ============================================ */
+  --container-xs: 480px;
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 960px;
+  --container-xl: 1120px;
+  --container-2xl: 1280px;
+
+  /* Column floors for ws_grid: the narrowest a column gets before the grid drops one.
+     A grid of md cards fits three across --container-xl and one on a phone. */
+  --grid-min-sm: 200px;  /* Compact tiles and stats: ws_grid min sm. Also the floor a growing ws_cluster item keeps before its row wraps */
+  --grid-min-md: 280px;  /* Cards, the ws_grid default */
+  --grid-min-lg: 360px;  /* Wide cards with a paragraph or an image: ws_grid min lg */
+
+
+  /* ============================================
+     SHARED: BREAKPOINTS (reference values ONLY — audit E1)
+     ⚠️ CSS custom properties CANNOT be used inside @media queries. These tokens
+     exist so the JSON mirror, the DTCG export and Figma carry the same numbers
+     the stylesheets hardcode. Never write `@media (max-width: var(--bp-tablet))`
+     — it silently never matches. Type the raw value:
+     @media (max-width: 480px)  -- mobile
+     @media (max-width: 640px)  -- mobile-landscape
+     @media (max-width: 768px)  -- tablet
+     @media (max-width: 960px)  -- tablet-landscape
+     @media (max-width: 1120px) -- desktop-small
+     @media (max-width: 1280px) -- desktop
+     ============================================ */
+  --bp-mobile: 480px;
+  --bp-mobile-landscape: 640px;
+  --bp-tablet: 768px;
+  --bp-tablet-landscape: 960px;
+  --bp-desktop-sm: 1120px;
+  --bp-desktop: 1280px;
+
+
+  /* ============================================
+     SHARED: ICON SIZES
+     Material Symbols optical sizing
+     ============================================ */
+  --icon-xs: 14px;  /* Retired for icons: an icon is at least --icon-lg (DESIGN.md §8). Kept only because the native apps mirror it; never size an icon with it */
+  --icon-sm: 16px;  /* Retired for icons: an icon is at least --icon-lg (DESIGN.md §8). Kept only because the native apps mirror it; never size an icon with it */
+  --icon-md: 20px;  /* Retired for icons: an icon is at least --icon-lg (DESIGN.md §8). Kept only because the native apps mirror it; never size an icon with it */
+  --icon-lg: 24px;  /* The smallest an icon is anywhere (DESIGN.md §8), an SVG from icon() or a font glyph */
+  --icon-xl: 32px;
+  --icon-2xl: 48px;
+
+  /* ============================================
+     SHARED: TARGET SIZE (WCAG 2.2 SC 2.5.8)
+     Icon sizes above are the GLYPH, not the hit area. Any control built around
+     an --icon-xs/--icon-sm glyph must still reach --target-min in both axes —
+     pad it out rather than shrinking the target to the icon.
+     ============================================ */
+  --target-min: 24px;      /* AA floor (SC 2.5.8) */
+  --target-comfortable: 44px; /* AAA / touch-first surfaces (SC 2.5.5) */
+
+
+  /* ============================================
+     SHARED: FOCUS RING
+     Consistent :focus-visible styling
+     INTENTIONAL (audit D2): the ring stays sky blue — the one non-red accent —
+     so keyboard focus is unmistakable against the all-red UI. Do not "fix".
+     Opaque since Jul 2026 (audit C1): at the old rgba(…, 0.5) the ring
+     composited to 1.93:1 on --bg-page, failing WCAG 2.2 SC 1.4.11 (3:1) — the
+     half-alpha defeated the very visibility the blue exists for. Solid #0284C7
+     gives 3.92:1 on --bg-page and 4.03:1 on --bg-surface. Do not reintroduce
+     alpha here; use --focus-ring-halo for the soft outer glow instead.
+     ============================================ */
+  --focus-ring-color: #0284C7;  /* The keyboard focus ring. Sky blue on purpose (decision D2): the one non-red accent, so focus is unmistakable. Keep it opaque; forced-colors mode swaps in Highlight */
+  /* Soft outer glow, for components that pair a ring with a halo. Alpha is
+     fine here because it is decorative — the opaque ring above carries the
+     contrast obligation. */
+  --focus-ring-halo: rgba(2, 132, 199, 0.25);
+  --focus-ring-offset: 2px;  /* Gap between a control's edge and its focus ring */
+  --focus-ring-width: 2px;  /* Focus ring thickness; 3px under prefers-contrast: more */
+  --focus-ring: var(--focus-ring-width) solid var(--focus-ring-color);  /* The whole ring as one value: outline: var(--focus-ring) */
+
+
+  /* ============================================
+     SHARED: OVERLAYS & BACKDROPS
+     ============================================ */
+  --overlay-light: rgba(255, 255, 255, 0.7);  /* White veil over content, lightest: the most of what is underneath shows through */
+  --overlay-medium: rgba(255, 255, 255, 0.85);  /* White veil over content, for a frosted panel or a loading cover */
+  --overlay-heavy: rgba(255, 255, 255, 0.95);  /* White veil over content, almost opaque */
+  --backdrop-light: rgba(0, 0, 0, 0.3);  /* Dark scrim behind a panel or drawer, lightest */
+  --backdrop-medium: rgba(0, 0, 0, 0.5);  /* Dark scrim behind a modal; --modal-backdrop uses it */
+  --backdrop-heavy: rgba(0, 0, 0, 0.7);  /* Dark scrim, heaviest, for a focus mode that hides the page */
+
+
+  /* ============================================
+     SHARED: Z-INDEX
+     ============================================ */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 1000;          /* generic overlays / scrims (app uses 1000 widely) */
+  --z-header: 1100;           /* unified header / sticky topbars */
+  --z-modal-backdrop: 1100;
+  --z-modal: 1200;
+  --z-tooltip: 1300;
+  /* High band — planner live-mode / kiosk dialogs that must sit above everything */
+  --z-dialog: 10000;
+  --z-dialog-high: 10001;
+  --z-dialog-highest: 10004;
+
+
+  /* ============================================
+     SEMANTIC: COMPONENT TOKENS
+     One level above primitives — maps intent
+     to values. Swap these for theming / dark mode.
+     ============================================ */
+
+  /* RECONCILED July 2026 (audit M6). This layer had drifted away from what the
+     components actually render — --badge-radius said pill while badges drew
+     4px, --toast-bg said white while toasts drew deep red, --button-bg-primary
+     said flat while buttons drew a gradient, and the input border/radius were
+     a step off. Because nothing consumed these tokens, nothing caught it.
+     Values below now MATCH components.css, which consumes them — so a drift
+     here is a visible drift, which is the point of wiring the layer up. */
+
+  /* Buttons */
+  --button-bg-primary: var(--mainsite-gradient);   /* gradient, not flat — matches .ws-btn--primary */
+  --button-shadow-primary-hover: var(--mainsite-shadow);  /* Shadow under a primary ws_button on hover */
+  --button-text-primary: var(--text-inverse);  /* Text on a primary ws_button */
+  --button-bg-secondary: var(--bg-surface);  /* Secondary ws_button fill. .ws-btn does not read it; only a Synthesize mockup does */
+  --button-text-secondary: var(--color-ink);  /* Secondary ws_button text. .ws-btn does not read it; only a Synthesize mockup does */
+  --button-border-secondary: var(--gray-300);  /* Secondary ws_button border. Nothing reads it yet */
+  --button-bg-ghost: transparent;  /* Ghost button fill. .ws-btn does not read it; Sidekick's .sk-btn--ghost does */
+  --button-text-ghost: var(--color-ink-secondary);  /* Ghost button text. .ws-btn does not read it; Sidekick's .sk-btn--ghost does */
+  --button-radius: var(--radius-lg);  /* Button corner radius. .ws-btn does not read it; the planner's .btn (planner/index.php) does */
+
+  /* Cards */
+  --card-bg: #F7F1EA;                /* Card surface: warm paper between --bg-paper (#FAF7F2) and --bg-paper-dark (#F0EBE3). White stays for modals, inputs and menus */
+  --card-border: var(--gray-200);  /* Card border, read by the ws_card family */
+  --card-shadow: var(--shadow-sm);  /* Resting card shadow; app card styles read it, .ws-card does not */
+  --card-shadow-hover: var(--shadow-md);  /* Card shadow on hover */
+  --card-radius: var(--radius-xl);  /* Card corner radius, read by the ws_card family */
+  /* 20px, which is what every page-level card already used before this token
+     had any consumers: the workshop cards, the library listings, the build
+     choices. It was declared at 24 and read by nothing, so the value moves to
+     the one the cards are actually drawn at rather than the other way round. */
+  --card-padding: var(--space-5);
+  /* Dense cards — a draggable library row, a rail item — where 20px of padding
+     would halve how many fit on screen. One step down, not a free-for-all. */
+  --card-padding-compact: var(--space-3);
+  /* Roomy cards: a full-width panel carrying a form or a settings section,
+     where 20px against 840px of card reads as no inset at all. One step up, and
+     the third and last member of this set. Settings drew --space-8 directly
+     before this token existed, which is how its panels ended up outside the
+     card family without anything noticing. */
+  --card-padding-roomy: var(--space-8);
+
+  /* Inputs */
+  --input-bg: var(--bg-surface);
+  --input-border: var(--gray-200);              /* was --gray-300; .ws-input draws gray-200 */
+  --input-border-hover: var(--gray-300);  /* Input border on hover */
+  --input-border-focus: var(--mainsite-primary);  /* Input border while focused, alongside --input-ring */
+  --input-text: var(--color-ink);  /* Text typed into an input */
+  --input-placeholder: var(--color-ink-faint);  /* Input placeholder text: decorative, never the label */
+  --input-radius: var(--radius-xl);             /* was --radius-lg; .ws-input draws 12px */
+  --input-ring: var(--mainsite-light);  /* Soft glow round a focused input */
+  --input-ring-width: 3px;  /* Width of --input-ring */
+
+  /* Modals */
+  --modal-bg: var(--bg-surface);
+  --modal-border: var(--gray-200);  /* Modal border. Nothing reads it yet */
+  --modal-shadow: var(--shadow-xl);  /* Shadow under a ws_modal */
+  --modal-backdrop: var(--backdrop-medium);  /* Scrim behind a ws_modal */
+  --modal-radius: var(--radius-2xl);  /* ws_modal corner radius */
+
+  /* Badges / Tags */
+  --badge-bg: var(--bg-muted);
+  --badge-text: var(--color-ink-secondary);  /* ws_badge default text. Nothing reads it yet */
+  --badge-border: var(--gray-200);  /* ws_badge default border. Nothing reads it yet */
+  --badge-radius: var(--radius-sm);       /* was --radius-full; .ws-badge draws 4px.
+                                             The pill shape is the --pill variant. */
+
+  /* Tooltips */
+  --tooltip-bg: var(--gray-900);
+  --tooltip-text: var(--text-inverse);  /* Tooltip text, on --tooltip-bg */
+  --tooltip-radius: var(--radius-md);  /* Tooltip corner radius */
+
+  /* Toasts / Notifications
+     Toasts are a deep-red surface with inverse ink (10.9:1), not a white card —
+     the old --toast-bg: var(--bg-surface) never matched what shipped. #7F1D1D is
+     red-900, promoted here as a real value per the theming rule (layer 3 may
+     hold a value; app CSS may not invent one). */
+  --toast-bg: #7F1D1D;
+  --toast-text: var(--text-inverse);  /* Toast text, on the deep-red --toast-bg */
+  --toast-border: transparent;  /* Toast border. Nothing reads it yet */
+  --toast-shadow: var(--shadow-xl);  /* Shadow under a toast */
+  --toast-radius: var(--radius-xl);  /* Toast corner radius */
+
+  /* Accessible Ink Colors for Colored Backgrounds
+     Dark ink for text on light semantic backgrounds.
+     All pass WCAG AA on their respective -very-light bg. */
+  --color-success-ink: #065F46;       /* Dark emerald — text on success backgrounds */
+  --color-warning-ink: #92400E;       /* Dark amber — text on warning backgrounds */
+  --color-warning-ink-dark: #78350F;  /* Darker amber — headings on warning backgrounds */
+  --color-error-ink: #9A1F2B;        /* Dark red — text on error backgrounds */
+
+  /* Warm Background Variants */
+  --bg-page-warm: #FAF4ED;           /* Slightly warmer than --bg-page, used for immersive detail pages */
+  --bg-warm-muted: #F5F3EF;          /* Warm muted background, midpoint between --bg-muted and --bg-page */
+  --bg-paper: #FAF7F2;               /* Standard grid/paper overlay background used in Planner, DNA, and Academy */
+  --bg-paper-dark: #F0EBE3;          /* Darker grid lines, panels, and borders for paper backgrounds */
+  --grid-line-color: rgba(44, 36, 22, 0.06); /* Standard signature drafting grid-paper overlay line color */
+  /* The drafting grid as one value, so it travels with the paper instead of
+     being re-typed. Apps that override `body { background: ... }` wipe
+     background-image with the shorthand — that is how five pages silently lost
+     the grid. Set background-image: var(--paper-grid-image) alongside. */
+  --paper-grid-image:
+    linear-gradient(var(--grid-line-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line-color) 1px, transparent 1px);
+  --paper-grid-size: 24px 24px;  /* Cell size for --paper-grid-image: background-size: var(--paper-grid-size) */
+
+  /* Dividers / Separators */
+  --divider-color: var(--gray-200);
+  --divider-strong: var(--gray-300);  /* A divider that has to read clearly, a step darker than the default border */
+
+  /* Links */
+  --link-color: var(--phase-plan);
+  --link-hover: var(--phase-plan-dark);  /* Link colour on hover. Nothing reads it yet */
+  --link-visited: var(--phase-facilitate);  /* Visited link colour. Nothing reads it yet */
+
+  /* ============================================
+     APP SHELL METRICS
+     The contained apps (Planner, Facilitator, Synthesize) must agree on these
+     or moving between them feels like moving between products. Their content
+     differs by design; the measurements should not.
+     ============================================ */
+  /* Bar below the global header. ws_app_bar already ships at this value. */
+  --app-bar-height: 60px;
+  /* The floating dock (ws_app_dock): its own height, and the room a shell's
+     scroll region keeps clear beneath the last thing on the page while the
+     dock is up — the height plus one --space-4 above and below it. */
+  --app-dock-height: 64px;
+  --app-dock-clearance: 96px;
+  /* Leading side rail inside the tools, unified at Planner's width. The
+     Facilitator console reads it for its agenda rail; Synthesize's standalone
+     intake reads it too. The app shell's own rails are on the page grid below
+     (--app-rail), which is a separate width by design. */
+  --app-rail-width: 320px;
+  /* Narrow step for <=1024, matching Planner's existing breakpoint. */
+  --app-rail-width-compact: 280px;
+  /* The page grid every non-bleed /app/ view sits on: eight columns of
+     --app-grid-col with --app-grid-gutter between them, 8×138 + 7×20 = 1244,
+     the content column at 1440. Literal px, not calc(): the DTCG export and
+     tests/header-shell.spec.js read these as plain strings. --app-grid-gutter
+     is --space-5 by value; the alias is not written so the export stays flat. */
+  --app-grid-col: 138px;
+  --app-grid-gutter: 20px;  /* The gutter between page-grid columns, and the gap of .app-page and every .app-grid-N */
+  --app-content-wide: 1244px;  /* The page grid's full width: the content column of an /app/ view in a 1440 window */
+  /* A shell rail is two columns of the grid: 138 + 20 + 138. Read by the app
+     shell's .app-page placements and, inside the embedded tools, by the
+     Planner palette and Synthesize material rails. */
+  --app-rail: 296px;
+}
+
+
+/* ============================================
+   Component styles have been moved to:
+   components/components.css
+
+   Import that file alongside platform-tokens.css
+   in any page that uses component classes like
+   .app-badge, etc.
+   ============================================ */
+
+/* ============================================
+   ACCESSIBILITY: BASELINE FOCUS INDICATOR (WCAG 2.2 SC 2.4.7, AA)
+
+   The tokens above described a focus ring that nothing applied. css/styles.css
+   carries a global :focus-visible rule, but only pages routed through
+   includes/header.php load it, and a page that hand-rolls its own <head> does
+   not: the homepage, every page under academy/, tips/, dna/, library/, and
+   every page of this design system. Those pages had no visible keyboard focus
+   at all outside forced-colors mode, which is a Level AA failure.
+
+   It belongs here rather than in styles.css because platform-tokens.css is the
+   one sheet every page loads, and because the ring is a design-system decision
+   (see the FOCUS RING note above) rather than a main-site one.
+
+   :where() keeps specificity at zero, so this is a floor and never fights a
+   component's own :focus-visible rule, styles.css's included. Scoped to
+   :focus-visible rather than :focus so a mouse click does not draw it.
+   ============================================ */
+:where(a, button, input, select, textarea, summary, [tabindex], [contenteditable="true"]):focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+
+/* ============================================
+   ACCESSIBILITY: REDUCED MOTION GATES
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0s !important;
+    --transition-base: 0s !important;
+    --transition-slow: 0s !important;
+    --duration-enter: 0s !important;
+    --duration-exit: 0s !important;
+    --duration-reveal: 0s !important;
+    --duration-reveal-lg: 0s !important;
+    --stagger-reveal: 0s !important;
+    --animate-slide-up: none !important;
+    --animate-scale: none !important;
+  }
+  *, *::before, *::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY: INCREASED CONTRAST
+   Users asking for more contrast get the accessible ink values everywhere,
+   including the places the design deliberately softens (faint ink, muted
+   borders). Nothing here changes layout — only ink and edge strength.
+   ============================================ */
+@media (prefers-contrast: more) {
+  :root {
+    --color-ink-faint: var(--color-ink-faint-accessible); /* 2.52:1 → 5.39:1 */
+    --text-faint: var(--color-ink-faint-accessible);
+    --text-muted: var(--color-ink-secondary);             /* 5.39:1 → 7.66:1 */
+    --input-placeholder: var(--color-ink-muted);
+    --divider-color: var(--gray-400);
+    --divider-strong: var(--gray-600);
+    --card-border: var(--gray-400);
+    --focus-ring-width: 3px;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY: FORCED COLORS (Windows High Contrast)
+   Forced-colors mode discards background-image, box-shadow and most colors.
+   Components that draw their focus ring with box-shadow alone therefore lose
+   it entirely (audit M2). Restoring a real outline is the only reliable fix —
+   the transparent outlines those rules now declare get repainted by the OS.
+   ============================================ */
+@media (forced-colors: active) {
+  :root {
+    --focus-ring-color: Highlight;
+    /* The drafting grid is decorative and is dropped by forced-colors anyway;
+       make that explicit so no one chases a missing background. */
+    --paper-grid-image: none;
+  }
+  *:focus-visible {
+    outline: var(--focus-ring-width) solid Highlight !important;
+    outline-offset: var(--focus-ring-offset) !important;
+  }
+}

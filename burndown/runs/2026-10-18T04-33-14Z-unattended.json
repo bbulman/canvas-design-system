@@ -1,0 +1,33 @@
+{
+  "mode": "unattended",
+  "before": 3452,
+  "after": 3441,
+  "stage": [
+    "dna/quiz.php",
+    "dna/results.php",
+    "design-system/page-baseline.json"
+  ],
+  "reverted": [],
+  "skipped": [],
+  "passed": [
+    "dna/quiz.php",
+    "dna/results.php"
+  ],
+  "extras": [],
+  "by_rule_after": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 1933,
+    "raw-component": 1359,
+    "uncachebusted-asset": 76
+  },
+  "batch_before": 54,
+  "batch_after": 43,
+  "by_rule_before": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 1944,
+    "raw-component": 1359,
+    "uncachebusted-asset": 76
+  },
+  "agent_cost_usd": 0.3365557,
+  "at": "2026-10-18T04:33:14.490Z"
+}

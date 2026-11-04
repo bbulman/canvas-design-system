@@ -1,0 +1,76 @@
+/* Design system review (design-system/components/review.php): page-local layout on platform tokens.
+   The rendered versions sit in sandboxed frames, which load this file too for .review-frame. */
+
+/* Two versions side by side need more than the microsite's reading width. */
+main[data-review-dir] {
+    max-width: var(--container-xl);
+}
+
+.review-pager {
+    margin-block: var(--space-4);
+}
+
+.review-meta {
+    color: var(--color-ink-muted);
+    font-size: var(--text-small);
+}
+
+.review-said {
+    margin-bottom: var(--space-1);
+    color: var(--color-ink-muted);
+}
+
+.review-piece {
+    font-family: var(--font-heading);
+    font-size: var(--text-body);
+    font-weight: var(--font-semibold);
+    color: var(--color-ink);
+}
+
+.review-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    min-width: 0;
+}
+
+.review-frame-box {
+    width: 100%;
+    height: 12rem;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    background: var(--bg-page);
+}
+
+.review-code {
+    margin: 0;
+}
+
+.review-code pre {
+    margin: 0;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.review-reason {
+    margin-top: var(--space-2);
+}
+
+.review-note {
+    color: var(--color-ink-muted);
+    font-size: var(--text-small);
+}
+
+/* A second heading in a list sits further from the list above it than from its own. */
+.review-later-section {
+    margin-top: var(--space-6);
+}
+
+/* The body of each sandboxed frame. */
+.review-frame {
+    margin: 0;
+    padding: var(--space-4);
+    background: var(--bg-page);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+}

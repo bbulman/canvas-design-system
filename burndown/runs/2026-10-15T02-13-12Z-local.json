@@ -1,0 +1,37 @@
+{
+  "mode": "local",
+  "before": 4937,
+  "after": 4927,
+  "stage": [
+    "academy/includes/header.php",
+    "library/exercises/popular.php",
+    "design-system/page-baseline.json"
+  ],
+  "reverted": [],
+  "skipped": [
+    "changelog/index.php: outside the batch, not staged",
+    "design-system/check-page.php: outside the batch, not staged",
+    "includes/data.php: outside the batch, not staged",
+    "library/workshops/detail/index.php: outside the batch, not staged",
+    "library/workshops/index.php: outside the batch, not staged"
+  ],
+  "passed": [
+    "academy/includes/header.php",
+    "library/exercises/popular.php"
+  ],
+  "extras": [],
+  "by_rule_after": {
+    "doctype-outside-layout": 92,
+    "hardcoded-hex": 3012,
+    "raw-component": 1723,
+    "uncachebusted-asset": 100
+  },
+  "by_rule_before": {
+    "doctype-outside-layout": 92,
+    "hardcoded-hex": 3017,
+    "raw-component": 1723,
+    "uncachebusted-asset": 105
+  },
+  "agent_cost_usd": 0.9152301999999998,
+  "at": "2026-10-15T02:13:12.330Z"
+}

@@ -1,0 +1,95 @@
+/* ============================================
+   Canvas Design System — Component Styles
+   ============================================
+   Component-level CSS that consumes design tokens
+   from platform-tokens.css. Tokens define values;
+   this file defines how components use them.
+
+   All components should reference token variables
+   rather than hardcoded values wherever possible.
+   ============================================ */
+
+
+/* ============================================
+   COMPONENT: App Badge
+
+   Usage: Set --badge-primary, --badge-dark, and
+   --badge-very-light CSS vars to the app's brand
+   colors, then apply the .app-badge class.
+
+   Example:
+   .my-badge {
+     --badge-primary: var(--coach-primary);
+     --badge-dark: var(--coach-dark);
+     --badge-very-light: var(--coach-very-light);
+   }
+   ============================================ */
+
+.app-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: var(--badge-very-light);
+  color: var(--badge-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  font-weight: var(--font-normal);
+  letter-spacing: 0.02em;
+  border-radius: 16px;
+  border: 1px solid var(--badge-dark);
+}
+
+.app-badge .material-symbols-outlined {
+  font-size: var(--text-body, 16px);
+}
+
+/* Pre-configured badge variants for each app */
+
+.app-badge--mainsite {
+  --badge-primary: var(--mainsite-primary);
+  --badge-dark: var(--mainsite-dark);
+  --badge-very-light: var(--mainsite-very-light);
+}
+
+.app-badge--tips {
+  --badge-primary: var(--tips-primary);
+  --badge-dark: var(--tips-dark);
+  --badge-very-light: var(--tips-very-light);
+}
+
+.app-badge--podcasts {
+  --badge-primary: var(--podcasts-primary);
+  --badge-dark: var(--podcasts-dark);
+  --badge-very-light: var(--podcasts-very-light);
+}
+
+.app-badge--planner {
+  --badge-primary: var(--planner-primary);
+  --badge-dark: var(--planner-dark);
+  --badge-very-light: var(--planner-very-light);
+}
+
+.app-badge--coach {
+  --badge-primary: var(--coach-primary);
+  --badge-dark: var(--coach-dark);
+  --badge-very-light: var(--coach-very-light);
+}
+
+.app-badge--intervention {
+  --badge-primary: var(--intervention-primary);
+  --badge-dark: var(--intervention-dark);
+  --badge-very-light: var(--intervention-very-light);
+}
+
+.app-badge--dna {
+  --badge-primary: var(--dna-primary);
+  --badge-dark: var(--dna-dark);
+  --badge-very-light: var(--dna-very-light);
+}
+
+.app-badge--training {
+  --badge-primary: var(--training-primary);
+  --badge-dark: var(--training-dark);
+  --badge-very-light: var(--training-very-light);
+}

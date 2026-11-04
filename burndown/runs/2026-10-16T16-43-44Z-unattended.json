@@ -1,0 +1,45 @@
+{
+  "mode": "unattended",
+  "before": 3843,
+  "after": 3596,
+  "stage": [
+    "dna/email-gate.php",
+    "dna/results.php",
+    "facilitator/index.php",
+    "includes/footer/notes-modal.php",
+    "intervention/download.php",
+    "planner/index.php",
+    "sidekick/index.php",
+    "sidekick/marketing/install.php",
+    "design-system/page-baseline.json"
+  ],
+  "reverted": [],
+  "skipped": [],
+  "passed": [
+    "dna/email-gate.php",
+    "dna/results.php",
+    "facilitator/index.php",
+    "includes/footer/notes-modal.php",
+    "intervention/download.php",
+    "planner/index.php",
+    "sidekick/index.php",
+    "sidekick/marketing/install.php"
+  ],
+  "extras": [],
+  "by_rule_after": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 2077,
+    "raw-component": 1359,
+    "uncachebusted-asset": 87
+  },
+  "batch_before": 474,
+  "batch_after": 227,
+  "by_rule_before": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 2317,
+    "raw-component": 1359,
+    "uncachebusted-asset": 94
+  },
+  "agent_cost_usd": 0.8358191000000001,
+  "at": "2026-10-16T16:43:44.963Z"
+}

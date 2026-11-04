@@ -1,0 +1,40 @@
+# Pages, docs, audits and assets that moved into subfolders on 4 Nov 2026.
+#
+# One file serves both hosts: www.workshopr.io/design-system/colors.php and
+# canvas.workshopr.io/colors.php (the canvas document root is this folder). Each
+# rule is written once per host rather than with an optional prefix group, so no
+# target depends on how the server fills an empty capture. On www a request only
+# reaches this file under /design-system/, so the root-anchored rules never fire
+# there. mod_alias, not mod_rewrite: a RewriteEngine here would stop the root
+# .htaccess rewrites (https, www) from running for anything under /design-system/.
+# A redirect fires whether or not the old file is still on the host, and the
+# deploy never deletes, so the old copies stay harmless.
+
+RedirectMatch 301 ^/design-system/(start-here|philosophy|voice|decisions|overview|case-study)\.php$ /design-system/getting-started/$1.php
+RedirectMatch 301 ^/(start-here|philosophy|voice|decisions|overview|case-study)\.php$ /getting-started/$1.php
+RedirectMatch 301 ^/design-system/(colors|typography|icons|spacing|elevation|animations|illustrations)\.php$ /design-system/foundations/$1.php
+RedirectMatch 301 ^/(colors|typography|icons|spacing|elevation|animations|illustrations)\.php$ /foundations/$1.php
+RedirectMatch 301 ^/design-system/(app-[a-z-]+|theming)\.php$ /design-system/apps/$1.php
+RedirectMatch 301 ^/(app-[a-z-]+|theming)\.php$ /apps/$1.php
+RedirectMatch 301 ^/design-system/(playground|components|component-library|javascript|review)\.php$ /design-system/components/$1.php
+RedirectMatch 301 ^/(playground|components|component-library|javascript|review)\.php$ /components/$1.php
+RedirectMatch 301 ^/design-system/(patterns|utilities|page-templates|composition|when-to-use)\.php$ /design-system/patterns/$1.php
+RedirectMatch 301 ^/(patterns|utilities|page-templates|composition|when-to-use)\.php$ /patterns/$1.php
+RedirectMatch 301 ^/design-system/(presentations|video|accessibility|tokens)\.php$ /design-system/resources/$1.php
+RedirectMatch 301 ^/(presentations|video|accessibility|tokens)\.php$ /resources/$1.php
+RedirectMatch 301 ^/design-system/(ADOPTION|debt-register|planner-debt-register|illustration-guidelines|motion-system|native|platform-color-system|spec-global-header|spec-phase-toolbar|theming|workshopr-style-guide)\.md$ /design-system/docs/$1.md
+RedirectMatch 301 ^/(ADOPTION|debt-register|planner-debt-register|illustration-guidelines|motion-system|native|platform-color-system|spec-global-header|spec-phase-toolbar|theming|workshopr-style-guide)\.md$ /docs/$1.md
+RedirectMatch 301 ^/design-system/((?:COMPONENT-GAP-)?AUDIT-[0-9-]+[a-z-]*|DESIGN_SYSTEM_AUDIT_REPORT|token-audit-2026-07)\.md$ /design-system/audits/$1.md
+RedirectMatch 301 ^/((?:COMPONENT-GAP-)?AUDIT-[0-9-]+[a-z-]*|DESIGN_SYSTEM_AUDIT_REPORT|token-audit-2026-07)\.md$ /audits/$1.md
+RedirectMatch 301 ^/design-system/(DOC-TEMPLATE)\.md$ /design-system/templates/$1.md
+RedirectMatch 301 ^/(DOC-TEMPLATE)\.md$ /templates/$1.md
+RedirectMatch 301 ^/design-system/(playground\.css|playground\.js|recipes\.css|review\.css|presentation-grid\.svg)$ /design-system/assets/$1
+RedirectMatch 301 ^/(playground\.css|playground\.js|recipes\.css|review\.css|presentation-grid\.svg)$ /assets/$1
+
+# The command-line tools now live in tools/ (refused by tools/.htaccess). Their old
+# copies stay on the host, because the deploy never deletes, and before this they ran
+# on any request: answer 410 Gone at the old addresses instead.
+RedirectMatch 410 ^/design-system/(check-drift|check-page|generate-catalog|generate-tokens-dtcg)\.php$
+RedirectMatch 410 ^/(check-drift|check-page|generate-catalog|generate-tokens-dtcg)\.php$
+RedirectMatch 410 ^/design-system/figma-plugin-script\.js$
+RedirectMatch 410 ^/figma-plugin-script\.js$

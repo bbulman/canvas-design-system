@@ -1,0 +1,4 @@
+{
+    "_comment": "Ratchet for generate-catalog.php --check. Each entry is a ws_* function missing whenToUse, example or a11y (from its demo, or an @whenToUse / @example / @a11y tag in its docblock), or an options array with no documented values or defaults. A function not listed here fails when it has a gap; fixing a listed gap fails until its entry is deleted. Never add an entry to unblock new code.",
+    "gaps": []
+}

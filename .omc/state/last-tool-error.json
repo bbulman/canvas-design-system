@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd design-system && for pat in tips coach intervention dna weight font-weight; do echo \\\"--- --*${pat}* in platform-tokens.css:\\\"; grep -c -E \\\"^\\\\s*--[a-z0-9-]*${pat}\\\" platform-tokens.cs...",
+  "error": "Exit code 1\n(eval):cd:1: no such file or directory: design-system",
+  "timestamp": "2026-08-02T02:13:02.641Z",
+  "retry_count": 1
+}

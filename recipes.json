@@ -1,0 +1,90 @@
+{
+    "_comment": "Screen recipes: whole screens built from ws_* helpers, for requests bigger than one component. Each id names design-system/recipes/<id>.php, which renders every listed state from fixture data (never the database). playground.php serves each state as an isolated preview (?recipe=<id>&state=<state>&preview=1) and composition.php shows them with their PHP. generate-catalog.php copies these entries into the catalog's recipes section with those preview URLs, and --check fails when a recipe file is missing, lacks the default, loading, empty or error state, or calls a ws_* helper it does not list (or lists one it does not call). ds:find and the enforcer MCP's suggest_component offer a recipe when a request names a page, screen or flow.",
+    "recipes": [
+        {
+            "id": "filtered-workshop-list",
+            "title": "Filtered workshop list",
+            "whenToUse": "A page listing workshops (or any library items) that people narrow down with search and filters, with loading, no-match and failed-load states.",
+            "components": [
+                "ws_section_header",
+                "ws_filter_bar",
+                "ws_skeleton",
+                "ws_alert",
+                "ws_empty_state",
+                "ws_card_start",
+                "ws_card_end",
+                "ws_duration",
+                "ws_category",
+                "ws_button",
+                "ws_stack_start",
+                "ws_stack_end",
+                "ws_grid_start",
+                "ws_grid_end",
+                "ws_cluster_start",
+                "ws_cluster_end",
+                "ws_text"
+            ],
+            "states": [
+                "default",
+                "loading",
+                "empty",
+                "error"
+            ],
+            "mobile": "Below 768px the filter bar stacks the search field and each select full width. The cards and their loading placeholders share one ws_grid, so both fit as many columns as --grid-min-md allows and reach one column on a phone together; nothing moves when the cards arrive.",
+            "why": "ws_filter_bar owns search, selects and active chips so filters look the same in every app. ws_skeleton's workshop variant mirrors the card shape, and sitting in the same ws_grid as the cards it keeps their columns too, so nothing jumps when data arrives. A stack spaces the page and each card; a cluster keeps the duration and category together. ws_empty_state gives the no-match case a way out (Show all workshops, which names where it goes), and ws_alert keeps the failed load inline beside the filters rather than in a modal. Inside /app/ the saved-workshop list is ws_workshop_list, which adds views and kanban."
+        },
+        {
+            "id": "settings-form",
+            "title": "Settings form",
+            "whenToUse": "A settings or preferences page: a short form of saved choices with a select and text fields, a save action, a switch that applies at once, and first-time, loading and validation-error states.",
+            "components": [
+                "ws_section_header",
+                "ws_card_start",
+                "ws_card_end",
+                "ws_skeleton",
+                "ws_alert",
+                "ws_select",
+                "ws_input",
+                "ws_toggle",
+                "ws_button",
+                "ws_stack_start",
+                "ws_stack_end",
+                "ws_cluster_start",
+                "ws_cluster_end"
+            ],
+            "states": [
+                "default",
+                "loading",
+                "empty",
+                "error"
+            ],
+            "mobile": "Fields are full width at every size and the actions cluster wraps, so Save stays reachable. Nothing sits side by side, so the page reads the same on a phone; the switch keeps its own card below the form.",
+            "why": "ws_input and ws_select carry their own labels, hints and error wiring (aria-describedby, aria-invalid), so the form needs no hand-written label markup. One ws_alert at the top says the save failed while the field error says why. The form is a ws_stack and its actions a ws_cluster led by Save, aligned left with the fields (DESIGN.md 11.6). ws_toggle sits in its own card outside the form because a switch must apply the moment it is flipped; inside a form that saves on submit it would look saved when it is not."
+        },
+        {
+            "id": "destructive-confirmation",
+            "title": "Confirm before a destructive action",
+            "whenToUse": "A flow that deletes or permanently removes something: the danger action, a confirmation step naming exactly what goes, an in-progress state, and a failure that says nothing was lost.",
+            "components": [
+                "ws_empty_state",
+                "ws_button",
+                "ws_card",
+                "ws_alert",
+                "ws_modal_footer",
+                "ws_modal",
+                "ws_stack_start",
+                "ws_stack_end",
+                "ws_text"
+            ],
+            "states": [
+                "default",
+                "loading",
+                "empty",
+                "error"
+            ],
+            "mobile": "Below 600px the small dialog becomes a bottom sheet: full width, rounded top, a drag handle. The footer keeps Keep workshop before Delete, so the safe choice is read first.",
+            "why": "ws_modal traps focus and restores it, which a confirmation needs; a toast or side panel would let the action slip past. ws_modal_footer puts the safe choice first and the danger button last with the danger variant. The dialog names the thing and what goes with it. The error keeps the dialog open with a ws_alert rather than closing on failure.",
+            "previewOpensModal": "confirm-delete"
+        }
+    ]
+}

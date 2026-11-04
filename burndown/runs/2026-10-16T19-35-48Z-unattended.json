@@ -1,0 +1,35 @@
+{
+  "mode": "unattended",
+  "before": 3596,
+  "after": 3577,
+  "stage": [
+    "academy/learn/download.php",
+    "dna/profile.php",
+    "intervention/card.php",
+    "design-system/page-baseline.json"
+  ],
+  "reverted": [],
+  "skipped": [],
+  "passed": [
+    "academy/learn/download.php",
+    "dna/profile.php",
+    "intervention/card.php"
+  ],
+  "extras": [],
+  "by_rule_after": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 2063,
+    "raw-component": 1359,
+    "uncachebusted-asset": 82
+  },
+  "batch_before": 68,
+  "batch_after": 49,
+  "by_rule_before": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 2077,
+    "raw-component": 1359,
+    "uncachebusted-asset": 87
+  },
+  "agent_cost_usd": 0.4196401999999999,
+  "at": "2026-10-16T19:35:48.613Z"
+}

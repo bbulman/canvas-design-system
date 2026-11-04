@@ -1,0 +1,57 @@
+/* Layout for the component pairs on composition.php that the layout helpers
+   (ws_stack_start, ws_cluster_start, ws_grid_start, ws_container_start) do not
+   cover. The screen recipes in design-system/recipes/ need none of it: they lay
+   out with those helpers, so a page that copies a recipe copies no CSS. */
+.ds-recipe-split {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    align-items: start;
+    gap: var(--space-8);
+}
+.ds-recipe-person {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-3);
+}
+.ds-recipe-person__text {
+    flex: 1;
+    min-width: 0;
+}
+.ds-recipe-person__name,
+.ds-recipe-person__role {
+    margin: 0;
+}
+.ds-recipe-person__name {
+    font-weight: var(--font-semibold);
+    color: var(--color-ink);
+}
+.ds-recipe-person__role {
+    font-size: var(--text-small);
+    color: var(--text-muted);
+}
+
+/* The composition page's own frame around each recipe preview. */
+.ds-recipe-states {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+}
+.ds-recipe-frame {
+    display: block;
+    width: 100%;
+    min-height: 32rem;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-xl);
+    background: var(--bg-page);
+}
+.ds-recipe-meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-6);
+    margin-block: var(--space-6);
+}
+@media (max-width: 48rem) {
+    .ds-recipe-meta { grid-template-columns: minmax(0, 1fr); }
+}

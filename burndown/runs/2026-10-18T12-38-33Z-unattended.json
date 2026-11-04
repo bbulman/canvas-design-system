@@ -1,0 +1,31 @@
+{
+  "mode": "unattended",
+  "before": 3441,
+  "after": 3432,
+  "stage": [
+    "toolkits/hybrid/index.php",
+    "design-system/page-baseline.json"
+  ],
+  "reverted": [],
+  "skipped": [],
+  "passed": [
+    "toolkits/hybrid/index.php"
+  ],
+  "extras": [],
+  "by_rule_after": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 1924,
+    "raw-component": 1359,
+    "uncachebusted-asset": 76
+  },
+  "batch_before": 19,
+  "batch_after": 10,
+  "by_rule_before": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 1933,
+    "raw-component": 1359,
+    "uncachebusted-asset": 76
+  },
+  "agent_cost_usd": 0.33273120000000006,
+  "at": "2026-10-18T12:38:33.550Z"
+}

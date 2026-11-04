@@ -1,0 +1,4 @@
+{
+  "_comment": "Page design-system violations that are right where they are. check-page.php --count subtracts an entry only when \"approved\" is true; the burn-down agent proposes entries with approved: false and a reason, and Bill approves them by flipping it to true. Format: files -> page path -> rule -> { count, reason, approved, proposed }.",
+  "files": {}
+}

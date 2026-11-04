@@ -1,0 +1,39 @@
+{
+  "mode": "unattended",
+  "before": 3554,
+  "after": 3510,
+  "stage": [
+    "intervention/index.php",
+    "planner/join.php",
+    "planner/planner-home.php",
+    "pocket/index.php",
+    "tips/daily.php",
+    "design-system/page-baseline.json"
+  ],
+  "reverted": [],
+  "skipped": [],
+  "passed": [
+    "intervention/index.php",
+    "planner/join.php",
+    "planner/planner-home.php",
+    "pocket/index.php",
+    "tips/daily.php"
+  ],
+  "extras": [],
+  "by_rule_after": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 2000,
+    "raw-component": 1359,
+    "uncachebusted-asset": 78
+  },
+  "batch_before": 150,
+  "batch_after": 106,
+  "by_rule_before": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 2040,
+    "raw-component": 1359,
+    "uncachebusted-asset": 82
+  },
+  "agent_cost_usd": 0.5989766999999999,
+  "at": "2026-10-17T15:35:41.537Z"
+}

@@ -1,0 +1,2 @@
+# Pages never rendered for screenshots: they write on load, need a login, or call out to a service.
+# One path per line, relative to the repo root. admin/ is always skipped.

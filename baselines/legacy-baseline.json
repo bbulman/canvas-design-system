@@ -1,0 +1,652 @@
+{
+    "_comment": "Legacy lookalikes per page, counted by check-page.php from legacy-patterns.json plus page-local card rules (card-rule). A count may only go down: --legacy-baseline lowers counts and seeds patterns it has not seen before, and never raises one. Raise a count by hand only when a new use is genuinely right, and say why in the commit.",
+    "patterns": [
+        ".modal-overlay",
+        ".template-card",
+        ".activity-card",
+        ".btn-primary",
+        ".form-group",
+        ".empty-state",
+        "card-rule"
+    ],
+    "files": {
+        "404.php": {
+            ".btn-primary": 1
+        },
+        "academy/check-email.php": {
+            "card-rule": 2
+        },
+        "academy/includes/footer.php": {
+            ".modal-overlay": 1
+        },
+        "academy/learn/1/book1.php": {
+            ".btn-primary": 3
+        },
+        "academy/learn/1/index.php": {
+            "card-rule": 11
+        },
+        "academy/learn/2/book2.php": {
+            ".btn-primary": 3
+        },
+        "academy/learn/2/index.php": {
+            "card-rule": 11
+        },
+        "academy/learn/3/book3.php": {
+            ".btn-primary": 3
+        },
+        "academy/learn/3/index.php": {
+            "card-rule": 11
+        },
+        "academy/learn/4/book4.php": {
+            ".btn-primary": 3
+        },
+        "academy/learn/4/index.php": {
+            "card-rule": 11
+        },
+        "academy/learn/5/book5.php": {
+            ".btn-primary": 3
+        },
+        "academy/learn/5/index.php": {
+            "card-rule": 11
+        },
+        "academy/learn/download.php": {
+            "card-rule": 2
+        },
+        "academy/learning-paths/bootcamp.php": {
+            "card-rule": 19
+        },
+        "academy/learning-paths/curriculum.php": {
+            "card-rule": 13
+        },
+        "academy/learning-paths/index.php": {
+            ".btn-primary": 6,
+            ".form-group": 3,
+            "card-rule": 18
+        },
+        "academy/learning-paths/modules/module-styles.php": {
+            "card-rule": 12
+        },
+        "admin/add-user.php": {
+            ".btn-primary": 3,
+            ".form-group": 6,
+            ".empty-state": 1,
+            "card-rule": 2
+        },
+        "admin/admin-accounts.php": {
+            ".form-group": 2,
+            ".empty-state": 1
+        },
+        "admin/analytics/ai-usage.php": {
+            "card-rule": 3
+        },
+        "admin/analytics/analytics.php": {
+            "card-rule": 5
+        },
+        "admin/analytics/card-downloads.php": {
+            ".empty-state": 1,
+            "card-rule": 2
+        },
+        "admin/analytics/dna-analytics.php": {
+            ".btn-primary": 1,
+            "card-rule": 3
+        },
+        "admin/analytics/ebook-analytics.php": {
+            ".empty-state": 13,
+            "card-rule": 6
+        },
+        "admin/analytics/hybrid-kit-analytics.php": {
+            ".empty-state": 8,
+            "card-rule": 5
+        },
+        "admin/analytics/index.php": {
+            "card-rule": 2
+        },
+        "admin/analytics/signup-sources.php": {
+            "card-rule": 2
+        },
+        "admin/analytics/site-health.php": {
+            ".btn-primary": 4,
+            "card-rule": 4
+        },
+        "admin/analytics/survey-analytics.php": {
+            ".empty-state": 7,
+            "card-rule": 3
+        },
+        "admin/backstage-style-web/index.php": {
+            "card-rule": 1
+        },
+        "admin/banners.php": {
+            ".btn-primary": 3,
+            ".form-group": 20,
+            "card-rule": 17
+        },
+        "admin/bulk-status.php": {
+            ".btn-primary": 3,
+            ".empty-state": 1,
+            "card-rule": 2
+        },
+        "admin/cache.php": {
+            "card-rule": 8
+        },
+        "admin/collection-items.php": {
+            ".modal-overlay": 3,
+            ".btn-primary": 3,
+            "card-rule": 2
+        },
+        "admin/collections.php": {
+            ".btn-primary": 8,
+            ".form-group": 19,
+            ".empty-state": 1
+        },
+        "admin/comments.php": {
+            ".btn-primary": 2,
+            ".empty-state": 1,
+            "card-rule": 5
+        },
+        "admin/content/bulk-status.php": {
+            ".btn-primary": 3,
+            ".empty-state": 1,
+            "card-rule": 2
+        },
+        "admin/content/collection-items.php": {
+            ".modal-overlay": 3,
+            ".btn-primary": 3,
+            "card-rule": 2
+        },
+        "admin/content/collections.php": {
+            ".btn-primary": 8,
+            ".form-group": 19,
+            ".empty-state": 1
+        },
+        "admin/content/comments.php": {
+            ".btn-primary": 2,
+            ".empty-state": 1,
+            "card-rule": 5
+        },
+        "admin/content/exercise-edit.php": {
+            ".btn-primary": 2,
+            ".form-group": 11
+        },
+        "admin/content/exercises.php": {
+            ".btn-primary": 2
+        },
+        "admin/content/goals.php": {
+            ".btn-primary": 7,
+            ".form-group": 5,
+            ".empty-state": 1
+        },
+        "admin/content/icebreaker-edit.php": {
+            ".btn-primary": 2,
+            ".form-group": 10
+        },
+        "admin/content/icebreakers.php": {
+            ".btn-primary": 2
+        },
+        "admin/content/index.php": {
+            "card-rule": 4
+        },
+        "admin/content/tip-categories.php": {
+            ".btn-primary": 2,
+            ".form-group": 7,
+            "card-rule": 2
+        },
+        "admin/content/tip-edit.php": {
+            ".btn-primary": 2,
+            ".form-group": 10
+        },
+        "admin/content/tips.php": {
+            ".btn-primary": 3
+        },
+        "admin/content/workshop-edit.php": {
+            ".btn-primary": 3,
+            ".form-group": 7
+        },
+        "admin/content/workshops.php": {
+            ".btn-primary": 2
+        },
+        "admin/email-logs.php": {
+            ".btn-primary": 2,
+            ".empty-state": 1,
+            "card-rule": 8
+        },
+        "admin/embeddings.php": {
+            ".btn-primary": 2,
+            "card-rule": 7
+        },
+        "admin/exercise-edit.php": {
+            ".btn-primary": 2,
+            ".form-group": 12
+        },
+        "admin/exercises.php": {
+            ".btn-primary": 2
+        },
+        "admin/goals.php": {
+            ".btn-primary": 7,
+            ".form-group": 5,
+            ".empty-state": 1
+        },
+        "admin/icebreaker-edit.php": {
+            ".btn-primary": 2,
+            ".form-group": 11
+        },
+        "admin/icebreakers.php": {
+            ".btn-primary": 2
+        },
+        "admin/includes/admin-auth.php": {
+            ".btn-primary": 3
+        },
+        "admin/index.php": {
+            "card-rule": 1
+        },
+        "admin/personalize/index.php": {
+            "card-rule": 3
+        },
+        "admin/personalize/types.php": {
+            ".btn-primary": 1,
+            "card-rule": 16
+        },
+        "admin/preview-emails.php": {
+            "card-rule": 10
+        },
+        "admin/saved-workshops.php": {
+            ".btn-primary": 5,
+            ".form-group": 3,
+            ".empty-state": 1,
+            "card-rule": 2
+        },
+        "admin/security-events.php": {
+            "card-rule": 4
+        },
+        "admin/system/banners.php": {
+            ".btn-primary": 4,
+            ".form-group": 21,
+            "card-rule": 18
+        },
+        "admin/system/cache.php": {
+            "card-rule": 8
+        },
+        "admin/system/email-logs.php": {
+            ".btn-primary": 2,
+            ".empty-state": 1,
+            "card-rule": 8
+        },
+        "admin/system/embeddings.php": {
+            ".btn-primary": 2,
+            "card-rule": 7
+        },
+        "admin/system/index.php": {
+            "card-rule": 2
+        },
+        "admin/system/preview-emails.php": {
+            "card-rule": 10
+        },
+        "admin/system/saved-workshops.php": {
+            ".btn-primary": 5,
+            ".form-group": 3,
+            ".empty-state": 1,
+            "card-rule": 2
+        },
+        "admin/system/workshop-agenda.php": {
+            ".btn-primary": 7,
+            ".empty-state": 3
+        },
+        "admin/tip-categories.php": {
+            ".btn-primary": 2,
+            ".form-group": 7,
+            "card-rule": 2
+        },
+        "admin/tip-digest-analytics.php": {
+            "card-rule": 1
+        },
+        "admin/tip-digest-subscribers.php": {
+            ".btn-primary": 1
+        },
+        "admin/tip-edit.php": {
+            ".btn-primary": 2,
+            ".form-group": 10
+        },
+        "admin/tip-generate-run.php": {
+            ".btn-primary": 1,
+            "card-rule": 2
+        },
+        "admin/tips.php": {
+            ".btn-primary": 6
+        },
+        "admin/users.php": {
+            ".btn-primary": 9,
+            ".form-group": 6,
+            ".empty-state": 1,
+            "card-rule": 5
+        },
+        "admin/users/add-user.php": {
+            ".btn-primary": 3,
+            ".form-group": 6,
+            ".empty-state": 1,
+            "card-rule": 2
+        },
+        "admin/users/index.php": {
+            "card-rule": 2
+        },
+        "admin/users/notify-signups.php": {
+            ".btn-primary": 1
+        },
+        "admin/users/security-events.php": {
+            "card-rule": 4
+        },
+        "admin/users/users.php": {
+            ".btn-primary": 9,
+            ".form-group": 6,
+            ".empty-state": 1,
+            "card-rule": 5
+        },
+        "admin/workshop-agenda.php": {
+            ".btn-primary": 7,
+            ".empty-state": 3
+        },
+        "admin/workshop-edit.php": {
+            ".btn-primary": 3,
+            ".form-group": 7
+        },
+        "admin/workshops.php": {
+            ".btn-primary": 2
+        },
+        "bettermeetings/index 2.php": {
+            "card-rule": 37
+        },
+        "bettermeetings/index 3.php": {
+            "card-rule": 37
+        },
+        "bettermeetings/index 4.php": {
+            "card-rule": 37
+        },
+        "bettermeetings/index.php": {
+            "card-rule": 37
+        },
+        "coach/index.php": {
+            ".btn-primary": 4,
+            ".form-group": 6,
+            "card-rule": 12
+        },
+        "coach/landing.php": {
+            ".btn-primary": 6,
+            "card-rule": 9
+        },
+        "content/articles/content/icewbreaker wheel/slides.php": {
+            ".empty-state": 2,
+            "card-rule": 49
+        },
+        "dna/about.php": {
+            ".modal-overlay": 4,
+            ".btn-primary": 1,
+            "card-rule": 5
+        },
+        "dna/coming-soon.php": {
+            ".btn-primary": 1
+        },
+        "dna/email-gate.php": {
+            "card-rule": 1
+        },
+        "dna/profile.php": {
+            ".btn-primary": 2
+        },
+        "dna/results.php": {
+            ".modal-overlay": 7,
+            ".btn-primary": 2
+        },
+        "dna/shared-result.php": {
+            "card-rule": 4
+        },
+        "facilitator/facilitator-home 3.php": {
+            "card-rule": 7
+        },
+        "facilitator/facilitator-home 4.php": {
+            "card-rule": 7
+        },
+        "facilitator/facilitator-home.php": {
+            "card-rule": 7
+        },
+        "facilitator/index.php": {
+            "card-rule": 5
+        },
+        "help-center/adapting-remote.php": {
+            ".btn-primary": 1
+        },
+        "help-center/contribute-workshops.php": {
+            ".btn-primary": 1
+        },
+        "help-center/creating-account.php": {
+            ".btn-primary": 1
+        },
+        "help-center/deleting-account.php": {
+            ".btn-primary": 1
+        },
+        "help-center/find-right-workshop.php": {
+            ".btn-primary": 1
+        },
+        "help-center/group-size.php": {
+            ".btn-primary": 1
+        },
+        "help-center/index.php": {
+            ".btn-primary": 1
+        },
+        "help-center/is-workshopr-free.php": {
+            ".btn-primary": 1
+        },
+        "help-center/managing-profile.php": {
+            ".btn-primary": 1
+        },
+        "help-center/notification-preferences.php": {
+            ".btn-primary": 1
+        },
+        "help-center/preparing-session.php": {
+            ".btn-primary": 1
+        },
+        "help-center/privacy-settings.php": {
+            ".btn-primary": 1
+        },
+        "help-center/report-issue.php": {
+            ".btn-primary": 1
+        },
+        "help-center/request-feature.php": {
+            ".btn-primary": 1
+        },
+        "help-center/saving-favorites.php": {
+            ".btn-primary": 1
+        },
+        "help-center/understanding-timelines.php": {
+            ".btn-primary": 1
+        },
+        "help-center/using-ai-assistant.php": {
+            ".btn-primary": 1
+        },
+        "includes/comments.php": {
+            ".btn-primary": 1
+        },
+        "includes/footer/auth.php": {
+            ".form-group": 1
+        },
+        "includes/footer/modals-inline.php": {
+            ".btn-primary": 1,
+            ".form-group": 6
+        },
+        "includes/footer/modals.php": {
+            ".modal-overlay": 1
+        },
+        "includes/footer/notes-modal.php": {
+            ".btn-primary": 3,
+            "card-rule": 6
+        },
+        "includes/partials/listing-empty-state.php": {
+            ".btn-primary": 3
+        },
+        "includes/ratings-ui.php": {
+            ".modal-overlay": 1,
+            ".form-group": 5
+        },
+        "intervention/card.php": {
+            "card-rule": 5
+        },
+        "intervention/check-email.php": {
+            "card-rule": 2
+        },
+        "intervention/download.php": {
+            "card-rule": 2
+        },
+        "intervention/index.php": {
+            "card-rule": 8
+        },
+        "library/collections/index.php": {
+            ".btn-primary": 1,
+            ".empty-state": 1
+        },
+        "library/exercises/popular.php": {
+            "card-rule": 2
+        },
+        "library/goals/index.php": {
+            ".btn-primary": 1
+        },
+        "library/icebreakers/popular.php": {
+            "card-rule": 2
+        },
+        "library/workshops/popular.php": {
+            "card-rule": 2
+        },
+        "newsletter/index.php": {
+            ".form-group": 6
+        },
+        "planner/edit.php": {
+            ".modal-overlay": 3,
+            ".btn-primary": 1,
+            ".form-group": 2
+        },
+        "planner/includes/data.php": {
+            ".activity-card": 7
+        },
+        "planner/includes/views/saved-body 2.php": {
+            ".modal-overlay": 4,
+            "card-rule": 3
+        },
+        "planner/includes/views/saved-body.php": {
+            ".modal-overlay": 4,
+            "card-rule": 3
+        },
+        "planner/index.php": {
+            ".btn-primary": 5,
+            "card-rule": 3
+        },
+        "planner/join.php": {
+            "card-rule": 13
+        },
+        "planner/landing.php": {
+            ".btn-primary": 5,
+            "card-rule": 4
+        },
+        "planner/planner-home.php": {
+            ".modal-overlay": 2,
+            "card-rule": 7
+        },
+        "planner/planner.php": {
+            ".empty-state": 1
+        },
+        "planner/templates.php": {
+            "card-rule": 10
+        },
+        "podcasts/episode.php": {
+            ".btn-primary": 1,
+            "card-rule": 3
+        },
+        "podcasts/index.php": {
+            ".btn-primary": 2
+        },
+        "search/index.php": {
+            ".btn-primary": 1
+        },
+        "sidekick/ecosystem.php": {
+            "card-rule": 4
+        },
+        "sidekick/includes/oauth-callback.php": {
+            "card-rule": 2
+        },
+        "sidekick/index.php": {
+            "card-rule": 17
+        },
+        "sidekick/platforms.php": {
+            "card-rule": 18
+        },
+        "solutions/byoutcome/alignment/index.php": {
+            ".template-card": 3
+        },
+        "solutions/byoutcome/build-trust/index.php": {
+            ".template-card": 3
+        },
+        "solutions/byoutcome/communication/index.php": {
+            ".template-card": 3
+        },
+        "solutions/byoutcome/creativity/index.php": {
+            ".template-card": 3
+        },
+        "solutions/byoutcome/engagement/index.php": {
+            ".template-card": 3
+        },
+        "solutions/byrole/coaches-facilitators/index.php": {
+            "card-rule": 46
+        },
+        "solutions/byrole/design-leads/index.php": {
+            "card-rule": 45
+        },
+        "solutions/byrole/first-time-facilitators/index.php": {
+            "card-rule": 46
+        },
+        "solutions/byrole/ld-managers/index.php": {
+            "card-rule": 45
+        },
+        "tips/all.php": {
+            ".modal-overlay": 1,
+            ".btn-primary": 1,
+            "card-rule": 2
+        },
+        "tips/category.php": {
+            ".modal-overlay": 1
+        },
+        "tips/custom/_chrome.php": {
+            "card-rule": 9
+        },
+        "tips/daily.php": {
+            "card-rule": 5
+        },
+        "tips/index.php": {
+            ".modal-overlay": 1,
+            "card-rule": 9
+        },
+        "tips/saved.php": {
+            ".modal-overlay": 1,
+            ".btn-primary": 1,
+            ".empty-state": 5
+        },
+        "tips/tip.php": {
+            ".modal-overlay": 1,
+            "card-rule": 2
+        },
+        "toolkits/hybrid/check-email.php": {
+            "card-rule": 2
+        },
+        "toolkits/hybrid/download.php": {
+            "card-rule": 2
+        },
+        "toolkits/hybrid/equity-audit.php": {
+            "card-rule": 14
+        },
+        "toolkits/hybrid/index.php": {
+            "card-rule": 4
+        },
+        "toolkits/index.php": {
+            "card-rule": 25
+        },
+        "toolkits/post-workshop/get.php": {
+            "card-rule": 1
+        },
+        "toolkits/pre-read/get.php": {
+            "card-rule": 1
+        }
+    }
+}

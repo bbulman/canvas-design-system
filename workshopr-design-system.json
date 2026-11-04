@@ -1,0 +1,4050 @@
+{
+  "meta": {
+    "name": "Workshopr Design System",
+    "version": "3.2.0",
+    "description": "Machine-readable mirror of the design tokens, component catalog, and rules. Hand-maintained, guarded against drift by check-drift.php. NOT the canonical intent source — see designSource/motionSource.",
+    "entryPoint": "/design-system/START-HERE.md",
+    "designSource": "/DESIGN.md",
+    "motionSource": "/motion.md",
+    "tokenSource": "/design-system/platform-tokens.css",
+    "componentSource": "/includes/components/helpers.php",
+    "styleGuide": "/design-system/docs/workshopr-style-guide.md",
+    "driftGuard": "/design-system/tools/check-drift.php",
+    "agentCatalog": "/design-system/components.generated.json",
+    "provenance": "Hand-maintained. Run `php design-system/tools/check-drift.php` after edits; it fails if this mirror drifts from platform-tokens.css or helpers.php.",
+    "lastUpdated": "2026-10-19",
+    "architecture": "LEARN > PLAN > FACILITATE > REFLECT (naming-only phases; entire platform is red — see rules.phaseColors)"
+  },
+  "phases": {
+    "learn": {
+      "color": "#E54D4D",
+      "dark": "#C73E3E",
+      "light": "#FEE2E2",
+      "veryLight": "#FEF2F2",
+      "description": "Discovery, knowledge, content consumption",
+      "apps": [
+        "mainsite",
+        "tips",
+        "podcasts",
+        "training"
+      ]
+    },
+    "plan": {
+      "color": "#E54D4D",
+      "dark": "#C73E3E",
+      "light": "#FECACA",
+      "veryLight": "#FEE2E2",
+      "description": "Building, creating, structuring workshops (naming-only phase — all red since July 2026, D1)",
+      "apps": [
+        "planner"
+      ]
+    },
+    "facilitate": {
+      "color": "#E54D4D",
+      "dark": "#C73E3E",
+      "light": "#FECACA",
+      "veryLight": "#FEE2E2",
+      "description": "Live sessions, real-time assistance (naming-only phase — all red since July 2026, D1)",
+      "apps": [
+        "intervention",
+        "facilitator"
+      ]
+    },
+    "reflect": {
+      "color": "#E54D4D",
+      "dark": "#C73E3E",
+      "light": "#FECACA",
+      "veryLight": "#FEE2E2",
+      "description": "Growth, renewal, skill development (naming-only phase — all red since July 2026, D1)",
+      "apps": [
+        "coach"
+      ]
+    }
+  },
+  "apps": {
+    "mainsite": {
+      "phase": "learn",
+      "primary": "#E54D4D",
+      "dark": "#C73E3E",
+      "light": "#FEE2E2",
+      "veryLight": "#FEF2F2",
+      "gradient": "linear-gradient(135deg, #E54D4D 0%, #C73E3E 100%)",
+      "shadow": "0 4px 14px rgba(229, 77, 77, 0.25)"
+    },
+    "tips": {
+      "phase": "learn",
+      "colorNote": "Unified to red family — retired legacy purple exception.",
+      "primary": "#E54D4D",
+      "dark": "#C73E3E",
+      "light": "#FECACA",
+      "veryLight": "#FEE2E2",
+      "gradient": "linear-gradient(135deg, #E54D4D 0%, #C73E3E 100%)",
+      "shadow": "0 4px 14px rgba(229, 77, 77, 0.25)",
+      "categories": {
+        "1": {
+          "color": "#4527A0",
+          "name": "Fundamentals"
+        },
+        "2": {
+          "color": "#5E35B1",
+          "name": "Engagement"
+        },
+        "3": {
+          "color": "#6930C3",
+          "name": "Facilitation"
+        },
+        "4": {
+          "color": "#7C4DFF",
+          "name": "Difficult Moments"
+        },
+        "5": {
+          "color": "#9575CD",
+          "name": "Activities"
+        },
+        "6": {
+          "color": "#B39DDB",
+          "name": "Reflection"
+        }
+      }
+    },
+    "podcasts": {
+      "phase": "learn",
+      "primary": "#E54D4D",
+      "dark": "#C73E3E",
+      "light": "#FECACA",
+      "veryLight": "#FEE2E2",
+      "gradient": "linear-gradient(135deg, #E54D4D 0%, #C73E3E 100%)",
+      "shadow": "0 4px 14px rgba(229, 77, 77, 0.25)",
+      "platforms": {
+        "spotify": "#1DB954",
+        "apple": "#FC3C44",
+        "amazon": "#FF9900",
+        "youtube": "#FF0000"
+      }
+    },
+    "planner": {
+      "phase": "plan",
+      "colorNote": "Unified to red family — retired legacy blue exception.",
+      "primary": "#E54D4D",
+      "dark": "#C73E3E",
+      "light": "#FECACA",
+      "veryLight": "#FEE2E2",
+      "accent": "#FEF2F2",
+      "gradient": "linear-gradient(135deg, #E54D4D 0%, #C73E3E 100%)",
+      "shadow": "0 4px 14px rgba(229, 77, 77, 0.25)",
+      "bodyClass": "planner-page",
+      "scopeSelector": ".planner-page"
+    },
+    "coach": {
+      "phase": "reflect",
+      "primary": "#E54D4D",
+      "dark": "#C73E3E",
+      "light": "#FECACA",
+      "veryLight": "#FEE2E2",
+      "gradient": "linear-gradient(135deg, #E54D4D 0%, #C73E3E 100%)",
+      "shadow": "0 4px 14px rgba(229, 77, 77, 0.25)",
+      "modes": {
+        "prep": "#F87171",
+        "facilitate": "#EF4444",
+        "synthesize": "#DC2626",
+        "debrief": "#B91C1C"
+      },
+      "ui": {
+        "bg": "#FFFBF8",
+        "surface": "#FFFFFF",
+        "border": "#E8ECF1"
+      }
+    },
+    "intervention": {
+      "phase": "facilitate",
+      "primary": "#E54D4D",
+      "dark": "#C73E3E",
+      "light": "#FECACA",
+      "veryLight": "#FEE2E2",
+      "gradient": "linear-gradient(135deg, #E54D4D 0%, #C73E3E 100%)",
+      "shadow": "0 4px 14px rgba(229, 77, 77, 0.25)",
+      "colorNote": "Unified to red family — retired legacy purple exception.",
+      "categories": {
+        "1": {
+          "color": "#7F1D1D",
+          "name": "Energy & Engagement"
+        },
+        "2": {
+          "color": "#991B1B",
+          "name": "Conflict & Tension"
+        },
+        "3": {
+          "color": "#B91C1C",
+          "name": "Participation"
+        },
+        "4": {
+          "color": "#C73E3E",
+          "name": "Time & Pacing"
+        },
+        "5": {
+          "color": "#E54D4D",
+          "name": "Focus & Clarity"
+        },
+        "6": {
+          "color": "#F87171",
+          "name": "Connection & Trust"
+        }
+      }
+    },
+    "facilitator": {
+      "phase": "facilitate",
+      "primary": "#E54D4D",
+      "dark": "#C73E3E",
+      "light": "#FECACA",
+      "veryLight": "#FEE2E2",
+      "gradient": "linear-gradient(160deg, #1A0404 0%, #3B0A0A 40%, #7F1D1D 100%)",
+      "shadow": "0 4px 14px rgba(229, 77, 77, 0.25)",
+      "colorNote": "Unified to red family — retired legacy purple exception."
+    },
+    "dna": {
+      "phase": "standalone",
+      "phaseNote": "Unphased utility app — not part of the Learn/Plan/Facilitate/Reflect journey (see CLAUDE.md app table).",
+      "colorNote": "Unified to red family — retired legacy green exception.",
+      "primary": "#E54D4D",
+      "dark": "#C73E3E",
+      "light": "#FECACA",
+      "veryLight": "#FEE2E2",
+      "gradient": "linear-gradient(135deg, #E54D4D 0%, #C73E3E 100%)",
+      "shadow": "0 4px 14px rgba(229, 77, 77, 0.25)",
+      "categories": {
+        "1": {
+          "color": "#7F1D1D",
+          "name": "Strengths"
+        },
+        "2": {
+          "color": "#B91C1C",
+          "name": "Growth Areas"
+        },
+        "3": {
+          "color": "#C73E3E",
+          "name": "Style"
+        },
+        "4": {
+          "color": "#E54D4D",
+          "name": "History"
+        },
+        "5": {
+          "color": "#FCA5A5",
+          "name": "Goals"
+        }
+      }
+    },
+    "training": {
+      "phase": "learn",
+      "colorNote": "Training/Academy is a Learn-phase app and ships with Learn red (#E54D4D), matching DESIGN.md and the live academy CSS.",
+      "primary": "#E54D4D",
+      "dark": "#C73E3E",
+      "light": "#FECACA",
+      "veryLight": "#FEE2E2",
+      "gradient": "linear-gradient(135deg, #E54D4D 0%, #C73E3E 100%)",
+      "shadow": "0 4px 14px rgba(229, 77, 77, 0.25)"
+    }
+  },
+  "native": {
+    "_comment": "The native apps and what binds each one to this system. Read by the enforcer MCP (native_apps, list_tokens with platform swift, the Swift rules in validate_file and check_snippet) and by npm run lint:ds:native. Intent is design-system/docs/native.md; the values an app ships live in its theme files, never here.",
+    "doc": "/design-system/docs/native.md",
+    "check": "npm run lint:ds:native",
+    "baseline": "/design-system/baselines/native-baseline.json",
+    "brandFonts": ["Fraunces", "Inter"],
+    "iconFonts": ["Material Symbols Outlined"],
+    "apps": {
+      "back-pocket": {
+        "name": "Back Pocket",
+        "platform": "ios",
+        "ui": "SwiftUI",
+        "minOS": "iOS 17",
+        "root": "workshopr-app",
+        "source": "workshopr-app/WorkshoprApp",
+        "project": "workshopr-app/WorkshoprApp.xcodeproj",
+        "scheme": "WorkshoprApp",
+        "bundleId": "io.workshopr.pocket",
+        "readme": "workshopr-app/README.md",
+        "themeFiles": ["workshopr-app/WorkshoprApp/Theme/Theme.swift", "workshopr-app/WorkshoprApp/Theme/Motion.swift"],
+        "components": ["workshopr-app/WorkshoprApp/Components"],
+        "tokenNamespace": "WS.C (colours), WS.Radius, WS.Space, WSFont, WSShadow, WS.Motion",
+        "annotation": "Each colour constant ends with a // --token comment naming the web token it mirrors.",
+        "projectFiles": "Synchronized root group: every file under WorkshoprApp/ is bundled into the app, hidden folders included, so a new Swift file needs no project edit.",
+        "hazards": [
+          "Never run a shell from inside workshopr-app/WorkshoprApp/. The oh-my-claudecode hooks write .omc/ state into the shell's directory, Xcode bundles it, and the build fails with \"Multiple commands produce ...\". Use absolute paths from the repo root."
+        ],
+        "sanctionedScopes": {}
+      },
+      "field-guide": {
+        "name": "Field Guide",
+        "platform": "ios",
+        "ui": "SwiftUI",
+        "minOS": "iOS 17",
+        "root": "library-app",
+        "source": "library-app/WorkshoprLibrary",
+        "project": "library-app/WorkshoprLibrary.xcodeproj",
+        "projectSpec": "library-app/project.yml",
+        "scheme": "WorkshoprLibrary",
+        "bundleId": "io.workshopr.library",
+        "themeFiles": ["library-app/WorkshoprLibrary/Theme/Theme.swift", "library-app/WorkshoprLibrary/Theme/Motion.swift"],
+        "components": ["library-app/WorkshoprLibrary/Components"],
+        "tokenNamespace": "Palette (colours), Tone (per-section hues), Typo",
+        "annotation": "None: constants are matched to web tokens by value. Tone's exercise and icebreaker tint and pale carry trailing // --token comments for people; the check does not read them.",
+        "projectFiles": "Generated by XcodeGen from project.yml. After adding or removing a file, run xcodegen generate in library-app/.",
+        "hazards": [],
+        "sanctionedScopes": {
+          "Tone": "Content-type hues (workshops red, exercises blue, icebreakers green, breaks stone), the activity-type exception to Red Unification. Field Guide applies them to whole sections (tab tint, screen gradient), wider than the Planner canvas use CLAUDE.md sanctions: pending Bill's confirmation."
+        }
+      },
+      "planner-mac": {
+        "name": "Workshopr Planner",
+        "platform": "macos",
+        "ui": "SwiftUI (AppKit host)",
+        "minOS": "macOS 14",
+        "root": "mac-app",
+        "source": "mac-app/Sources/WorkshoprPlanner",
+        "package": "mac-app/Package.swift",
+        "build": "mac-app/scripts/make-app.sh",
+        "run": "swift run --package-path mac-app",
+        "themeFiles": ["mac-app/Sources/WorkshoprPlanner/Theme/Theme.swift", "mac-app/Sources/WorkshoprPlanner/Theme/Fonts.swift"],
+        "components": ["mac-app/Sources/WorkshoprPlanner/Views/Components.swift"],
+        "tokenNamespace": "Theme (colours, Radius, Space, type), ActivityKind (activity-type hues)",
+        "annotation": "None: constants are matched to web tokens by value.",
+        "projectFiles": "Swift package: files under Sources/WorkshoprPlanner/ are picked up automatically.",
+        "hazards": [],
+        "sanctionedScopes": {
+          "ActivityKind": "Activity-type colours on the agenda canvas, the exception CLAUDE.md sanctions for the Planner (§11, Planner CSS)."
+        }
+      }
+    }
+  },
+  "colors": {
+    "semantic": {
+      "success": {
+        "base": "#22C55E",
+        "dark": "#16A34A",
+        "light": "#BBF7D0",
+        "veryLight": "#DCFCE7"
+      },
+      "warning": {
+        "base": "#F59E0B",
+        "dark": "#D97706",
+        "light": "#FDE68A",
+        "veryLight": "#F9EEC3"
+      },
+      "error": {
+        "base": "#EF4444",
+        "dark": "#DC2626",
+        "light": "#FECACA",
+        "veryLight": "#FEE2E2"
+      },
+      "info": {
+        "base": "#3B82F6",
+        "dark": "#2563EB",
+        "light": "#BFDBFE",
+        "veryLight": "#DBEAFE"
+      }
+    },
+    "activityTypes": {
+      "comment": "--exercise-* and --icebreaker-*: the activity-type exception to Red Unification, only for marking an exercise or an icebreaker (the Field Guide's section theming is the one wider use, pending Bill). Each step takes the OKLCH lightness and chroma of --brand-line and --brand-soft, at hues 120 degrees either side of the red (triadic); exercise.light is clipped into sRGB. Text on the blue uses --color-info-strong, on the green --color-success-ink. Not the planner's --planner-exercise-* steps.",
+      "exercise": {
+        "light": "#C2DBFF",
+        "veryLight": "#DDEBFF"
+      },
+      "icebreaker": {
+        "light": "#C7E3BD",
+        "veryLight": "#E0EFDB"
+      }
+    },
+    "ink": {
+      "default": "#2C2416",
+      "secondary": "#5C5242",
+      "muted": "#706965",
+      "faint": "#A8A29E"
+    },
+    "backgrounds": {
+      "page": "#FAFAF9",
+      "pageAlt": "#FFFBF8",
+      "surface": "#FFFFFF",
+      "card": "#F7F1EA",
+      "cardNote": "--card-bg. The card surface: a warm paper tone between --bg-paper (#FAF7F2) and --bg-paper-dark (#F0EBE3), held as a value at the semantic layer. Every card reads var(--card-bg); surface white stays for modals, inputs and menus.",
+      "muted": "#F5F5F4",
+      "subtle": "#FAFAF9"
+    },
+    "grays": {
+      "comment": "Warm stone grays (Tailwind Stone palette)",
+      "50": "#FAFAF9",
+      "100": "#F5F5F4",
+      "200": "#E7E5E4",
+      "300": "#D6D3D1",
+      "400": "#A8A29E",
+      "500": "#78716C",
+      "600": "#57534E",
+      "700": "#44403C",
+      "800": "#292524",
+      "900": "#1C1917"
+    },
+    "navy": {
+      "base": "#1A2744",
+      "light": "#2E3D5C"
+    },
+    "text": {
+      "dark": "#2C2416",
+      "default": "#5C5242",
+      "muted": "#706965",
+      "faint": "#A8A29E",
+      "inverse": "#FFFFFF"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Fraunces', Georgia, serif",
+      "body": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
+    "scale": {
+      "display": {
+        "size": "2.875rem",
+        "px": 46,
+        "font": "heading",
+        "usage": "Hero/display text"
+      },
+      "h1": {
+        "size": "2rem",
+        "px": 32,
+        "font": "heading"
+      },
+      "h2": {
+        "size": "1.5rem",
+        "px": 24,
+        "font": "heading"
+      },
+      "h3": {
+        "size": "1.25rem",
+        "px": 20,
+        "font": "heading"
+      },
+      "h4": {
+        "size": "1.125rem",
+        "px": 18,
+        "font": "body"
+      },
+      "body": {
+        "size": "1rem",
+        "px": 16,
+        "font": "body"
+      },
+      "ui": {
+        "size": "0.9375rem",
+        "px": 15,
+        "font": "body"
+      },
+      "small": {
+        "size": "0.875rem",
+        "px": 14,
+        "font": "body"
+      },
+      "meta": {
+        "size": "0.8125rem",
+        "px": 13,
+        "font": "body"
+      },
+      "caption": {
+        "size": "0.75rem",
+        "px": 12,
+        "font": "body"
+      },
+      "micro": {
+        "size": "0.6875rem",
+        "px": 11,
+        "font": "body"
+      },
+      "nano": {
+        "size": "0.625rem",
+        "px": 10,
+        "font": "body"
+      }
+    },
+    "weights": {
+      "normal": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "lineHeights": {
+      "tight": 1.2,
+      "snug": 1.35,
+      "normal": 1.5,
+      "relaxed": 1.625
+    },
+    "letterSpacing": {
+      "tight": "-0.02em",
+      "normal": "0",
+      "wide": "0.025em"
+    }
+  },
+  "spacing": {
+    "baseUnit": "4px",
+    "scale": {
+      "0.5": "2px",
+      "1": "4px",
+      "1.5": "6px",
+      "2": "8px",
+      "2.5": "10px",
+      "3": "12px",
+      "3.5": "14px",
+      "4": "16px",
+      "4.5": "18px",
+      "5": "20px",
+      "6": "24px",
+      "8": "32px",
+      "10": "40px",
+      "12": "48px",
+      "16": "64px"
+    }
+  },
+  "layout": {
+    "containers": {
+      "xs": "480px",
+      "sm": "640px",
+      "md": "768px",
+      "lg": "960px",
+      "xl": "1120px",
+      "2xl": "1280px"
+    },
+    "breakpoints": {
+      "mobile": "480px",
+      "mobileLandscape": "640px",
+      "tablet": "768px",
+      "tabletLandscape": "960px",
+      "desktopSm": "1120px",
+      "desktop": "1280px"
+    },
+    "appShell": {
+      "_note": "The /app/ shell layout system. Documented at design-system/apps/app-shell-layouts.php; CSS in app/css/app-shell.css. Distinct from layout.containers, which is the main site.",
+      "frame": {
+        "viewport": "1440",
+        "header": "60",
+        "rail": "100",
+        "main": "1340",
+        "appBar": "60",
+        "footer": "48"
+      },
+      "archetypes": {
+        "fullBleed": {
+          "flag": "$fullBleed",
+          "slot": {
+            "x": "0",
+            "width": "1340"
+          },
+          "footer": false,
+          "routes": [
+            "plan/build",
+            "plan/check",
+            "facilitate/run",
+            "synthesize/make",
+            "synthesize/recap"
+          ]
+        },
+        "wide": {
+          "flag": null,
+          "class": ".app-shell__content",
+          "maxWidth": "calc(var(--app-content-wide) + 48px * 2)",
+          "slot": {
+            "x": "48",
+            "width": "1244",
+            "y": "84 with the document bar, 24 without"
+          },
+          "footer": true,
+          "routes": [
+            "home",
+            "plan/home",
+            "plan/saved",
+            "strategize/*",
+            "facilitate/home",
+            "synthesize/home",
+            "prove/home",
+            "prove/report",
+            "settings",
+            "stuff/*",
+            "library"
+          ],
+          "_note": "Since September 2026 the only non-bleed column: every view opens .app-page inside it (six-column main 928 + two-column rail 296). $wideContent and .app-shell__content--wide are retired."
+        },
+        "handoffSheet": {
+          "flag": null,
+          "class": ".app-shell__sheet",
+          "slot": {
+            "x": "48",
+            "width": "928 (inside .app-page__main)",
+            "y": "24"
+          },
+          "footer": true,
+          "routes": [
+            "library"
+          ],
+          "bar": false,
+          "_note": "No document bar: the bar renders only for plan, facilitate, synthesize and prove, so library content starts 24px below the region top. The sheet sits in the page grid's main with the shared rail beside it; signed out that rail is the Tips card alone."
+        }
+      },
+      "grids": {
+        "_note": "One page grid since September 2026: --app-grid-col 138 × 8 with --app-grid-gutter 20 = --app-content-wide 1244. A rail is two columns (--app-rail 296), the main beside it six (928). .app-page is the page-level grid with the rail and main placed; every non-bleed view opens it. The old .app-cols split (892 + 320) was deleted in batch 5 once no view opened it (tests/E2E/app-grid.spec.js measures every route).",
+        ".app-page": {
+          "columns": "repeat(8, minmax(0, 1fr))",
+          "gap": "--app-grid-gutter",
+          "at1244": "138 x8; .app-page__main span 6 = 928, .app-rail span 2 = 296",
+          "modifier": ".app-page--rail-left puts the rail in columns 1-2 and the main in 3-8",
+          "status": "shipped"
+        },
+        ".app-grid-8": {
+          "columns": "repeat(8, minmax(0, 1fr))",
+          "gap": "--app-grid-gutter",
+          "at1244": "138 x8",
+          "status": "shipped",
+          "_note": "The same tracks as .app-page, as a bare primitive for layouts inside a column. Spanning grid, not a card grid: 138 is below the 260px .wl-grid floor. Span with .app-span-2/-3/-4/-6/-full."
+        },
+        ".app-grid-6": {
+          "columns": "repeat(6, minmax(0, 1fr))",
+          "gap": "--app-grid-gutter",
+          "at928": "138 x6",
+          "status": "shipped",
+          "_note": "Inside a six-column main only; reproduces the page columns exactly."
+        },
+        ".app-grid-4": {
+          "columns": "repeat(4, minmax(0, 1fr))",
+          "gap": "--app-grid-gutter",
+          "at1244": "296 x4",
+          "status": "shipped",
+          "_note": "Inside the full width only: 217 inside a 928 main is off-grid."
+        },
+        ".app-grid-3": {
+          "columns": "repeat(3, minmax(0, 1fr))",
+          "gap": "--app-grid-gutter",
+          "at928": "296 x3",
+          "status": "shipped",
+          "_note": "Inside a six-column main only: inside the full width it is off-grid. .wl-grid lands here by itself."
+        },
+        ".app-grid-2": {
+          "columns": "repeat(2, minmax(0, 1fr))",
+          "gap": "--app-grid-gutter",
+          "at928": "454 x2",
+          "at1244": "612 x2",
+          "status": "shipped"
+        }
+      },
+      "_measuredAgainstApp": "17 Sep 2026, /app/ in a browser at 1440. Header 60, rail 100, main 1340, bar 60, content column 1244 (the reading measure retired with the page grid), footer 48.",
+      "barRendersFor": [
+        "plan",
+        "facilitate",
+        "synthesize",
+        "prove"
+      ],
+      "resolved": [
+        {
+          "what": "document bar height",
+          "wasDrawn": "72",
+          "actual": "60",
+          "fixed": "ws-app-bar Figma component resized; slot moved y96 -> y84"
+        },
+        {
+          "what": "handoff sheet bar",
+          "wasDrawn": "bar present, content y84",
+          "actual": "no bar, content y24",
+          "fixed": "bar removed from both Figma files"
+        },
+        {
+          "what": "reading measure",
+          "wasDrawn": "1244",
+          "actual": "1131",
+          "fixed": "templates reverted to the shipped measure"
+        }
+      ]
+    }
+  },
+  "borders": {
+    "radius": {
+      "sm": "4px",
+      "md": "6px",
+      "lg": "8px",
+      "xl": "12px",
+      "2xl": "16px",
+      "full": "9999px"
+    }
+  },
+  "shadows": {
+    "xs": "0 1px 2px rgba(0, 0, 0, 0.04)",
+    "sm": "0 1px 3px rgba(0, 0, 0, 0.06)",
+    "md": "0 4px 6px rgba(0, 0, 0, 0.07)",
+    "lg": "0 10px 15px rgba(0, 0, 0, 0.08)",
+    "xl": "0 20px 25px rgba(0, 0, 0, 0.10)"
+  },
+  "animations": {
+    "durations": {
+      "fast": "150ms",
+      "base": "200ms",
+      "slow": "300ms",
+      "enter": "300ms",
+      "exit": "200ms"
+    },
+    "easings": {
+      "default": "ease",
+      "in": "cubic-bezier(0.4, 0, 1, 0.2)",
+      "out": "cubic-bezier(0, 0, 0.2, 1)",
+      "inOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "spring": "cubic-bezier(0.22, 1, 0.36, 1)",
+      "bounce": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+    },
+    "transitions": {
+      "fast": "150ms ease",
+      "base": "200ms ease",
+      "slow": "300ms ease"
+    }
+  },
+  "icons": {
+    "source": "Material Symbols Outlined",
+    "sizes": {
+      "xs": "14px",
+      "sm": "16px",
+      "md": "20px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px"
+    }
+  },
+  "zIndex": {
+    "dropdown": 100,
+    "sticky": 200,
+    "overlay": 1000,
+    "header": 1100,
+    "modalBackdrop": 1100,
+    "modal": 1200,
+    "tooltip": 1300,
+    "dialog": 10000,
+    "dialogHigh": 10001,
+    "dialogHighest": 10004
+  },
+  "focus": {
+    "ringColor": "rgba(2, 132, 199, 0.5)",
+    "ringOffset": "2px",
+    "ringWidth": "2px"
+  },
+  "components": {
+    "_comment": "All ws_* PHP helpers from /includes/components/helpers.php. Use these instead of writing raw HTML.",
+    "_css": "/includes/components/components.css",
+    "_helpers": "/includes/components/helpers.php",
+    "_templates": "/includes/components/*.php",
+    "ws_badge": {
+      "function": "ws_badge(string $text, array $options = []): string",
+      "description": "Inline label/tag for metadata display",
+      "options": {
+        "variant": {
+          "type": "string",
+          "values": [
+            "default",
+            "duration",
+            "category",
+            "status",
+            "count",
+            "new",
+            "ai"
+          ],
+          "default": "default",
+          "description": "ai: the AI mark and \"Prepared by Workshopr\" (its text when given none), on the brand tint"
+        },
+        "size": {
+          "type": "string",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        },
+        "icon": {
+          "type": "string",
+          "description": "Material icon name"
+        },
+        "color": {
+          "type": "string",
+          "description": "Hex color for category variant"
+        },
+        "status": {
+          "type": "string",
+          "values": [
+            "success",
+            "warning",
+            "error",
+            "info",
+            "gold"
+          ],
+          "description": "For status variant"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      },
+      "convenience": {
+        "ws_duration": "ws_duration(string $duration, bool $withIcon = true) — badge with variant=duration, icon=schedule, size=sm",
+        "ws_category": "ws_category(string $category, ?string $color = null) — badge with variant=category",
+        "ws_status": "ws_status(string $text, string $status = 'info') — badge with variant=status"
+      }
+    },
+    "ws_duration": {
+      "function": "ws_duration(string $duration, bool $withIcon = true): string",
+      "description": "Convenience wrapper of ws_badge (variant=duration, icon=schedule, size=sm). Use for durations like \"45 min\".",
+      "convenienceOf": "ws_badge"
+    },
+    "ws_category": {
+      "function": "ws_category(string $category, ?string $color = null): string",
+      "description": "Convenience wrapper of ws_badge (variant=category).",
+      "convenienceOf": "ws_badge"
+    },
+    "ws_status": {
+      "function": "ws_status(string $text, string $status = 'info'): string",
+      "description": "Convenience wrapper of ws_badge (variant=status). Status: success|warning|error|info.",
+      "convenienceOf": "ws_badge"
+    },
+    "ws_pill": {
+      "function": "ws_pill(string $text, array $options = []): string",
+      "description": "Read-only tag / display chip for metadata display",
+      "options": {
+        "variant": {
+          "type": "string",
+          "values": [
+            "solid",
+            "ghost",
+            "tint"
+          ],
+          "default": "tint"
+        },
+        "color": {
+          "type": "string",
+          "values": [
+            "learn",
+            "plan",
+            "facilitate",
+            "reflect",
+            "neutral"
+          ],
+          "default": "neutral"
+        },
+        "size": {
+          "type": "string",
+          "values": [
+            "sm",
+            "md"
+          ],
+          "default": "md"
+        },
+        "icon": {
+          "type": "string",
+          "description": "Material Symbols leading icon name"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_toggle": {
+      "function": "ws_toggle(string $name, array $options = []): string",
+      "description": "Interactive sliding toggle switch for on/off states",
+      "options": {
+        "checked": {
+          "type": "bool",
+          "default": false
+        },
+        "label": {
+          "type": "string",
+          "description": "Text label shown next to the switch"
+        },
+        "description": {
+          "type": "string",
+          "description": "Supporting description text shown below the label"
+        },
+        "disabled": {
+          "type": "bool",
+          "default": false
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_range": {
+      "function": "ws_range(string $name, array $options = []): string",
+      "description": "Native range slider for a value picked by feel along a continuous scale. The bare variant makes track and thumb transparent so the page can draw the handle (a divider between panes) while the input stays real, focusable and labelled.",
+      "options": {
+        "label": {
+          "type": "string",
+          "description": "Label element naming the input; always pass one"
+        },
+        "hideLabel": {
+          "type": "bool",
+          "default": false,
+          "description": "Visually hide the label while it still names the input"
+        },
+        "description": {
+          "type": "string",
+          "description": "Sub-text under the slider, wired as aria-describedby"
+        },
+        "min": {
+          "type": "number",
+          "default": 0
+        },
+        "max": {
+          "type": "number",
+          "default": 100
+        },
+        "step": {
+          "type": "number",
+          "default": 1
+        },
+        "value": {
+          "type": "number",
+          "description": "Starting value; defaults to halfway between min and max"
+        },
+        "valueText": {
+          "type": "string",
+          "description": "What the starting value means, as aria-valuetext; update it from script as the value moves"
+        },
+        "variant": {
+          "type": "string",
+          "enum": ["default", "bare"],
+          "default": "default"
+        },
+        "disabled": {
+          "type": "bool",
+          "default": false
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array",
+          "description": "Extra attributes on the input"
+        }
+      }
+    },
+    "ws_run_clock": {
+      "function": "ws_run_clock(array $options = []): string",
+      "description": "The time left on the running block, read across a room: counts down, then up past the plan with a plus sign. role=\"timer\". With endsAt, /js/ws-run-clock.js keeps it right from the timestamp.",
+      "options": {
+        "seconds": {"type": "int", "description": "Seconds left; negative means over. Derives value, label, state and the accessible name"},
+        "value": {"type": "string", "description": "Text shown when seconds is not given"},
+        "planned": {"type": "int", "description": "The block's planned minutes, for the label"},
+        "label": {"type": "string", "description": "Replaces the derived label"},
+        "state": {"type": "string", "values": ["running", "ending", "over", "paused"], "default": "running", "description": "Derived from seconds when not given; pass paused by hand"},
+        "size": {"type": "string", "values": ["md", "lg", "xl"], "default": "lg"},
+        "endsAt": {"type": "int", "description": "Epoch milliseconds the block is due to end"},
+        "id": {"type": "string"},
+        "class": {"type": "string"},
+        "attrs": {"type": "array"}
+      }
+    },
+    "ws_exercise_tile": {
+      "function": "ws_exercise_tile(array $options): string",
+      "description": "One exercise as a square, as a recipe shows it: a two-letter symbol top left (Fraunces), the step's minutes top right and the name in capitals bottom right (Inter). Reads \"Brainwriting, 20 minutes\"; the symbol is aria-hidden. With href the whole tile is one link; with actions too, the name is the link stretched over the tile and the action buttons sit beside it.",
+      "options": {
+        "symbol": {"type": "string", "description": "Required: two letters, capital then lowercase"},
+        "name": {"type": "string", "description": "Required: the exercise's display name; the capitals are CSS"},
+        "minutes": {"type": "int", "default": null, "description": "The step's minutes; omitted, the corner stays empty"},
+        "href": {"type": "string", "default": "", "description": "Makes the tile a link, usually to the exercise's page"},
+        "actions": {"type": "array", "default": [], "description": "Needs href. Icon buttons (each icon, label, attrs) shown while the tile is hovered or holds focus, always on touch: the name becomes the link, stretched over the tile, and each button is named \"{label} {name}\" with label as its tooltip. A recipe passes Swap and Quick view, each opening a ws_side_panel"},
+        "linkAttrs": {"type": "array", "default": [], "description": "Needs href. Extra attributes on the tile's link (the tile itself, or with actions its name). A recipe passes the Quick view's data-ws-side-panel-open, aria-controls and aria-expanded, so a click on the tile opens the panel; a modifier-click and a page without script still follow href"},
+        "id": {"type": "string", "default": ""},
+        "class": {"type": "string", "default": ""},
+        "attrs": {"type": "array", "default": []}
+      }
+    },
+    "ws_exercise_formula": {
+      "function": "ws_exercise_formula(array $tiles, array $options = []): string",
+      "description": "A recipe's exercise tiles in order, joined by plus signs: an ordered list, the plus signs aria-hidden in the gap so every tile keeps the same width. One row that spans its container: the tiles stay at --formula-tile (14rem) and the spare width goes into the gaps, each at least --space-12 with its plus sign centred; stacked below 600px.",
+      "items": "Each tile: ws_exercise_tile's options",
+      "options": {
+        "label": {"type": "string", "default": "", "description": "Accessible name for the list, when no heading right above names it"},
+        "id": {"type": "string", "default": ""},
+        "class": {"type": "string", "default": ""},
+        "attrs": {"type": "array", "default": []}
+      }
+    },
+    "ws_session_shape": {
+      "function": "ws_session_shape(array $parts, array $options = []): string",
+      "description": "A short session at a glance: an energy line (SVG, named in words) over a time bar (an ordered list, each block named \"Check-in, 10 minutes\"), on one horizontal scale. Block widths come from size classes in 5-minute steps; opening and closing blocks are grey, exercises --brand-soft. Not ws_energy_arc_card, which grades a workshop with a score.",
+      "items": "Each part: name (required), minutes (required), kind frame | exercise (default exercise), energy 1-5 (default 3), href",
+      "options": {
+        "label": {"type": "string", "default": "Shape of the session", "description": "The group's accessible name"},
+        "showEnergy": {"type": "bool", "default": true, "description": "Draw the energy line over the time bar; false leaves the time bar on its own"},
+        "control": {"type": "string", "default": "", "description": "Rendered HTML drawn as a row under the time bar, on its scale: a ws_range that reshapes the session, such as its length"},
+        "controlLabel": {"type": "string", "default": "", "description": "The control row's axis word, shown beside it like Time and hidden from assistive technology; the control names itself"},
+        "id": {"type": "string", "default": ""},
+        "class": {"type": "string", "default": ""},
+        "attrs": {"type": "array", "default": []}
+      }
+    },
+    "ws_link_switch": {
+      "function": "ws_link_switch(array $items, array $options = []): string",
+      "description": "Two to four links to versions of the same page, one current, drawn like segmented tabs: 90 | 60, In person | Remote. Each option is a link carrying the setting in its URL, so it needs no JavaScript and the choice can be shared and printed. Not ws_tabs, which switches panels in place.",
+      "items": "Each option: label (required), href (required), current (bool)",
+      "options": {
+        "label": {"type": "string", "description": "Required: what is being switched; names the list"},
+        "showLabel": {"type": "bool", "default": false, "description": "Show the label as visible text before the options"},
+        "id": {"type": "string"},
+        "class": {"type": "string"},
+        "attrs": {"type": "array"}
+      }
+    },
+    "ws_stepper": {
+      "function": "ws_stepper(string $name, array $options = []): string",
+      "description": "Number input between decrement and increment buttons, for values edited in fixed jumps. Behaviour is the page's, via data-ws-stepper hooks.",
+      "options": {
+        "label": {
+          "type": "string",
+          "description": "Field label; renders the ws-field wrapper"
+        },
+        "value": {
+          "type": "int|string",
+          "default": 0
+        },
+        "min": {
+          "type": "int|string"
+        },
+        "max": {
+          "type": "int|string"
+        },
+        "step": {
+          "type": "int|string",
+          "default": 1
+        },
+        "unit": {
+          "type": "string",
+          "description": "Trailing unit text"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array",
+          "description": "Extra attributes on the number input"
+        },
+        "decreaseLabel": {
+          "type": "string"
+        },
+        "increaseLabel": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_cta_section": {
+      "function": "ws_cta_section(string $title, array $options = []): string",
+      "description": "Full-width bottom-of-page marketing conversion block",
+      "options": {
+        "subtitle": {
+          "type": "string",
+          "description": "Secondary descriptive paragraph body"
+        },
+        "eyebrow": {
+          "type": "string",
+          "description": "Small label shown above the main title"
+        },
+        "primaryBtn": {
+          "type": "array",
+          "description": "Options array for primary action button"
+        },
+        "secondaryBtn": {
+          "type": "array",
+          "description": "Options array for secondary action button"
+        },
+        "color": {
+          "type": "string",
+          "values": [
+            "learn",
+            "plan",
+            "facilitate",
+            "reflect",
+            "neutral"
+          ],
+          "default": "learn"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_how_steps": {
+      "function": "ws_how_steps(array $steps, array $options = []): string",
+      "description": "Numbered 'How It Works' process step card grid",
+      "options": {
+        "color": {
+          "type": "string",
+          "values": [
+            "learn",
+            "plan",
+            "facilitate",
+            "reflect",
+            "neutral"
+          ],
+          "default": "learn"
+        },
+        "columns": {
+          "type": "int",
+          "values": [
+            2,
+            3,
+            4
+          ],
+          "default": 3
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_filter_bar": {
+      "function": "ws_filter_bar(array $filters, array $options = []): string",
+      "description": "The search box above a list, with or without filter selects: a GET search form (role=search), with chips for the filters applied",
+      "options": {
+        "search": {
+          "type": "array",
+          "description": "Optional search input configuration"
+        },
+        "searchLabel": {
+          "type": "string",
+          "description": "The search field's name; defaults to the placeholder"
+        },
+        "showSearchLabel": {
+          "type": "bool",
+          "default": false,
+          "description": "Show searchLabel as a visible label above the field"
+        },
+        "submitLabel": {
+          "type": "string",
+          "description": "Button text: Search with no filters, Filter with them"
+        },
+        "keep": {
+          "type": "array",
+          "default": [],
+          "description": "Query-string names the search carries through, e.g. view and step inside /app/"
+        },
+        "activeChips": {
+          "type": "array",
+          "description": "Active clearable filter chips display"
+        },
+        "color": {
+          "type": "string",
+          "values": [
+            "learn",
+            "plan",
+            "facilitate",
+            "reflect"
+          ],
+          "default": "learn"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_button": {
+      "function": "ws_button(string $text, array $options = []): string",
+      "description": "Primary interactive element for actions",
+      "options": {
+        "variant": {
+          "type": "string",
+          "values": [
+            "primary",
+            "secondary",
+            "ghost",
+            "danger"
+          ],
+          "default": "primary"
+        },
+        "size": {
+          "type": "string",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        },
+        "icon": {
+          "type": "string",
+          "description": "Material icon name"
+        },
+        "iconPosition": {
+          "type": "string",
+          "values": [
+            "left",
+            "right"
+          ],
+          "default": "left"
+        },
+        "href": {
+          "type": "string",
+          "description": "Makes button an <a> tag"
+        },
+        "type": {
+          "type": "string",
+          "values": [
+            "button",
+            "submit",
+            "reset"
+          ],
+          "default": "button"
+        },
+        "disabled": {
+          "type": "bool",
+          "default": false
+        },
+        "loading": {
+          "type": "bool",
+          "default": false
+        },
+        "fullWidth": {
+          "type": "bool",
+          "default": false
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array",
+          "description": "Key-value pairs for additional HTML attributes"
+        }
+      },
+      "convenience": {
+        "ws_icon_button": "ws_icon_button(string $icon, array $options = []) — icon-only button with variant=ghost, size=sm"
+      }
+    },
+    "ws_icon_button": {
+      "function": "ws_icon_button(string $icon, array $options = []): string",
+      "description": "Convenience wrapper of ws_button: icon-only button with variant=ghost, size=sm.",
+      "convenienceOf": "ws_button",
+      "options": {
+        "attrs": {
+          "type": "array",
+          "description": "Pass attrs['aria-label']: an icon-only button has no visible text, so this is its accessible name"
+        },
+        "href": {
+          "type": "string",
+          "description": "Renders a link styled as the button"
+        },
+        "type": {
+          "type": "string",
+          "default": "button"
+        },
+        "disabled": {
+          "type": "bool",
+          "default": false
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_input": {
+      "function": "ws_input(string $name, array $options = []): string",
+      "description": "Form text input field with label, validation, and helper text",
+      "options": {
+        "type": {
+          "type": "string",
+          "values": [
+            "text",
+            "email",
+            "password",
+            "number",
+            "tel",
+            "url",
+            "search",
+            "date",
+            "time",
+            "color",
+            "file",
+            "textarea",
+            "select"
+          ],
+          "default": "text"
+        },
+        "label": {
+          "type": "string"
+        },
+        "placeholder": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "required": {
+          "type": "bool",
+          "default": false
+        },
+        "disabled": {
+          "type": "bool",
+          "default": false
+        },
+        "error": {
+          "type": "string",
+          "description": "Error message (activates error state)"
+        },
+        "hint": {
+          "type": "string",
+          "description": "Help text below the field; the error replaces it while set"
+        },
+        "size": {
+          "type": "string",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        },
+        "readonly": {
+          "type": "bool",
+          "default": false
+        },
+        "autocomplete": {
+          "type": "string",
+          "description": "The autocomplete attribute, e.g. email"
+        },
+        "minlength": {
+          "type": "int"
+        },
+        "maxlength": {
+          "type": "int"
+        },
+        "pattern": {
+          "type": "string"
+        },
+        "options": {
+          "type": "array",
+          "description": "Choices for type select: value => label"
+        },
+        "rows": {
+          "type": "int",
+          "default": 4,
+          "description": "Rows for type textarea"
+        },
+        "showPasswordToggle": {
+          "type": "bool",
+          "default": true,
+          "description": "Show the reveal button on type password"
+        }
+      }
+    },
+    "ws_select": {
+      "function": "ws_select(string $name, array $selectOptions, array $options = []): string",
+      "description": "Dropdown select field",
+      "params": {
+        "selectOptions": "Associative array of value => label pairs"
+      },
+      "options": {
+        "label": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string",
+          "description": "Pre-selected value"
+        },
+        "placeholder": {
+          "type": "string"
+        },
+        "required": {
+          "type": "bool",
+          "default": false
+        },
+        "disabled": {
+          "type": "bool",
+          "default": false
+        },
+        "error": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_card": {
+      "function": "ws_card(string $content, array $options = []): string",
+      "description": "Content container with optional link, hover, and elevation",
+      "alternatives": {
+        "ws_card_start / ws_card_end": "For wrapping arbitrary PHP/HTML content between card open/close tags (see their own top-level entries)"
+      },
+      "options": {
+        "variant": {
+          "type": "string",
+          "values": [
+            "content",
+            "feature",
+            "compact",
+            "flush"
+          ],
+          "default": "content"
+        },
+        "hoverable": {
+          "type": "bool",
+          "default": false
+        },
+        "elevated": {
+          "type": "bool",
+          "default": false
+        },
+        "bordered": {
+          "type": "bool",
+          "default": false
+        },
+        "tag": {
+          "type": "string",
+          "default": "div",
+          "description": "HTML tag (auto-set to 'a' if href provided)"
+        },
+        "href": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_card_start": {
+      "function": "ws_card_start(array $options = []): void",
+      "description": "Opens a card wrapper so you can put arbitrary PHP/HTML between it and ws_card_end. Same options as ws_card.",
+      "pairsWith": "ws_card_end"
+    },
+    "ws_card_end": {
+      "function": "ws_card_end(): void",
+      "description": "Closes a ws_card_start wrapper.",
+      "pairsWith": "ws_card_start"
+    },
+    "ws_card_deck": {
+      "function": "ws_card_deck(array $cards, array $options = []): string",
+      "description": "Up to three suggested cards cascaded (the Intervention Card peek): the front card's title, icon and caption, the cards behind showing only their title strips. The whole deck is one link with an accessible name that lists every card.",
+      "cards": "Front first. Each card: title (required); caption; icon (a Material Symbols name). Only the front card shows its caption and icon; only the first three are drawn; no titled card renders nothing.",
+      "options": {
+        "href": {"type": "string", "description": "Where the deck leads; without it the deck is a named group, not a link"},
+        "name": {"type": "string", "default": "Intervention Cards", "description": "What the deck holds; opens the accessible name"},
+        "label": {"type": "string", "description": "Replaces the derived accessible name ('Intervention Cards, 3 suggested: ...')"},
+        "position": {"type": "string", "values": ["inline", "float"], "default": "inline", "description": "float pins it to the bottom right of its positioned container; --ws-card-deck-bottom lifts it clear of a dock"},
+        "id": {"type": "string"},
+        "class": {"type": "string"},
+        "attrs": {"type": "array"}
+      }
+    },
+    "ws_tab_panel_start": {
+      "function": "ws_tab_panel_start(string $tab, array $options = []): void",
+      "description": "Opens the panel a ws_tabs tab controls, by the tab's item id; ws_tab_panel_end prints it. The panel is open exactly when its tab is the active item in the ws_tabs call before it, and is wired as a tabpanel.",
+      "pairsWith": "ws_tab_panel_end",
+      "options": {
+        "active": {"type": "bool", "default": null, "description": "Overrides whether the panel is open; null follows its tab"},
+        "label": {"type": "string", "default": "", "description": "aria-label for the panel instead of its tab's name"},
+        "class": {"type": "string", "default": ""},
+        "attrs": {"type": "array", "default": []}
+      }
+    },
+    "ws_tab_panel_end": {
+      "function": "ws_tab_panel_end(): void",
+      "description": "Closes the most recent ws_tab_panel_start and prints the panel.",
+      "pairsWith": "ws_tab_panel_start"
+    },
+    "ws_text": {
+      "function": "ws_text(string $text, array $options = []): string",
+      "description": "A line of text in a design-system step: title (a card or item title, Fraunces --text-h4) or caption (a small secondary line in --text-default). Escapes the text.",
+      "options": {
+        "variant": {"type": "string", "values": ["title", "caption"], "default": "caption"},
+        "tag": {"type": "string", "values": ["h2", "h3", "h4", "h5", "p", "span", "div"], "description": "Defaults to h3 for a title and p for a caption"},
+        "live": {"type": "bool", "default": false, "description": "role=status, for text a script changes"},
+        "id": {"type": "string"},
+        "class": {"type": "string"},
+        "attrs": {"type": "array"}
+      }
+    },
+    "ws_agenda": {
+      "function": "ws_agenda(array $items, array $options = []): string",
+      "description": "A read-only running order: each activity's start time, title, type (written out) and duration, as an ordered list. Times follow from start and each numeric duration. Not for editing; the Planner keeps ws_planner_card.",
+      "items": "Each item: title (required); start 'HH:MM'; duration (minutes as an int, or text); type exercise | icebreaker | break | custom; description; day (1, 2 ...). A running session adds state done | now | next; actual (minutes a done block took) or actual_seconds (seconds, which win); planned_seconds (when the plan is not duration x 60); planned_start ('HH:MM' when start has moved); change trimmed | skipped | added. A done block within 60 seconds of its plan either way is On time. Rows without them render as before.",
+      "options": {
+        "start": {"type": "string", "description": "'HH:MM' the first activity starts"},
+        "live": {"type": "bool", "default": false, "description": "A live running order: the now row gets aria-current=\"step\" and the list's label gains \", live\""},
+        "label": {"type": "string", "description": "Accessible name for the list, e.g. 'Morning agenda'"},
+        "id": {"type": "string"},
+        "class": {"type": "string"},
+        "attrs": {"type": "array"}
+      }
+    },
+    "ws_stack_start": {
+      "function": "ws_stack_start(array $options = []): void",
+      "description": "Opens a stack: children one above the other with one spacing step between each pair. The stack owns that space.",
+      "pairsWith": "ws_stack_end",
+      "options": {
+        "gap": {"type": "string", "values": ["1", "2", "3", "4", "5", "6", "8", "10", "12"], "default": "4", "description": "The --space-N step between children"},
+        "tag": {"type": "string", "values": ["div", "section", "ul", "ol", "form"], "default": "div", "description": "ul and ol get role=\"list\""},
+        "id": {"type": "string"},
+        "class": {"type": "string"},
+        "attrs": {"type": "array", "description": "Extra attributes, e.g. method and action on a form"}
+      }
+    },
+    "ws_stack_end": {
+      "function": "ws_stack_end(): void",
+      "description": "Closes the most recent ws_stack_start.",
+      "pairsWith": "ws_stack_start"
+    },
+    "ws_cluster_start": {
+      "function": "ws_cluster_start(array $options = []): void",
+      "description": "Opens a cluster: children side by side, wrapping when they run out of room. For action rows, a field beside its button, chips.",
+      "pairsWith": "ws_cluster_end",
+      "options": {
+        "gap": {"type": "string", "values": ["1", "2", "3", "4", "5", "6", "8"], "default": "3", "description": "The --space-N step between items"},
+        "justify": {"type": "string", "values": ["start", "center", "end", "between"], "default": "start"},
+        "align": {"type": "string", "values": ["start", "center", "end", "baseline", "stretch"], "default": "center"},
+        "grow": {"type": "string", "values": ["none", "first", "last"], "default": "none", "description": "The item that takes the row's free width, such as a search field beside its button"},
+        "tag": {"type": "string", "values": ["div", "ul", "ol"], "default": "div", "description": "ul and ol get role=\"list\""},
+        "id": {"type": "string"},
+        "class": {"type": "string"},
+        "attrs": {"type": "array"}
+      }
+    },
+    "ws_cluster_end": {
+      "function": "ws_cluster_end(): void",
+      "description": "Closes the most recent ws_cluster_start.",
+      "pairsWith": "ws_cluster_start"
+    },
+    "ws_grid_start": {
+      "function": "ws_grid_start(array $options = []): void",
+      "description": "Opens a grid of equal columns, as many as fit above a column floor (--grid-min-*). No breakpoints; one column on a phone.",
+      "pairsWith": "ws_grid_end",
+      "options": {
+        "min": {"type": "string", "values": ["sm", "md", "lg"], "default": "md", "description": "Column floor: --grid-min-sm, -md or -lg"},
+        "gap": {"type": "string", "values": ["2", "3", "4", "5", "6", "8"], "default": "4", "description": "The --space-N step between items"},
+        "tag": {"type": "string", "values": ["div", "section", "ul", "ol"], "default": "div", "description": "ul and ol get role=\"list\"; wrap each item in an li"},
+        "id": {"type": "string"},
+        "class": {"type": "string"},
+        "attrs": {"type": "array"}
+      }
+    },
+    "ws_grid_end": {
+      "function": "ws_grid_end(): void",
+      "description": "Closes the most recent ws_grid_start.",
+      "pairsWith": "ws_grid_start"
+    },
+    "ws_container_start": {
+      "function": "ws_container_start(array $options = []): void",
+      "description": "Opens a centred column at a --container-* maximum width with --space-4 gutters. Not inside /app/ views, whose page grid sets the width.",
+      "pairsWith": "ws_container_end",
+      "options": {
+        "width": {"type": "string", "values": ["xs", "sm", "md", "lg", "xl", "2xl"], "default": "lg", "description": "The --container-* maximum width"},
+        "gutter": {"type": "bool", "default": true, "description": "false drops the side padding"},
+        "tag": {"type": "string", "values": ["div", "section", "article"], "default": "div"},
+        "id": {"type": "string"},
+        "class": {"type": "string"},
+        "attrs": {"type": "array"}
+      }
+    },
+    "ws_container_end": {
+      "function": "ws_container_end(): void",
+      "description": "Closes the most recent ws_container_start.",
+      "pairsWith": "ws_container_start"
+    },
+    "ws_modal": {
+      "function": "ws_modal(string $content, array $options = []): string",
+      "description": "Dialog overlay for forms, confirmations, and detail views",
+      "alternatives": {
+        "ws_modal_start / ws_modal_end": "For wrapping arbitrary PHP/HTML content between modal open/close tags"
+      },
+      "options": {
+        "id": {
+          "type": "string",
+          "required": true
+        },
+        "title": {
+          "type": "string"
+        },
+        "size": {
+          "type": "string",
+          "values": [
+            "sm",
+            "default",
+            "lg",
+            "xl",
+            "full"
+          ],
+          "default": "default"
+        },
+        "variant": {
+          "type": "string",
+          "values": [
+            "default",
+            "drawer",
+            "bottom-sheet",
+            "branded"
+          ],
+          "default": "default"
+        },
+        "closable": {
+          "type": "bool",
+          "default": true
+        },
+        "backdrop": {
+          "type": "bool",
+          "default": true
+        },
+        "headerColor": {
+          "type": "string",
+          "description": "CSS color for header background"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      },
+      "related": {
+        "ws_modal_footer": "ws_modal_footer(array $options) — standardized button layout for modal footers. Options: cancel (string), primary (string|array), left (string)"
+      }
+    },
+    "ws_modal_start": {
+      "function": "ws_modal_start(array $options = []): void",
+      "description": "Opens a modal wrapper so you can put arbitrary PHP/HTML between it and ws_modal_end. Same options as ws_modal.",
+      "pairsWith": "ws_modal_end"
+    },
+    "ws_modal_end": {
+      "function": "ws_modal_end(): void",
+      "description": "Closes a ws_modal_start wrapper.",
+      "pairsWith": "ws_modal_start"
+    },
+    "ws_modal_footer": {
+      "function": "ws_modal_footer(array $options): string",
+      "description": "Standardized button layout for modal footers.",
+      "options": {
+        "cancel": {
+          "type": "string",
+          "description": "Cancel button label"
+        },
+        "primary": {
+          "type": "string",
+          "description": "Primary button label, or [label, options]; options accept variant (primary by default, danger for a destructive confirm)"
+        },
+        "left": {
+          "type": "string",
+          "description": "Optional left-aligned content/button"
+        }
+      }
+    },
+    "ws_side_panel": {
+      "function": "ws_side_panel(string $body, array $options = []): string",
+      "description": "A non-modal panel that slides in from the right edge beside the page. Toggled by any [data-ws-side-panel-open=\"{id}\"] (components.js keeps its aria-expanded in step); fires ws-side-panel-open and ws-side-panel-close on itself. Escape or the close button put it away and hand focus back. Placement: --ws-side-panel-top / --ws-side-panel-bottom; opened from a bar (.ws-app-bar or [data-ws-side-panel-anchor]) it starts under that bar and follows it as the page scrolls; one step under overlays (--z-overlay minus 100); full screen below 600px.",
+      "params": {
+        "body": {
+          "type": "string",
+          "description": "Panel body HTML, already escaped by the caller"
+        }
+      },
+      "options": {
+        "id": {
+          "type": "string",
+          "description": "Required; triggers point at it. The heading and subtitle take {id}-title and {id}-subtitle"
+        },
+        "title": {
+          "type": "string",
+          "description": "Heading (Fraunces)"
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "One line under the heading"
+        },
+        "variant": {
+          "type": "string",
+          "enum": ["default", "branded"],
+          "default": "default",
+          "description": "branded: the red header band the branded ws_modal wears, white title and close"
+        },
+        "icon": {
+          "type": "string",
+          "description": "Material Symbols name, in a pill beside the heading"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      },
+      "js": "wsSidePanelOpen(id, trigger), wsSidePanelClose(id), wsSidePanelToggle(id, trigger)"
+    },
+    "ws_menu": {
+      "function": "ws_menu(string $label, array $items, array $options = []): string",
+      "description": "An action menu: a trigger and a panel of actions on one object (mode menu, the WAI-ARIA menu button) or of links to other pages (mode disclosure). The panel renders in place after its trigger and components.js shows it in the top layer (popover=\"manual\"), placed against the trigger, flipped when the preferred side lacks room, and kept inside the viewport. Behaviour is delegated, so a menu drawn after load needs no init. Fires ws-menu-open, ws-menu-close, ws-menu-action (an item that acts at once) and ws-menu-dialog (an item that opens a modal or side panel, with its action, modal or sidePanel, item, menu and trigger) on the wrapper. A destructive item always confirms in a ws_modal: give a danger item a modal (built as the destructive-confirmation recipe builds it). Its modal wins over an href, so it is always a button; choosing it fires ws-menu-dialog, never ws-menu-action, then opens the dialog, and focus returns to the trigger when the dialog closes. A danger item with no modal renders disabled. Only http, https, mailto, tel, relative and fragment hrefs are kept. Returns '' when no item is left to show. Without script a disclosure's links stay hidden.",
+      "params": {
+        "label": {
+          "type": "string",
+          "description": "The trigger's accessible name and the menu's (\"Actions for Quarterly planning offsite\"); a button trigger's visible text"
+        },
+        "items": {
+          "type": "array",
+          "description": "Entries: label (required), href (a link; wins over the rest except on a danger item; http, https, mailto, tel, relative or a fragment), action (fires ws-menu-action, or ws-menu-dialog on an item that opens a dialog), icon, description (second line; a disabled item's reason), danger (confirms in its modal; disabled without one), disabled, current, modal (a ws_modal id), sidePanel (a ws_side_panel id), attrs; or type separator or heading"
+        }
+      },
+      "options": {
+        "id": {
+          "type": "string",
+          "description": "Wrapper id, default ws-menu-{n}. The trigger, panel, list and items derive theirs ({id}-trigger, {id}-panel, {id}-list, {id}-item-{n}); pass one per row"
+        },
+        "trigger": {
+          "type": "string",
+          "values": ["icon", "button"],
+          "default": "icon",
+          "description": "icon: an icon-only ghost button named by the label; button: a button showing the label with a chevron"
+        },
+        "icon": {
+          "type": "string",
+          "default": "more_horiz",
+          "description": "The icon trigger's glyph, a Material Symbols name with an SVG in images/icons/"
+        },
+        "variant": {
+          "type": "string",
+          "values": ["ghost", "secondary", "primary"],
+          "default": "ghost",
+          "description": "The trigger's ws_button variant"
+        },
+        "size": {
+          "type": "string",
+          "values": ["sm", "md"],
+          "default": "sm",
+          "description": "The trigger's ws_button size"
+        },
+        "align": {
+          "type": "string",
+          "values": ["end", "start"],
+          "default": "end",
+          "description": "Which edge of the panel lines up with the trigger's (follows dir)"
+        },
+        "placement": {
+          "type": "string",
+          "values": ["bottom", "top"],
+          "default": "bottom",
+          "description": "The preferred side; the panel flips when that side lacks room"
+        },
+        "mode": {
+          "type": "string",
+          "values": ["menu", "disclosure"],
+          "default": "menu",
+          "description": "menu: actions, role=menu with arrow keys; disclosure: a few links to other pages, a plain list in the Tab order (items that open a modal or side panel are dropped)"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array",
+          "description": "Attributes on the wrapper, such as the row's data-plan-id"
+        },
+        "triggerAttrs": {
+          "type": "array",
+          "description": "Extra attributes on the trigger, names lowercased; its ids, role, name and the ARIA it owns (aria-haspopup, aria-expanded, aria-controls, aria-label, aria-labelledby) are never taken from here"
+        },
+        "panel": {
+          "type": "string",
+          "description": "The id of a ws_menu_panel() template to clone on open instead of items of its own: one panel for every row of a list. The menu then draws only its trigger, with no aria-controls until components.js clones the panel in after it; ws-menu-open lets a listener cut the clone down to the row. The panel's mode must match"
+        }
+      },
+      "js": "ws.menu(label, items, options); behaviour wsMenuOpen(menu, {focus}), wsMenuClose(menu, {restoreFocus, reason}), wsMenuToggle(menu)"
+    },
+    "ws_menu_panel": {
+      "function": "ws_menu_panel(array $items, array $options = []): string",
+      "description": "A ws_menu's panel rendered once, as <template id=\"{id}\" data-ws-menu-template>, for every row of a list to share: each row draws ws_menu($label, [], ['panel' => $id, 'id' => ...]). components.js clones the panel in after a row's trigger when its menu opens (giving the clone {menuId}-panel and {menuId}-list, naming the list by the trigger and setting the trigger's aria-controls), fires ws-menu-open so a listener can drop the entries that row lacks and fill in its ids, and removes the clone on close. One copy of the entries per list instead of one per row. Items, normalization and modes are ws_menu's. Returns '' when no item is left. No JS twin: no script draws one.",
+      "params": {
+        "items": {
+          "type": "array",
+          "description": "The entries, exactly as ws_menu takes them"
+        }
+      },
+      "options": {
+        "id": {
+          "type": "string",
+          "description": "The template's id, which each row's panel option names. Item label and description ids derive from it; only one clone is in the page at a time"
+        },
+        "mode": {
+          "type": "string",
+          "values": ["menu", "disclosure"],
+          "default": "menu",
+          "description": "Must match the mode of the menus that use the panel"
+        },
+        "attrs": {
+          "type": "array",
+          "description": "Attributes on the <template> element, such as a list's own hook (data-wl-menu-tpl)"
+        }
+      }
+    },
+    "ws_tabs": {
+      "function": "ws_tabs(array $items, array $options = []): string",
+      "description": "Tab navigation for switching content panels",
+      "params": {
+        "items": "Array of {id, label, icon?, count?, active?, disabled?, gated?}"
+      },
+      "options": {
+        "id": {
+          "type": "string"
+        },
+        "variant": {
+          "type": "string",
+          "values": [
+            "underline",
+            "pill",
+            "segmented"
+          ],
+          "default": "underline"
+        },
+        "size": {
+          "type": "string",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        },
+        "scrollable": {
+          "type": "bool",
+          "default": false
+        },
+        "param": {
+          "type": "string",
+          "default": "",
+          "description": "Query-string name for the open tab, e.g. tab: it overrides the active flags, rides through each panel's GET forms and follows tab switches in the URL"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_accordion": {
+      "function": "ws_accordion(array $items, array $options = []): string",
+      "description": "Expandable content sections",
+      "params": {
+        "items": "Array of {title, content, open?, icon?}"
+      },
+      "options": {
+        "id": {
+          "type": "string"
+        },
+        "multiple": {
+          "type": "bool",
+          "default": false,
+          "description": "Allow multiple panels open at once"
+        },
+        "variant": {
+          "type": "string",
+          "values": [
+            "default",
+            "bordered",
+            "flush"
+          ],
+          "default": "default"
+        },
+        "size": {
+          "type": "string",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_alert": {
+      "function": "ws_alert(string $message, array $options = []): string",
+      "description": "Contextual feedback message",
+      "options": {
+        "variant": {
+          "type": "string",
+          "values": [
+            "info",
+            "success",
+            "warning",
+            "error"
+          ],
+          "default": "info"
+        },
+        "title": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string",
+          "description": "Material icon name"
+        },
+        "dismissible": {
+          "type": "bool",
+          "default": false
+        },
+        "bordered": {
+          "type": "bool",
+          "default": false
+        },
+        "filled": {
+          "type": "bool",
+          "default": false
+        },
+        "actions": {
+          "type": "string",
+          "description": "Action button HTML"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_progress": {
+      "function": "ws_progress(int|float $value, array $options = []): string",
+      "description": "Progress bar with optional label",
+      "options": {
+        "variant": {
+          "type": "string",
+          "values": [
+            "primary",
+            "success",
+            "warning",
+            "error",
+            "info"
+          ],
+          "default": "primary"
+        },
+        "size": {
+          "type": "string",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        },
+        "label": {
+          "type": "string"
+        },
+        "showValue": {
+          "type": "bool",
+          "default": false
+        },
+        "striped": {
+          "type": "bool",
+          "default": false
+        },
+        "animated": {
+          "type": "bool",
+          "default": false
+        },
+        "indeterminate": {
+          "type": "bool",
+          "default": false
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_avatar": {
+      "function": "ws_avatar(string $name, array $options = []): string",
+      "description": "User avatar with initials fallback",
+      "options": {
+        "image": {
+          "type": "string",
+          "description": "Image URL"
+        },
+        "size": {
+          "type": "string",
+          "values": [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl"
+          ],
+          "default": "md"
+        },
+        "color": {
+          "type": "string",
+          "description": "Background color for initials"
+        },
+        "ring": {
+          "type": "bool",
+          "default": false
+        },
+        "status": {
+          "type": "string",
+          "values": [
+            "online",
+            "offline",
+            "busy"
+          ],
+          "description": "Status indicator dot"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_hero": {
+      "function": "ws_hero(string $title, string $accent = '', array $options = []): string",
+      "description": "Full-width hero section with badge, title, subtitle, buttons, stats, and optional image",
+      "options": {
+        "badge": {
+          "type": "string",
+          "description": "Badge text above title"
+        },
+        "badgeIcon": {
+          "type": "string",
+          "description": "Material icon in badge"
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "Description paragraph below title"
+        },
+        "buttons": {
+          "type": "array",
+          "description": "Array of button HTML strings (use ws_button())"
+        },
+        "stats": {
+          "type": "array",
+          "description": "Array of {value, label} items"
+        },
+        "statColor": {
+          "type": "string",
+          "default": "#E54D4D"
+        },
+        "image": {
+          "type": "string",
+          "description": "Image URL for hero visual"
+        },
+        "imageAlt": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_banner": {
+      "function": "ws_banner(string $message, array $options = []): string",
+      "description": "Full-width announcement/promotional banner",
+      "options": {
+        "variant": {
+          "type": "string",
+          "values": [
+            "default",
+            "brand",
+            "success",
+            "warning",
+            "dark",
+            "learn",
+            "plan",
+            "facilitate",
+            "reflect",
+            "dna"
+          ],
+          "default": "default"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "action": {
+          "type": "string",
+          "description": "Action link text"
+        },
+        "href": {
+          "type": "string"
+        },
+        "onclick": {
+          "type": "string",
+          "description": "JS onclick handler"
+        },
+        "dismissible": {
+          "type": "bool",
+          "default": false
+        },
+        "centered": {
+          "type": "bool",
+          "default": true
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_section_header": {
+      "function": "ws_section_header(string $title, array $options = []): string",
+      "description": "Centered section heading with optional subtitle, description, and label",
+      "options": {
+        "subtitle": {
+          "type": "string",
+          "description": "Secondary heading (italic, brand color)"
+        },
+        "description": {
+          "type": "string",
+          "description": "Paragraph below heading"
+        },
+        "tag": {
+          "type": "string",
+          "values": [
+            "h1",
+            "h2",
+            "h3"
+          ],
+          "default": "h2"
+        },
+        "align": {
+          "type": "string",
+          "values": [
+            "left",
+            "center"
+          ],
+          "default": "center"
+        },
+        "label": {
+          "type": "string",
+          "description": "Small label above heading"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_feature_card": {
+      "function": "ws_feature_card(string $title, string $description, array $options = []): string",
+      "description": "Icon + title + description card for feature/benefit lists",
+      "options": {
+        "icon": {
+          "type": "string",
+          "description": "Material icon name (rendered via icon() helper)"
+        },
+        "svg": {
+          "type": "string",
+          "description": "Raw SVG string (alternative to icon)"
+        },
+        "variant": {
+          "type": "string",
+          "values": [
+            "default",
+            "compact",
+            "coming-soon"
+          ],
+          "default": "default"
+        },
+        "href": {
+          "type": "string",
+          "description": "Makes card a link"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_level_up_grid": {
+      "function": "ws_level_up_grid(array $options = []): string",
+      "description": "Cross-promotional grid of all Workshopr apps grouped by facilitation phase (Learn, Plan, Facilitate, Reflect). Used on landing pages to drive users across the ecosystem. Phase colors applied automatically per card.",
+      "options": {
+        "current_app": {
+          "type": "string",
+          "description": "App key to exclude from the grid (e.g., 'intervention', 'planner', 'tips')"
+        },
+        "eyebrow": {
+          "type": "string",
+          "default": "More from Workshopr",
+          "description": "Small label above the section title"
+        },
+        "title": {
+          "type": "string",
+          "default": "Level Up Your Facilitation",
+          "description": "Section heading"
+        },
+        "apps": {
+          "type": "array",
+          "description": "Override the built-in app catalog"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      },
+      "app_catalog": {
+        "learn": [
+          "library",
+          "academy",
+          "podcasts"
+        ],
+        "plan": [
+          "planner",
+          "hybrid"
+        ],
+        "facilitate": [
+          "facilitator",
+          "sidekick",
+          "intervention",
+          "tips"
+        ],
+        "reflect": [
+          "dna",
+          "coach",
+          "roi"
+        ]
+      }
+    },
+    "ws_stat": {
+      "function": "ws_stat(string $value, string $label, array $options = []): string",
+      "description": "Single stat display with value and label",
+      "options": {
+        "color": {
+          "type": "string",
+          "description": "Value color (hex or CSS var)"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      },
+      "related": {
+        "ws_stats": "ws_stats(array $stats, array $options = []) — group of stats with dividers. Stats: [{value, label, color?}]"
+      }
+    },
+    "ws_stats": {
+      "function": "ws_stats(array $stats, array $options = []): string",
+      "description": "Group of ws_stat items with dividers.",
+      "params": {
+        "stats": "Array of {value, label, color?}"
+      }
+    },
+    "ws_empty_state": {
+      "function": "ws_empty_state(string $title, array $options = []): string",
+      "description": "Placeholder for empty content areas",
+      "options": {
+        "description": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string",
+          "default": "inbox"
+        },
+        "action": {
+          "type": "string",
+          "description": "Action button text"
+        },
+        "actionHref": {
+          "type": "string"
+        },
+        "actionVariant": {
+          "type": "string",
+          "default": "primary"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_breadcrumb": {
+      "function": "ws_breadcrumb(array $items, array $options = []): string",
+      "description": "Navigation breadcrumb trail",
+      "params": {
+        "items": "Array of {label, href?}. Last item should have no href."
+      },
+      "options": {
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "separator": {
+          "type": "string",
+          "default": "/"
+        }
+      }
+    },
+    "ws_checklist": {
+      "function": "ws_checklist(array $items, array $options = []): string",
+      "description": "List with check icons for feature lists and requirements",
+      "params": {
+        "items": "Array of checklist item strings"
+      },
+      "options": {
+        "icon": {
+          "type": "string",
+          "default": "check_circle"
+        },
+        "variant": {
+          "type": "string",
+          "values": [
+            "default",
+            "compact"
+          ],
+          "default": "default"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_task_checklist": {
+      "function": "ws_task_checklist(array $items, array $options = []): string",
+      "description": "Progress-tracked list of activation/setup tasks; each item links to where the task happens, with done state computed by the caller from real data",
+      "params": {
+        "items": "Array of items: label (required), done (bool), href (undone items render as links), description (hidden once done), phase (uppercase eyebrow), key (data-task attr for JS)"
+      },
+      "options": {
+        "title": {
+          "type": "string",
+          "default": "Getting started"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "progress": {
+          "type": "bool",
+          "default": true,
+          "description": "Show 'x of N done' count + progress bar"
+        },
+        "dismissible": {
+          "type": "bool",
+          "default": false,
+          "description": "Render dismiss button (data-checklist-dismiss); consumer JS handles it"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_skeleton": {
+      "function": "ws_skeleton(array $options = []): string",
+      "description": "Loading placeholder skeleton",
+      "options": {
+        "variant": {
+          "type": "string",
+          "values": [
+            "text",
+            "avatar",
+            "image",
+            "card",
+            "workshop",
+            "button",
+            "input"
+          ],
+          "default": "text"
+        },
+        "grid": {
+          "type": "bool",
+          "default": false,
+          "description": "Wrap workshop-variant cards in the component's own responsive grid (.ws-skeleton-grid); the id and attrs then go on the wrapper"
+        },
+        "width": {
+          "type": "string"
+        },
+        "height": {
+          "type": "string"
+        },
+        "lines": {
+          "type": "int",
+          "default": 1,
+          "description": "Number of text lines"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_toast_container": {
+      "function": "ws_toast_container(): string",
+      "description": "Toast notification container (call once in page footer). Toasts triggered via JS: wsToast('message', 'success')"
+    },
+    "ws_tooltip": {
+      "function": "ws_tooltip(string $text, array $options = []): string",
+      "description": "Tooltip attributes to add to an element",
+      "options": {
+        "position": {
+          "type": "string",
+          "values": [
+            "top",
+            "bottom",
+            "left",
+            "right"
+          ],
+          "default": "top"
+        },
+        "variant": {
+          "type": "string",
+          "values": [
+            "dark",
+            "light"
+          ],
+          "default": "dark"
+        },
+        "arrow": {
+          "type": "bool",
+          "default": true
+        }
+      }
+    },
+    "ws_form_row": {
+      "function": "ws_form_row(string $content, array $options = []): string",
+      "description": "Form field wrapper with label, helper text, and error state",
+      "options": {
+        "label": {
+          "type": "string"
+        },
+        "required": {
+          "type": "bool",
+          "default": false
+        },
+        "helper": {
+          "type": "string"
+        },
+        "error": {
+          "type": "string"
+        },
+        "inline": {
+          "type": "bool",
+          "default": false,
+          "description": "Horizontal label + field layout"
+        },
+        "columns": {
+          "type": "int",
+          "description": "Grid columns this row spans"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_form_row_start": {
+      "function": "ws_form_row_start(array $options = []): void",
+      "description": "Opens a form row around content that helpers print rather than return (a ws_stack_start of switches); ws_form_row_end prints the row. Same options and label binding as ws_form_row.",
+      "pairsWith": "ws_form_row_end",
+      "options": {"label": {"type": "string"}, "required": {"type": "bool", "default": false}, "optional": {"type": "bool", "default": false}, "helper": {"type": "string"}, "error": {"type": "string"}, "inline": {"type": "bool", "default": false}, "columns": {"type": "int"}, "id": {"type": "string"}, "class": {"type": "string"}}
+    },
+    "ws_form_row_end": {
+      "function": "ws_form_row_end(): void",
+      "description": "Closes the most recent ws_form_row_start and prints the row.",
+      "pairsWith": "ws_form_row_start"
+    },
+    "ws_prompt_select": {
+      "function": "ws_prompt_select(string $label, string $name, array $selectOptions, array $opts = []): string",
+      "description": "Inline prompt + select dropdown (e.g. 'I need help with [Goal...]')",
+      "options": {
+        "value": {
+          "type": "string"
+        },
+        "onchange": {
+          "type": "string"
+        },
+        "variant": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_chip_input": {
+      "function": "ws_chip_input(string $name, array $options = []): string",
+      "description": "Email/tag input with add/remove chip functionality",
+      "options": {
+        "label": {
+          "type": "string"
+        },
+        "placeholder": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "default": "email"
+        },
+        "addIcon": {
+          "type": "string"
+        },
+        "addText": {
+          "type": "string"
+        },
+        "removeIcon": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_radio_card_group": {
+      "function": "ws_radio_card_group(string $name, array $items, array $options = []): string",
+      "description": "Card-style radio selector grid",
+      "params": {
+        "items": "Array of {value, label, icon?, description?, checked?, disabled?}"
+      },
+      "options": {
+        "label": {
+          "type": "string"
+        },
+        "columns": {
+          "type": "int"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_checkbox_card_group": {
+      "function": "ws_checkbox_card_group(array $items, array $options = []): string",
+      "description": "Toggle switch list with icons",
+      "params": {
+        "items": "Array of {id, title, description?, icon?, iconColor?, checked?, highlight?, value?}"
+      },
+      "options": {
+        "label": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string",
+          "description": "Form field name every checkbox submits under, e.g. books[]; each submits its item's value (default its id). Omit it and the group submits nothing."
+        },
+        "control": {
+          "type": "string",
+          "values": ["toggle", "checkbox"],
+          "default": "toggle",
+          "description": "toggle: a switch at the row's end, for options that apply together. checkbox: a checkbox at the row's start and a tinted row once ticked, for picking items from a list."
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_listing_card": {
+      "function": "ws_listing_card(array $card): string",
+      "description": "Content listing card (exercise, workshop, etc.) from prepareCardData()"
+    },
+    "ws_choice_card": {
+      "function": "ws_choice_card(array $card): string",
+      "description": "One way into a task, offered beside the others: icon, title, one sentence of what you get, and a foot carrying the time cost and the action. Renders as a button by default, or a link when href is set. Use ws_choice_cards for the row.",
+      "options": {
+        "title": {
+          "type": "string",
+          "description": "Card heading"
+        },
+        "desc": {
+          "type": "string",
+          "description": "One sentence: what this path gives you"
+        },
+        "icon": {
+          "type": "string",
+          "description": "Material Symbols name for the tile"
+        },
+        "badge": {
+          "type": "string",
+          "description": "Optional chip, top right (\"Recommended\")"
+        },
+        "time": {
+          "type": "string",
+          "description": "Optional cost, bottom left (\"~30 seconds\")"
+        },
+        "cta": {
+          "type": "string",
+          "description": "Optional action text, bottom right (\"Generate\")"
+        },
+        "featured": {
+          "type": "bool",
+          "default": false,
+          "description": "Pink border + solid badge. At most one per row."
+        },
+        "href": {
+          "type": "string",
+          "description": "Render as a link to here instead of a button"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_choice_cards": {
+      "function": "ws_choice_cards(array $cards, array $options = []): string",
+      "description": "The row of ws_choice_card entries. Plan's home, the planner home and the builder's empty canvas all offer the same three paths through this.",
+      "options": {
+        "columns": {
+          "type": "int",
+          "values": [
+            1,
+            2,
+            3
+          ],
+          "default": 3
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_suggestion_card": {
+      "function": "ws_suggestion_card(array $options): string",
+      "description": "Activity recommendation card with add button",
+      "options": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_ai_mark": {
+      "function": "ws_ai_mark(array $options = []): string",
+      "description": "The one AI mark: Material Symbols auto_awesome through icon(), in brand red. Decorative (aria-hidden) unless given a label, when it becomes role=\"img\". Already inside ws_agent_proposal, ws_agent_status and the ws_badge ai variant. JS twin: WsAgent.aiMark() in /js/ws-agent.js.",
+      "options": {
+        "size": {
+          "type": "string",
+          "values": [
+            "sm",
+            "md"
+          ],
+          "default": "md"
+        },
+        "label": {
+          "type": "string",
+          "description": "Accessible name; without one the mark is aria-hidden"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_agent_status": {
+      "function": "ws_agent_status(array $options = []): string",
+      "description": "What the AI is doing right now. thinking: the AI mark, a sentence (\"Working on it\") and three dots, role=\"status\", still under reduced motion. stages: an ordered list in a polite live region, each stage done, failed, now or todo with an optional detail; a failed stage takes a recovery hint and one action (data-ws-stage-action; ws-agent.js dispatches ws:agent-retry). JS twin: WsAgent.status(), and WsAgent.setStage(root, key, patch) redraws one stage.",
+      "options": {
+        "mode": {
+          "type": "string",
+          "values": [
+            "thinking",
+            "stages"
+          ],
+          "description": "Defaults to stages when stages are passed, else thinking"
+        },
+        "label": {
+          "type": "string",
+          "description": "thinking: the sentence (default \"Working on it\"); stages: the list's title"
+        },
+        "detail": {
+          "type": "string",
+          "description": "thinking: a second, quieter sentence"
+        },
+        "stages": {
+          "type": "array",
+          "default": [],
+          "description": "Each: label, state (done|failed|now|todo), detail, key, recovery, action"
+        },
+        "id": {
+          "type": "string",
+          "description": "With a label in stages mode the list is named by {id}-title"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      },
+      "js": "WsAgent.status(options), WsAgent.setStage(root, key, {state, detail, recovery, action})"
+    },
+    "ws_agent_steps": {
+      "function": "ws_agent_steps(array $steps, array $options = []): string",
+      "description": "An AI run's visible history: a timeline of steps (done, fail, now, todo) with detail lines and an optional summary row (label and value). Each step starts with visually hidden words for its state.",
+      "params": {
+        "steps": {
+          "type": "array",
+          "description": "Each: label, state (done|fail|now|todo), detail, icon"
+        }
+      },
+      "options": {
+        "label": {
+          "type": "string",
+          "default": "What Workshopr did",
+          "description": "The list's accessible name"
+        },
+        "summary": {
+          "type": "array",
+          "default": null,
+          "description": "A row under the list: label and value"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_agent_check": {
+      "function": "ws_agent_check(array $checks, array $options = []): string",
+      "description": "The checks an AI result was held to: a bordered list, each check pass, warn or fail with its own glyph, visually hidden verdict words, a title and a detail line.",
+      "params": {
+        "checks": {
+          "type": "array",
+          "description": "Each: title, state (pass|warn|fail), detail"
+        }
+      },
+      "options": {
+        "label": {
+          "type": "string",
+          "default": "",
+          "description": "The list's accessible name, when no heading names it"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_agent_proposal": {
+      "function": "ws_agent_proposal(array $proposal): string",
+      "description": "A change the AI proposes: the AI mark and a kicker, a title, a before-and-after list (was, new, removed), the reason, then Apply, an optional Adjust and Not now. A <section> named by its title. With /js/ws-agent.js: Apply dispatches ws:proposal-apply (cancelable) and, unless prevented, hides the card and shows a toast whose Undo dispatches ws:proposal-undo and brings it back; Not now dispatches ws:proposal-dismiss (cancelable) and removes it; Adjust dispatches ws:proposal-adjust. Each event's detail is { id, proposal }. JS twin: WsAgent.proposal(), and WsAgent.applied(card) finishes an apply a listener prevented.",
+      "options": {
+        "id": {
+          "type": "string",
+          "default": "ws-agent-proposal",
+          "description": "Required: unique on the page; the title takes {id}-title"
+        },
+        "source": {
+          "type": "string",
+          "values": ["ai", "rules"],
+          "default": "ai",
+          "description": "Who proposed the change. ai draws the AI mark; rules (the agenda rules, not a model) draws none and sets data-ws-proposal-source"
+        },
+        "kicker": {
+          "type": "string",
+          "default": "Suggested change"
+        },
+        "title": {
+          "type": "string",
+          "default": "",
+          "description": "What the change achieves, in a sentence"
+        },
+        "changes": {
+          "type": "array",
+          "default": [],
+          "description": "Each: label, at, was, new, removed (bool)"
+        },
+        "why": {
+          "type": "string",
+          "default": "",
+          "description": "The reason, in the person's terms"
+        },
+        "apply": {
+          "type": "string",
+          "default": "Apply"
+        },
+        "adjust": {
+          "type": "string",
+          "default": "",
+          "description": "Adjust button text; none without it"
+        },
+        "dismiss": {
+          "type": "string",
+          "default": "Not now"
+        },
+        "toast": {
+          "type": "string",
+          "default": "Change applied."
+        },
+        "undo": {
+          "type": "bool",
+          "default": true,
+          "description": "Offer Undo in the toast"
+        },
+        "returnFocus": {
+          "type": "string",
+          "default": "",
+          "description": "Selector for where focus goes when the card leaves"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      },
+      "js": "WsAgent.proposal(proposal), WsAgent.applied(card); events ws:proposal-apply, ws:proposal-undo, ws:proposal-dismiss, ws:proposal-adjust"
+    },
+    "ws_source_chip": {
+      "function": "ws_source_chip(string $label, array $options = []): string",
+      "description": "Where a line in an AI result came from: a glyph for the kind of source, a short label, a link when there is one, and visible \"not linked\" words when the source can no longer be opened. JS twin: WsAgent.sourceChip().",
+      "options": {
+        "kind": {
+          "type": "string",
+          "values": [
+            "note",
+            "recording",
+            "photo",
+            "document",
+            "board",
+            "poll"
+          ],
+          "default": null
+        },
+        "href": {
+          "type": "string",
+          "default": "",
+          "description": "Where the source opens; renders a link"
+        },
+        "unlinked": {
+          "type": "bool",
+          "default": false
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_consent_row": {
+      "function": "ws_consent_row(array $options): string",
+      "description": "Confirm before Workshopr sends something out or acts on its own: what, where and when, a ws_toggle consent switch that is never on at render, the action disabled until it is, and a real alternative. With /js/ws-agent.js the switch enables the action, which dispatches ws:consent-confirm; the alternative dispatches ws:consent-alternative; each with detail { id, row }.",
+      "options": {
+        "id": {
+          "type": "string",
+          "default": "ws-consent",
+          "description": "Required: unique on the page"
+        },
+        "title": {
+          "type": "string",
+          "default": ""
+        },
+        "what": {
+          "type": "string",
+          "default": ""
+        },
+        "where": {
+          "type": "string",
+          "default": ""
+        },
+        "when": {
+          "type": "string",
+          "default": ""
+        },
+        "consent": {
+          "type": "string",
+          "default": "Yes, go ahead",
+          "description": "The switch's label"
+        },
+        "name": {
+          "type": "string",
+          "default": "",
+          "description": "The checkbox's form name (default {id}-consent)"
+        },
+        "action": {
+          "type": "string",
+          "default": "Send",
+          "description": "Text, or ws_button options with label"
+        },
+        "alternative": {
+          "type": "string",
+          "default": null,
+          "description": "Text, or ws_button options with label"
+        },
+        "hint": {
+          "type": "string",
+          "default": "Nothing leaves Workshopr until you switch this on."
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      },
+      "js": "events ws:consent-confirm, ws:consent-alternative"
+    },
+    "ws_activity_badge": {
+      "function": "ws_activity_badge(string $type, array $options = []): string",
+      "description": "Activity type badge (exercise/icebreaker/break/custom)",
+      "params": {
+        "type": "exercise | icebreaker | break | custom"
+      },
+      "options": {
+        "text": {
+          "type": "string"
+        },
+        "size": {
+          "type": "string",
+          "values": [
+            "sm",
+            "md"
+          ],
+          "default": "md"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_energy_arc_card": {
+      "function": "ws_energy_arc_card(array $options = []): string",
+      "description": "Session retrospective card for the Coach/Facilitator apps. Renders an eyebrow header (label + progress + status), a score with interpretive tinted-pill badge, a sparkline chart with time-axis labels, and a 2x2 grid of fixed-width bar-fill metrics. Light (canonical) and dark themes. Max width 340px.",
+      "options": {
+        "showHeader": {
+          "type": "bool",
+          "default": true,
+          "description": "Set false when hosting the card inside a section that provides its own title (e.g. ws_planner_inspector_rail)."
+        },
+        "eyebrow": {
+          "type": "string",
+          "default": "Energy Arc"
+        },
+        "timeUsed": {
+          "type": "string",
+          "description": "Muted top-middle text, e.g. '8 of 8h used'"
+        },
+        "status": {
+          "type": "array",
+          "shape": {
+            "text": "string",
+            "type": "success|warning|danger|info|neutral"
+          }
+        },
+        "score": {
+          "type": "int",
+          "range": "0..scoreMax"
+        },
+        "scoreMax": {
+          "type": "int",
+          "default": 100
+        },
+        "scoreBadge": {
+          "type": "array",
+          "shape": {
+            "text": "string",
+            "type": "success|warning|danger|info|neutral",
+            "variant": "pill|note (default: pill)"
+          }
+        },
+        "chartData": {
+          "type": "array",
+          "shape": "[{time: string, value: 0..100}]"
+        },
+        "timeLabels": {
+          "type": "array",
+          "description": "x-axis tick labels rendered evenly below the chart"
+        },
+        "metrics": {
+          "type": "array",
+          "shape": "[{label, value, fill 0..100, barColor?}]",
+          "max": 4
+        },
+        "theme": {
+          "type": "string",
+          "values": [
+            "light",
+            "dark"
+          ],
+          "default": "light"
+        },
+        "accent": {
+          "type": "string",
+          "description": "Override accent color"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_planner_activity_inspector": {
+      "function": "ws_planner_activity_inspector(array $options = []): string",
+      "description": "Right-column rail in the Workshop Planner — selected-activity mode. Sibling of ws_planner_inspector_rail; shares the visual shell but surfaces activity-specific sections (identity, overview, energy impact, logistics, facilitator notes, when-it-runs, and actions). Render this when the user has an agenda item selected; render ws_planner_inspector_rail otherwise.",
+      "options": {
+        "type": {
+          "type": "string",
+          "values": [
+            "exercise",
+            "icebreaker",
+            "break",
+            "custom"
+          ],
+          "default": "exercise",
+          "description": "Drives the left-border stripe, energy-bar fill, net-badge tint, bullet color, note rule, and button hover."
+        },
+        "duration": {
+          "type": "string",
+          "description": "Composed into the eyebrow, e.g. '60 min'"
+        },
+        "groupSize": {
+          "type": "string",
+          "description": "Composed into the eyebrow, e.g. '6–12 ppl'"
+        },
+        "title": {
+          "type": "string",
+          "description": "Activity title (required)"
+        },
+        "tags": {
+          "type": "array",
+          "description": "Small tag strings rendered under the title in mono uppercase"
+        },
+        "closable": {
+          "type": "bool",
+          "default": true,
+          "description": "Show the × close control"
+        },
+        "overview": {
+          "type": "string",
+          "description": "Description paragraph in the display/serif font. Doubles as the Overview tab body when instructions are provided."
+        },
+        "instructions": {
+          "type": "array|string|null",
+          "description": "Step-by-step facilitator instructions. Array of strings renders as a numbered list; string is rendered as HTML (caller owns markup). When present, the Overview section becomes a tabbed panel: Overview · Instructions."
+        },
+        "activeTab": {
+          "type": "string",
+          "values": [
+            "overview",
+            "instructions"
+          ],
+          "default": "overview",
+          "description": "Which tab renders active on first paint."
+        },
+        "energy": {
+          "type": "array|null",
+          "shape": {
+            "net": "string (e.g. '+16')",
+            "dimensions": "[{label, delta, fill 0..100}]"
+          }
+        },
+        "logistics": {
+          "type": "array",
+          "description": "String bullets rendered in a 2-col mono grid"
+        },
+        "notes": {
+          "type": "array|null",
+          "shape": {
+            "body": "string",
+            "author": "string",
+            "date": "string",
+            "canAdd": "bool"
+          }
+        },
+        "context": {
+          "type": "array|null",
+          "shape": {
+            "time": "string",
+            "description": "string"
+          }
+        },
+        "actions": {
+          "type": "array",
+          "description": "Primary action row: [{label, icon?, action, href?}]. Grid auto-divides into equal columns."
+        },
+        "destructive": {
+          "type": "array|null",
+          "description": "Single destructive action, rendered full-width below the primary row."
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_planner_inspector_rail": {
+      "function": "ws_planner_inspector_rail(array $options = []): string",
+      "description": "Right-column inspector sidebar inside the Workshop Planner — default mode. Three opinionated sections: Energy (wraps ws_energy_arc_card), Coach suggests (list of icon+eyebrow+line+meta items), and Facilitators (avatar stack + presence blurb). Each section is optional. The Energy section auto-sets showHeader=false on the wrapped card and defaults the score-badge variant to 'note'. Render ws_planner_activity_inspector instead when the user has an agenda item selected.",
+      "options": {
+        "energy": {
+          "type": "array|null",
+          "shape": {
+            "title": "string",
+            "meta": "string",
+            "card": "ws_energy_arc_card options"
+          }
+        },
+        "coach": {
+          "type": "array|null",
+          "shape": {
+            "title": "string",
+            "meta": "string",
+            "items": "[{icon, pre, line (HTML allowed for <em>), meta, action, href?}]"
+          }
+        },
+        "facilitators": {
+          "type": "array|null",
+          "shape": {
+            "title": "string",
+            "meta": "string",
+            "avatars": "[{initials, bg}]",
+            "presence": "{name, status}"
+          }
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_planner_library_rail": {
+      "function": "ws_planner_library_rail(array $options = []): string",
+      "description": "Left-column sidebar inside the Workshop Planner. Composes search, an optional top-level categories nav, one or more stacked sections (each optionally collapsible with an icon, and either a flat item list, an onboarding 'instructions' block, or a filter + category-buttons grid that drills into items via app-level JS), and an optional footer CTA. Every activity item is rendered via ws_planner_card (size=sm). Designed for v1 planner parity — see /planner/app2.php for the full adoption.",
+      "options": {
+        "search": {
+          "type": "array|null",
+          "shape": {
+            "placeholder": "string",
+            "kbd": "string",
+            "name": "string",
+            "value": "string"
+          }
+        },
+        "categories": {
+          "type": "array|null",
+          "shape": {
+            "title": "string",
+            "count": "string",
+            "items": "[{label,color,count?,active?,href?,id?}]"
+          }
+        },
+        "sections": {
+          "type": "array",
+          "shape": "[{title, meta?, icon?, kind? ('items'|'instructions'), collapsible?, defaultOpen?, filter? {name,options [{value,label,selected?}]}, categoryButtons? [{id,name,icon?,count?,type?}], items: [ws_planner_card options | {icon,body} for instructions], showMore?, id?}]"
+        },
+        "footer": {
+          "type": "array|null",
+          "shape": {
+            "label": "string",
+            "button": {
+              "text": "string",
+              "icon": "string",
+              "id": "string",
+              "action?": "string",
+              "href?": "string"
+            }
+          }
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_planner_card": {
+      "function": "ws_planner_card(string $title, array $options = []): string",
+      "description": "Agenda/timeline card used in the Workshop Planner (exercise/icebreaker/break/custom). Available in lg (timeline) and sm (palette) sizes with default/selected/disabled states. SM cards surface a swap icon on hover (and on focus-within / touch devices); disabled SM cards never reveal it. SM accepts an optional meta subtitle (e.g. '6-12 ppl') rendered under the title.",
+      "params": {
+        "title": "string — card title"
+      },
+      "options": {
+        "type": {
+          "type": "string",
+          "values": [
+            "exercise",
+            "icebreaker",
+            "break",
+            "custom"
+          ],
+          "default": "exercise"
+        },
+        "duration": {
+          "type": "string|int",
+          "description": "e.g. '60m' or integer minutes"
+        },
+        "size": {
+          "type": "string",
+          "values": [
+            "lg",
+            "sm"
+          ],
+          "default": "lg"
+        },
+        "state": {
+          "type": "string",
+          "values": [
+            "default",
+            "selected",
+            "disabled"
+          ],
+          "default": "default"
+        },
+        "draggable": {
+          "type": "bool",
+          "default": false,
+          "description": "Show drag handle (lg only)"
+        },
+        "actions": {
+          "type": "array",
+          "description": "Action keys: swap, delete, edit (lg only)"
+        },
+        "meta": {
+          "type": "string",
+          "description": "Secondary line (sm only), e.g. '6-12 ppl'"
+        },
+        "href": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_results_overlay": {
+      "function": "ws_results_overlay(array $options): string",
+      "description": "Operation outcome display panel",
+      "options": {
+        "id": {
+          "type": "string"
+        },
+        "variant": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "buttonText": {
+          "type": "string"
+        },
+        "buttonId": {
+          "type": "string"
+        },
+        "listId": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        }
+      }
+    },
+    "ws_audio_recorder": {
+      "function": "ws_audio_recorder(array $options = []): string",
+      "description": "Voice note capture via MediaRecorder API",
+      "options": {
+        "id": {
+          "type": "string"
+        },
+        "entity_type": {
+          "type": "string"
+        },
+        "entity_id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_audio_player": {
+      "function": "ws_audio_player(string $src, array $options = []): string",
+      "description": "Voice note playback component",
+      "options": {
+        "duration": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "note_id": {
+          "type": "string"
+        },
+        "deletable": {
+          "type": "bool",
+          "default": false
+        },
+        "id": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array"
+        }
+      }
+    },
+    "ws_sidenav": {
+      "function": "ws_sidenav(array $items, array $options = []): string",
+      "description": "The vertical nav down an app shell's left edge, built for the chromeless window: with no browser chrome and no horizontal platform nav, this is the only way between apps. Two variants: expanded (icon + label) and rail (icon only, the label kept in the DOM as the accessible name and shown back as a tooltip).",
+      "options": {
+        "items": {
+          "type": "array",
+          "description": "Nav entries: an item (label, icon, href, active, disabled, badge, expands, children), ['type' => 'divider'], or ['type' => 'heading', 'label' => …]"
+        },
+        "variant": {
+          "type": "string",
+          "default": "expanded",
+          "values": [
+            "expanded",
+            "rail"
+          ],
+          "description": "Icon plus label, or icon only with the label as tooltip"
+        },
+        "ariaLabel": {
+          "type": "string",
+          "description": "Landmark label for the nav"
+        },
+        "brand": {
+          "type": "array",
+          "description": "Brand block at the rail's head"
+        },
+        "collapsible": {
+          "type": "boolean",
+          "description": "Show the control that toggles expanded and rail"
+        },
+        "footer": {
+          "type": "string",
+          "description": "Raw HTML pinned to the foot of the rail"
+        },
+        "id": {
+          "type": "string",
+          "description": "Nav element ID"
+        },
+        "class": {
+          "type": "string",
+          "description": "Additional CSS classes"
+        },
+        "attrs": {
+          "type": "array",
+          "description": "Additional HTML attributes"
+        }
+      }
+    },
+    "ws_app_footer": {
+      "function": "ws_app_footer(array $options = []): string",
+      "description": "How an app page ends, in two weights. 'band' (default) is the 24px stone rail; 'full' is the app frame's beta bar — wordmark, beta pill, build version, Send feedback / Resources / Company — worn by the consolidated shell's document views. Shares the global footer's render-once guard, so a page gets one footer of one kind. App pages reach this automatically through ws_footer(), which calls with no arguments, so a page choosing the full variant on that route sets $GLOBALS['ws_app_footer_options'] instead (see app/index.php). Call it directly only to force an app footer on a page outside WS_APP_PATHS.",
+      "options": {
+        "variant": {
+          "type": "string",
+          "values": [
+            "band",
+            "full"
+          ],
+          "default": "band",
+          "description": "'band' is the 24px stone rail; 'full' is the app frame's beta bar"
+        },
+        "launcher": {
+          "type": "boolean",
+          "default": false,
+          "description": "Render Resources as the app-launcher trigger. Full variant only."
+        }
+      }
+    },
+    "ws_is_app_page": {
+      "function": "ws_is_app_page(): bool",
+      "description": "Is the current request inside one of the sub-applications (WS_APP_PATHS, mirroring the app inventory in PRODUCT.md section 5)? Decides which ending a page gets: the thin app rail or the full footer composite. Reads the request path rather than the script path, because under the built-in dev server the router owns SCRIPT_NAME and only REQUEST_URI shows the real file.",
+      "options": {}
+    },
+    "ws_synth_action_bar": {
+      "function": "ws_synth_action_bar(array $opts = []): string",
+      "description": "The stone rail that closes an empty Synthesize surface: a note pinned at the left saying what the room should have brought back, and the one action that starts the work at the right. The note rotates through a set of nudges rather than repeating one, pausing on hover and focus, stopping on a hidden tab, and holding still under prefers-reduced-motion.",
+      "options": {
+        "id": {
+          "type": "string",
+          "description": "Bar element ID"
+        },
+        "class": {
+          "type": "string",
+          "description": "Additional CSS classes on the bar"
+        },
+        "notes": {
+          "type": "array",
+          "description": "The rotating set, each ['title' =>, 'body' =>]. Defaults to the built-in nudges; a single note disables rotation."
+        },
+        "rotate": {
+          "type": "int",
+          "default": 12000,
+          "description": "Milliseconds between notes; 0 holds on the first"
+        },
+        "action": {
+          "type": "array",
+          "description": "The primary action ['label' =>, 'href' =>, 'id' =>, 'icon' =>, 'attrs' =>], rendered through ws_button()"
+        },
+        "noteHidden": {
+          "type": "boolean",
+          "default": false,
+          "description": "Render the bar with the action alone"
+        },
+        "attrs": {
+          "type": "array",
+          "description": "Additional HTML attributes on the bar"
+        }
+      }
+    },
+    "ws_app_bar": {
+      "function": "ws_app_bar(array $opts = []): string",
+      "description": "Document bar every app shell wears under ws_header. One anatomy across Planner, Facilitator and Synthesize: app label + document title, contextual controls, save state, actions. The component owns height, gradient, title typography and action geometry; apps pass only their own markup through the slots.",
+      "options": {
+        "id": {
+          "type": "string",
+          "description": "Bar element ID"
+        },
+        "class": {
+          "type": "string",
+          "description": "Additional CSS classes on the bar (app hooks)"
+        },
+        "ariaLabel": {
+          "type": "string",
+          "default": "App toolbar",
+          "description": "Landmark label"
+        },
+        "app": {
+          "type": "array",
+          "description": "App identity chip: label, badge, id, hidden"
+        },
+        "title": {
+          "type": "array",
+          "description": "Document title: mode (static|input|editable), text, id, inputId, editId, placeholder, maxlength, ariaLabel, hidden"
+        },
+        "center": {
+          "type": "string",
+          "description": "Raw HTML contextual controls; rendered only if non-empty"
+        },
+        "centerId": {
+          "type": "string"
+        },
+        "centerClass": {
+          "type": "string"
+        },
+        "centerHidden": {
+          "type": "boolean"
+        },
+        "saveState": {
+          "type": "array",
+          "description": "Save-state pill: id, text, state, hidden"
+        },
+        "actions": {
+          "type": "array",
+          "description": "Action buttons; each: icon, label, showLabel, id, href, variant (default|primary|danger), class, hidden, disabled, attrs[]"
+        },
+        "actionsId": {
+          "type": "string"
+        },
+        "actionsClass": {
+          "type": "string"
+        },
+        "actionsHidden": {
+          "type": "boolean"
+        },
+        "leadSlot": {
+          "type": "string",
+          "description": "Raw HTML appended to the lead cluster"
+        },
+        "trailLead": {
+          "type": "string",
+          "description": "Raw HTML at the trail's leading edge, before the actions (presence avatars, status pills)"
+        },
+        "trailSlot": {
+          "type": "string",
+          "description": "Raw HTML appended to the trail cluster (user menus etc.)"
+        },
+        "trailClass": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "array",
+          "description": "Additional HTML attributes on the bar"
+        }
+      },
+      "notes": "Height comes from --app-bar-height (60px). The center/leadSlot/trailSlot raw-HTML slots exist so an app can keep markup its JS already binds to; new work should use actions and title instead."
+    },
+    "ws_app_dock": {
+      "function": "ws_app_dock(array $opts = []): string",
+      "description": "The floating toolbar at the foot of a tool shell: a pill of icon-only slots with an optional labelled pill either side — what you have on the left, the ways to add to it in the middle, what happens next on the right. Material 3's floating toolbar in Workshopr's red (--phase-learn-dark pill, --text-inverse glyphs, --shadow-sm over --shadow-md). Positioned against the nearest positioned ancestor, centred and --space-4 up from its foot; clicks pass through the gaps between pills.",
+      "options": {
+        "id": {
+          "type": "string",
+          "description": "Dock element ID"
+        },
+        "class": {
+          "type": "string",
+          "description": "Additional CSS classes on the dock"
+        },
+        "ariaLabel": {
+          "type": "string",
+          "default": "App dock",
+          "description": "Landmark label — the dock renders as a <nav>"
+        },
+        "hidden": {
+          "type": "boolean",
+          "default": false,
+          "description": "Render hidden; the app reveals it when its screen wants it"
+        },
+        "lead": {
+          "type": "array",
+          "description": "Labelled pill before the items: label, icon, iconPosition (left|right), id, href, static, tone (default|success), hidden, disabled, attrs[]. static renders a <span> read-out rather than a control; tone success paints a read-out green (--color-success-dark) for a good state, never for an action"
+        },
+        "items": {
+          "type": "array",
+          "description": "Icon-only slots; each: icon, label (the accessible name and the tooltip), id, href, active (aria-pressed), hidden, disabled, attrs[], badge {id, text, hidden} — a count pinned to the slot's corner that the app shows and hides with inline display"
+        },
+        "trail": {
+          "type": "array",
+          "description": "Labelled pill after the items; same shape as lead"
+        },
+        "attrs": {
+          "type": "array",
+          "description": "Additional HTML attributes on the dock"
+        }
+      },
+      "notes": "Geometry: --app-dock-height (64px) pill, 48px slots, 40px state layer at 8%/12%/16%, 24px glyphs, 48px labelled pills. The shell that wears it sets position: relative on itself and pads its scroll region by --app-dock-clearance (96px) while the dock is showing. Slot tooltips open upward. Synthesize wears it on the material screen (app/views/synthesize/make.php); the four-slot shape is what the Strategize frames draw."
+    },
+    "ws_phase_toolbar": {
+      "function": "ws_phase_toolbar(string $phase, array $opts = []): string",
+      "description": "The dock a phase always wears. ws_app_dock() is the shape; this is the contents. The canon in includes/components/phase-toolbars.php fixes which slots Strategize, Plan, Facilitate and Synthesize each show, in which order, with which glyph and name, so the same phase carries the same toolbar on every screen of that phase. The component owns the shape, the app owns the wiring (ids, hrefs, data-attributes, badge counts), and the slot key is the contract between them. Prove has no canonical toolbar and renders nothing.",
+      "options": {
+        "$phase": {
+          "type": "string",
+          "description": "strategize|plan|facilitate|synthesize. An app's own path name resolves too: planner, facilitator, strategist, synth. Anything else renders the empty string rather than an empty pill"
+        },
+        "slots": {
+          "type": "array",
+          "description": "Per-key wiring merged over the canon's icon and label; the caller's keys win. false drops that slot. Keys the canon does not define are ignored. Each value takes everything ws_app_dock() takes on an item: id, href, active, disabled, hidden, attrs[], badge{}"
+        },
+        "extra": {
+          "type": "array",
+          "description": "Slots appended after the canon's, each exactly as ws_app_dock() takes an item. Never interleaved, so the canonical order stays recognisable"
+        },
+        "lead": {
+          "type": "array",
+          "description": "Merged over the phase's lead pill; false drops it. A pill the canon leaves wordless (Plan's duration, Synthesize's source count) is dropped rather than drawn blank when the caller supplies no label"
+        },
+        "trail": {
+          "type": "array",
+          "description": "Merged over the phase's trail pill; false drops it"
+        },
+        "id": {
+          "type": "string",
+          "description": "Dock element ID"
+        },
+        "class": {
+          "type": "string",
+          "description": "Additional CSS classes on the dock"
+        },
+        "ariaLabel": {
+          "type": "string",
+          "description": "Landmark label; defaults to the phase's own (Strategize steps, Agenda tools, Session controls, Add material)"
+        },
+        "hidden": {
+          "type": "boolean",
+          "default": false,
+          "description": "Render hidden; the app reveals it when its screen wants it"
+        },
+        "attrs": {
+          "type": "array",
+          "description": "Additional HTML attributes on the dock"
+        }
+      },
+      "notes": "Renders through ws_app_dock(), so every token, state and responsive rule is that component's. Order is the canon's, always: the caller's slots map is read by key, not by position. The four call sites are app/index.php (strategize), planner/planner.php (plan), app/views/facilitate/run.php and app/views/synthesize/make.php. Demo at components/demos/phase-toolbar.php; full specification at design-system/spec-phase-toolbar.md."
+    },
+    "ws_footer": {
+      "function": "ws_footer(array $options = []): string",
+      "description": "Global footer composite: 'Level Up Your Facilitation' phase grid + Letter CTA newsletter block + dark brand bar. The canonical bottom-of-page for all non-app-shell pages. Self-contained (emits its own styles, platform tokens, fonts, and the functional core toast/auth includes, each once per page) with a render-once guard so double inclusion yields one footer. Template: /includes/components/footer.php.",
+      "options": {
+        "hide_level_up": {
+          "type": "bool",
+          "default": false,
+          "description": "Drop the Level Up grid, heading included"
+        },
+        "hide_phases": {
+          "type": "array",
+          "default": [],
+          "description": "Phase names to hide within the Level Up grid, e.g. ['Learn']"
+        }
+      }
+    }
+  },
+  "rules": {
+    "_comment": "Mandatory constraints for all AI-assisted development on this project",
+    "componentFirst": {
+      "rule": "ALWAYS use ws_* components before writing raw HTML",
+      "detail": "Before creating any button, input, modal, card, badge, alert, or other UI element, check if a ws_* helper exists. If it does, use it. If it doesn't, suggest creating one.",
+      "severity": "mandatory",
+      "checkCommand": "grep 'function ws_' /includes/components/helpers.php"
+    },
+    "tokenFirst": {
+      "rule": "ALWAYS use platform tokens for all styling",
+      "detail": "Colors, spacing, typography, radii, shadows — use CSS variables from /design-system/platform-tokens.css. Never hardcode hex colors or pixel values when a token exists.",
+      "severity": "mandatory",
+      "source": "/design-system/platform-tokens.css",
+      "examples": {
+        "do": [
+          "var(--space-4)",
+          "var(--text-default)",
+          "var(--radius-lg)",
+          "var(--shadow-md)",
+          "var(--font-heading)"
+        ],
+        "dont": [
+          "16px",
+          "#1E1E26",
+          "8px",
+          "0 4px 6px rgba(0,0,0,0.07)",
+          "'Fraunces'"
+        ]
+      }
+    },
+    "phaseColors": {
+      "rule": "All apps use the unified mainsite red color family",
+      "detail": "Phase colors have been unified to Learn Red (#E54D4D) as part of the Red Unification Plan. Traditional phase names (Learn, Plan, Facilitate, Reflect) remain for semantic grouping, but all render in Red.",
+      "severity": "mandatory",
+      "mapping": {
+        "learn": {
+          "color": "#E54D4D",
+          "apps": [
+            "mainsite",
+            "tips",
+            "podcasts",
+            "training"
+          ],
+          "note": "Unified to red family."
+        },
+        "plan": {
+          "color": "#E54D4D",
+          "apps": [
+            "planner"
+          ],
+          "note": "Unified to red family."
+        },
+        "facilitate": {
+          "color": "#E54D4D",
+          "apps": [
+            "intervention",
+            "facilitator"
+          ],
+          "note": "Unified to red family."
+        },
+        "reflect": {
+          "color": "#E54D4D",
+          "apps": [
+            "coach"
+          ],
+          "note": "Unified to red family. DNA is standalone/unphased."
+        }
+      }
+    },
+    "appScopedOverrides": {
+      "rule": "App-specific component overrides MUST use the app's body class scope",
+      "detail": "Planner uses body class 'planner-page' with CSS scope '.planner-page'. This ensures ws_* components adapt to the app's phase color without affecting other apps.",
+      "severity": "mandatory",
+      "apps": {
+        "planner": {
+          "bodyClass": "planner-page",
+          "cssScope": ".planner-page",
+          "bridgeFile": "/css/planner/components/_component-bridge.css",
+          "overrides": [
+            ".planner-page .ws-btn--primary uses planner gradient",
+            ".planner-page .ws-btn--primary icons must be white",
+            ".planner-page .ws-btn--secondary uses planner-primary red (recolored June 2026)",
+            ".planner-page .ws-input:focus uses planner-primary border"
+          ]
+        }
+      }
+    },
+    "deprecatedCssClasses": {
+      "rule": "Legacy button classes are deprecated in favor of ws_button() / .ws-btn",
+      "detail": "css/styles.css still defines pre-design-system button classes (.btn-primary, .btn-secondary, .btn-tertiary, .btn-outline, .btn-sm, .btn-lg, .btn-block). New UI must use ws_button(). The modern base class is .ws-btn (NOT .ws-button), with modifiers like .ws-btn--primary / .ws-btn--secondary.",
+      "severity": "recommended",
+      "deprecated": [
+        ".btn-primary",
+        ".btn-secondary",
+        ".btn-tertiary",
+        ".btn-outline",
+        ".btn-sm",
+        ".btn-lg",
+        ".btn-block"
+      ]
+    },
+    "componentExemptions": {
+      "rule": "Some app subsystems intentionally use bespoke CSS instead of ws_* components — do not flag their raw HTML as violations",
+      "detail": "Planner briefing (.briefing-* in css/planner/briefing.css, used by planner/briefing.php) and planner analytics (.analytics-* in planner/analytics.php) are app-specific UI without ws_* wrappers by design. Coach ships a bespoke component library (see coach/CLAUDE.md) and does not use ws_*; its .btn-primary/.btn-secondary are coach-local, not the deprecated globals above.",
+      "severity": "informational",
+      "exemptScopes": [
+        ".briefing-",
+        ".analytics-",
+        "coach/"
+      ]
+    },
+    "iconLibrary": {
+      "rule": "Use Material Symbols Outlined for ALL icons",
+      "detail": "Never use Font Awesome, Heroicons, SVG icon sets, or emoji as icons. All icons come from Google Material Symbols Outlined with the standard optical size 24, weight 400, FILL 0, GRAD 0.",
+      "severity": "mandatory",
+      "cdn": "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0",
+      "helper": "icon(string $name) from /includes/icon.php renders the <span> tag"
+    },
+    "typography": {
+      "rule": "Headings use Fraunces, body uses Inter (or Source Sans 3 for older pages)",
+      "detail": "All heading elements (h1-h3, card titles, hero text) use var(--font-heading) = Fraunces. Body text, labels, buttons use var(--font-body) = Inter. Never use system fonts directly.",
+      "severity": "mandatory"
+    },
+    "noFrameworks": {
+      "rule": "Vanilla JS and CSS only — no React, Vue, Tailwind, or CSS frameworks",
+      "detail": "The frontend is intentionally framework-free. Do not introduce npm-based UI frameworks, CSS utility frameworks, or JS component libraries unless explicitly requested.",
+      "severity": "mandatory"
+    },
+    "newComponentProcess": {
+      "rule": "New UI patterns go in the design system, not inline",
+      "detail": "If you need UI that doesn't exist as a ws_* component: 1) Create the PHP function in /includes/components/helpers.php, 2) Create the template in /includes/components/, 3) Add CSS to /includes/components/components.css, 4) Add a demo page in /design-system/components/, 5) Then use it in the app.",
+      "severity": "mandatory"
+    },
+    "databaseAccess": {
+      "rule": "All database queries MUST use PDO prepared statements",
+      "detail": "Never concatenate user input into SQL strings. Always use parameterized queries with $pdo->prepare() and $stmt->execute().",
+      "severity": "mandatory"
+    },
+    "cssArchitecture": {
+      "rule": "Follow the established CSS architecture for each app",
+      "globalFiles": {
+        "tokens": "/design-system/platform-tokens.css",
+        "components": "/includes/components/components.css",
+        "listingRedesign": "/css/listing-redesign.css",
+        "detailFieldguide": "/css/detail-fieldguide.css"
+      },
+      "appFiles": {
+        "planner": {
+          "variables": "/css/planner/base/_variables.css",
+          "main": "/css/planner/planner-new.css",
+          "bridge": "/css/planner/components/_component-bridge.css"
+        },
+        "facilitator": {
+          "main": "/css/facilitator/facilitator.css",
+          "participant": "/css/facilitator/participant.css",
+          "summary": "/css/facilitator/summary.css"
+        },
+        "library": {
+          "landing": "/css/library/library-landing.css",
+          "collections": "/css/library/library-collections.css",
+          "goals": "/css/library/library-goals.css",
+          "shared": "/css/listing-redesign.css",
+          "detail": "/css/detail-fieldguide.css"
+        }
+      }
+    },
+    "globalHeader": {
+      "rule": "Use the unified header, ws_header(), on every page",
+      "detail": "Call ws_header($section) from /includes/components/header.php with the page's section key; /design-system/components/demos/nav.php demonstrates it. The old global-header include is retired.",
+      "file": "/includes/components/header.php"
+    },
+    "writingStyle": {
+      "rule": "All user-facing content must follow the Workshopr writing style guide",
+      "file": "/content/workshopr_writing_style_guide.md",
+      "severity": "mandatory"
+    },
+    "designSystemUpdates": {
+      "rule": "When CSS changes are made, update the design system documentation",
+      "detail": "Update relevant files in /design-system/ and add a note to the change-log.",
+      "severity": "recommended"
+    }
+  },
+  "externalComponents": {
+    "_comment": "Component families that render app screens but live OUTSIDE includes/components/, so none of check-drift's gates apply to them: not token-verified, not card-geometry-checked, and free to drift from the components they sit beside. check-drift's own note says the fix is to move them in and document them, or give them a local gate. Inventoried from the /app/ home and plan-builder captures, 17 Sep 2026. Documented at design-system/app-screen-components.php. NOT in `components` on purpose: check 1b requires every key there to map to a helpers.php function.",
+    "workshopList": {
+      "where": "app/includes/workshop-list.php",
+      "css": "app/css/workshop-list.css",
+      "functions": [
+        "ws_wl_agenda_empty",
+        "ws_wl_at_stage",
+        "ws_wl_cta_for_stage",
+        "ws_wl_duration",
+        "ws_wl_href",
+        "ws_wl_journey",
+        "ws_wl_menu",
+        "ws_wl_menu_pop_id",
+        "ws_wl_menu_template",
+        "ws_wl_meta",
+        "ws_wl_phase_title",
+        "ws_wl_select_box",
+        "ws_wl_stage_href",
+        "ws_wl_stage_pill",
+        "ws_wl_stage_routes",
+        "ws_wl_stage_scope",
+        "ws_wl_view_grid",
+        "ws_wl_view_kanban",
+        "ws_wl_view_list",
+        "ws_wl_view_timeline",
+        "ws_workshop_list",
+        "ws_workshop_list_fetch",
+        "ws_workshop_list_normalize",
+        "ws_workshop_list_stages"
+      ],
+      "classes": [
+        "wl-card",
+        "wl-card__top",
+        "wl-card__meta",
+        "wl-stage",
+        "wl-chip",
+        "wl-view",
+        "wl-grid",
+        "wl-page",
+        "wl-select__box",
+        "wl__controls",
+        "wl__filters",
+        "wl__views",
+        "wl__pages",
+        "wl-kanban"
+      ],
+      "usedOn": [
+        "/app/ (home, 12 wl-card instances)",
+        "/app/?view=plan&step=home",
+        "/app/?view=plan&step=saved",
+        "planner/saved.php"
+      ],
+      "_note": "The single biggest gap. 24 functions and 32KB of CSS rendering the most-repeated card on the platform. check-drift already WARNs about it."
+    },
+    "dashboardAndRail": {
+      "where": "app/views/home.php, app/includes/dashboard.php, app/includes/rail.php",
+      "css": "app/css/app-shell.css, app/css/dashboard.css",
+      "classes": [
+        "app-hero",
+        "app-hero__eyebrow",
+        "dash__meta",
+        "dash__hero",
+        "dash__hero-body",
+        "dash__hero-actions",
+        "app-page",
+        "app-page__main",
+        "app-page--rail-left",
+        "app-rail",
+        "app-rail__lead",
+        "app-rail__academy",
+        "app-rail__academy-art",
+        "app-rail__journey--compact",
+        "st-crumbs--shell",
+        "st-page--home",
+        "st-queue",
+        "app-see-all",
+        "app-rail__quick",
+        "app-rail__tips-tile",
+        "app-rail__tips-text",
+        "app-rail__tips-foot",
+        "app-rail__film-tile",
+        "app-rail__film-text"
+      ],
+      "usedOn": [
+        "/app/ (home)"
+      ],
+      "_note": "The up-next band and the rail's tips/film cards are hand-built around ws_card rather than being components of their own."
+    },
+    "planner": {
+      "where": "planner/ (raw CSS; NO ws_* helper functions at all)",
+      "css": "css/planner/planner-new.css and its @imports",
+      "classes": [
+        "agenda-item",
+        "item-content-wrapper",
+        "item-details",
+        "item-title-row",
+        "item-duration-badge",
+        "item-description",
+        "item-icon",
+        "agenda-container",
+        "agenda-items",
+        "agenda-day-container",
+        "agenda-progress-header",
+        "activity-sidebar",
+        "sidebar-section",
+        "section-header",
+        "section-content",
+        "section-filter",
+        "filter-select",
+        "category-btn",
+        "category-btn-count",
+        "create-custom-btn",
+        "topbar-dropdown",
+        "topbar-date-input",
+        "topbar-time-input",
+        "topbar-control-group",
+        "energy-arc",
+        "energy-arc__bar",
+        "energy-arc__fill",
+        "energy-arc__status",
+        "energy-arc__score"
+      ],
+      "usedOn": [
+        "/app/?view=plan&step=build (iframed planner)"
+      ],
+      "_note": "Largest surface and the least componentised: zero helper functions, so every one of these is raw markup. ws_energy_arc_card IS a registered component, but the builder's progress header uses the separate energy-arc classes, not that component."
+    }
+  }
+}

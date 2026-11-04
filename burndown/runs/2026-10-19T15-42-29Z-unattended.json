@@ -1,0 +1,31 @@
+{
+  "mode": "unattended",
+  "before": 3429,
+  "after": 3426,
+  "stage": [
+    "sidekick/platforms.php",
+    "design-system/page-baseline.json"
+  ],
+  "reverted": [],
+  "skipped": [],
+  "passed": [
+    "sidekick/platforms.php"
+  ],
+  "extras": [],
+  "by_rule_after": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 1922,
+    "raw-component": 1359,
+    "uncachebusted-asset": 72
+  },
+  "batch_before": 11,
+  "batch_after": 8,
+  "by_rule_before": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 1923,
+    "raw-component": 1359,
+    "uncachebusted-asset": 74
+  },
+  "agent_cost_usd": 0.3227366,
+  "at": "2026-10-19T15:42:29.337Z"
+}

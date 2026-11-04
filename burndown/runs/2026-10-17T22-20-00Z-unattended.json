@@ -1,0 +1,35 @@
+{
+  "mode": "unattended",
+  "before": 3482,
+  "after": 3452,
+  "stage": [
+    "dna/profile.php",
+    "intervention/card.php",
+    "intervention/index.php",
+    "design-system/page-baseline.json"
+  ],
+  "reverted": [],
+  "skipped": [],
+  "passed": [
+    "dna/profile.php",
+    "intervention/card.php",
+    "intervention/index.php"
+  ],
+  "extras": [],
+  "by_rule_after": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 1944,
+    "raw-component": 1359,
+    "uncachebusted-asset": 76
+  },
+  "batch_before": 66,
+  "batch_after": 36,
+  "by_rule_before": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 1974,
+    "raw-component": 1359,
+    "uncachebusted-asset": 76
+  },
+  "agent_cost_usd": 0.6169033000000002,
+  "at": "2026-10-17T22:20:00.979Z"
+}

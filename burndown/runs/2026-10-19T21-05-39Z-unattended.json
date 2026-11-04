@@ -1,0 +1,33 @@
+{
+  "mode": "unattended",
+  "before": 3426,
+  "after": 3410,
+  "stage": [
+    "pocket/index.php",
+    "toolkits/post-workshop/index.php",
+    "design-system/page-baseline.json"
+  ],
+  "reverted": [],
+  "skipped": [],
+  "passed": [
+    "pocket/index.php",
+    "toolkits/post-workshop/index.php"
+  ],
+  "extras": [],
+  "by_rule_after": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 1906,
+    "raw-component": 1359,
+    "uncachebusted-asset": 72
+  },
+  "batch_before": 34,
+  "batch_after": 18,
+  "by_rule_before": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 1922,
+    "raw-component": 1359,
+    "uncachebusted-asset": 72
+  },
+  "agent_cost_usd": 0.37930150000000007,
+  "at": "2026-10-19T21:05:39.910Z"
+}

@@ -1,0 +1,37 @@
+{
+  "mode": "unattended",
+  "before": 3510,
+  "after": 3482,
+  "stage": [
+    "content/articles/content/icewbreaker wheel/slides.php",
+    "dna/about.php",
+    "dna/index.php",
+    "tips/custom/_chrome.php",
+    "design-system/page-baseline.json"
+  ],
+  "reverted": [],
+  "skipped": [],
+  "passed": [
+    "content/articles/content/icewbreaker wheel/slides.php",
+    "dna/about.php",
+    "dna/index.php",
+    "tips/custom/_chrome.php"
+  ],
+  "extras": [],
+  "by_rule_after": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 1974,
+    "raw-component": 1359,
+    "uncachebusted-asset": 76
+  },
+  "batch_before": 108,
+  "batch_after": 80,
+  "by_rule_before": {
+    "doctype-outside-layout": 73,
+    "hardcoded-hex": 2000,
+    "raw-component": 1359,
+    "uncachebusted-asset": 78
+  },
+  "agent_cost_usd": 0.37347339999999996,
+  "at": "2026-10-17T18:32:30.863Z"
+}

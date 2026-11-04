@@ -1,0 +1,2666 @@
+{
+    "$description": "Workshopr design tokens in W3C DTCG format. GENERATED from design-system/platform-tokens.css by generate-tokens-dtcg.php — do not edit by hand.",
+    "brand": {
+        "brand": {
+            "$value": "#E54D4D",
+            "$type": "color",
+            "$description": "buttons, the mark, fills that carry white text",
+            "$extensions": {
+                "com.workshopr.cssVar": "--brand"
+            }
+        },
+        "ink": {
+            "$value": "#C73E3E",
+            "$type": "color",
+            "$description": "red text on white (5.02:1), headings, emphasis",
+            "$extensions": {
+                "com.workshopr.cssVar": "--brand-ink"
+            }
+        },
+        "line": {
+            "$value": "#FECACA",
+            "$type": "color",
+            "$description": "borders and rules on a soft red fill",
+            "$extensions": {
+                "com.workshopr.cssVar": "--brand-line"
+            }
+        },
+        "soft": {
+            "$value": "#FEE2E2",
+            "$type": "color",
+            "$description": "chips, soft fills, the underline band",
+            "$extensions": {
+                "com.workshopr.cssVar": "--brand-soft"
+            }
+        },
+        "tint": {
+            "$value": "#FEF2F2",
+            "$type": "color",
+            "$description": "the lightest wash: page bands, hover backgrounds",
+            "$extensions": {
+                "com.workshopr.cssVar": "--brand-tint"
+            }
+        }
+    },
+    "phase": {
+        "color": {
+            "$value": "{brand.brand}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-color"
+            }
+        },
+        "learn": {
+            "$value": "{brand.brand}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-learn"
+            }
+        },
+        "learn-dark": {
+            "$value": "{brand.ink}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-learn-dark"
+            }
+        },
+        "learn-light": {
+            "$value": "{brand.soft}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-learn-light"
+            }
+        },
+        "learn-very-light": {
+            "$value": "{brand.tint}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-learn-very-light"
+            }
+        },
+        "plan": {
+            "$value": "{brand.brand}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-plan"
+            }
+        },
+        "plan-dark": {
+            "$value": "{brand.ink}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-plan-dark"
+            }
+        },
+        "plan-light": {
+            "$value": "{brand.line}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-plan-light"
+            }
+        },
+        "plan-very-light": {
+            "$value": "{brand.soft}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-plan-very-light"
+            }
+        },
+        "facilitate": {
+            "$value": "{brand.brand}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-facilitate"
+            }
+        },
+        "facilitate-dark": {
+            "$value": "{brand.ink}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-facilitate-dark"
+            }
+        },
+        "facilitate-light": {
+            "$value": "{brand.line}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-facilitate-light"
+            }
+        },
+        "facilitate-very-light": {
+            "$value": "{brand.soft}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-facilitate-very-light"
+            }
+        },
+        "reflect": {
+            "$value": "{brand.brand}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-reflect"
+            }
+        },
+        "reflect-dark": {
+            "$value": "{brand.ink}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-reflect-dark"
+            }
+        },
+        "reflect-light": {
+            "$value": "{brand.line}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-reflect-light"
+            }
+        },
+        "reflect-very-light": {
+            "$value": "{brand.soft}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--phase-reflect-very-light"
+            }
+        }
+    },
+    "mainsite": {
+        "primary": {
+            "$value": "{brand.brand}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--mainsite-primary"
+            }
+        },
+        "dark": {
+            "$value": "{brand.ink}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--mainsite-dark"
+            }
+        },
+        "light": {
+            "$value": "{brand.soft}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--mainsite-light"
+            }
+        },
+        "very-light": {
+            "$value": "{brand.tint}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--mainsite-very-light"
+            }
+        },
+        "gradient": {
+            "$value": "linear-gradient(135deg, #D13A3A 0%, #C73E3E 100%)",
+            "$type": "gradient",
+            "$extensions": {
+                "com.workshopr.cssVar": "--mainsite-gradient"
+            }
+        },
+        "shadow": {
+            "$value": "0 4px 14px rgba(229, 77, 77, 0.25)",
+            "$type": "shadow",
+            "$extensions": {
+                "com.workshopr.cssVar": "--mainsite-shadow"
+            }
+        }
+    },
+    "tips": {
+        "primary": {
+            "$value": "{brand.brand}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--tips-primary"
+            }
+        },
+        "dark": {
+            "$value": "{brand.ink}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--tips-dark"
+            }
+        },
+        "light": {
+            "$value": "{brand.line}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--tips-light"
+            }
+        },
+        "very-light": {
+            "$value": "{brand.soft}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--tips-very-light"
+            }
+        },
+        "cat-1": {
+            "$value": "#7F1D1D",
+            "$type": "color",
+            "$description": "Fundamentals",
+            "$extensions": {
+                "com.workshopr.cssVar": "--tips-cat-1"
+            }
+        },
+        "cat-2": {
+            "$value": "#991B1B",
+            "$type": "color",
+            "$description": "Engagement",
+            "$extensions": {
+                "com.workshopr.cssVar": "--tips-cat-2"
+            }
+        },
+        "cat-3": {
+            "$value": "#C73E3E",
+            "$type": "color",
+            "$description": "Facilitation",
+            "$extensions": {
+                "com.workshopr.cssVar": "--tips-cat-3"
+            }
+        },
+        "cat-4": {
+            "$value": "#E54D4D",
+            "$type": "color",
+            "$description": "Difficult Moments",
+            "$extensions": {
+                "com.workshopr.cssVar": "--tips-cat-4"
+            }
+        },
+        "cat-5": {
+            "$value": "#F87171",
+            "$type": "color",
+            "$description": "Activities",
+            "$extensions": {
+                "com.workshopr.cssVar": "--tips-cat-5"
+            }
+        }
+    },
+    "podcasts": {
+        "primary": {
+            "$value": "{brand.brand}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--podcasts-primary"
+            }
+        },
+        "dark": {
+            "$value": "{brand.ink}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--podcasts-dark"
+            }
+        },
+        "light": {
+            "$value": "{brand.line}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--podcasts-light"
+            }
+        },
+        "very-light": {
+            "$value": "{brand.soft}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--podcasts-very-light"
+            }
+        }
+    },
+    "planner": {
+        "primary": {
+            "$value": "{brand.brand}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--planner-primary"
+            }
+        },
+        "dark": {
+            "$value": "{brand.ink}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--planner-dark"
+            }
+        },
+        "light": {
+            "$value": "{brand.soft}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--planner-light"
+            }
+        },
+        "very-light": {
+            "$value": "{brand.tint}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--planner-very-light"
+            }
+        },
+        "accent": {
+            "$value": "{brand.tint}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--planner-accent"
+            }
+        },
+        "gradient": {
+            "$value": "{mainsite.gradient}",
+            "$type": "gradient",
+            "$extensions": {
+                "com.workshopr.cssVar": "--planner-gradient"
+            }
+        },
+        "shadow": {
+            "$value": "0 4px 14px rgba(229, 77, 77, 0.25)",
+            "$type": "shadow",
+            "$extensions": {
+                "com.workshopr.cssVar": "--planner-shadow"
+            }
+        },
+        "blue": {
+            "$value": "{brand.brand}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--planner-blue"
+            }
+        },
+        "accent-dark": {
+            "$value": "#0369A1",
+            "$type": "color",
+            "$description": "sky-700 — planner button hover",
+            "$extensions": {
+                "com.workshopr.cssVar": "--planner-accent-dark"
+            }
+        }
+    },
+    "coach": {
+        "primary": {
+            "$value": "{brand.brand}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--coach-primary"
+            }
+        },
+        "dark": {
+            "$value": "{brand.ink}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--coach-dark"
+            }
+        },
+        "light": {
+            "$value": "{brand.line}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--coach-light"
+            }
+        },
+        "very-light": {
+            "$value": "{brand.soft}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--coach-very-light"
+            }
+        },
+        "shadow": {
+            "$value": "0 4px 14px rgba(229, 77, 77, 0.25)",
+            "$type": "shadow",
+            "$extensions": {
+                "com.workshopr.cssVar": "--coach-shadow"
+            }
+        },
+        "mode-prep": {
+            "$value": "#F87171",
+            "$type": "color",
+            "$description": "Prep - lightest, planning",
+            "$extensions": {
+                "com.workshopr.cssVar": "--coach-mode-prep"
+            }
+        },
+        "mode-facilitate": {
+            "$value": "#EF4444",
+            "$type": "color",
+            "$description": "Facilitate - active",
+            "$extensions": {
+                "com.workshopr.cssVar": "--coach-mode-facilitate"
+            }
+        },
+        "mode-synthesize": {
+            "$value": "#DC2626",
+            "$type": "color",
+            "$description": "Synthesize - processing",
+            "$extensions": {
+                "com.workshopr.cssVar": "--coach-mode-synthesize"
+            }
+        },
+        "mode-debrief": {
+            "$value": "#B91C1C",
+            "$type": "color",
+            "$description": "Debrief - deepest reflection",
+            "$extensions": {
+                "com.workshopr.cssVar": "--coach-mode-debrief"
+            }
+        },
+        "bg": {
+            "$value": "#FFFBF8",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--coach-bg"
+            }
+        },
+        "surface": {
+            "$value": "#FFFFFF",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--coach-surface"
+            }
+        },
+        "border": {
+            "$value": "#E8ECF1",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--coach-border"
+            }
+        }
+    },
+    "intervention": {
+        "primary": {
+            "$value": "{brand.brand}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--intervention-primary"
+            }
+        },
+        "dark": {
+            "$value": "{brand.ink}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--intervention-dark"
+            }
+        },
+        "light": {
+            "$value": "{brand.soft}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--intervention-light"
+            }
+        },
+        "very-light": {
+            "$value": "{brand.tint}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--intervention-very-light"
+            }
+        },
+        "cat-1": {
+            "$value": "#7F1D1D",
+            "$type": "color",
+            "$description": "Energy & Engagement - darkest/urgent",
+            "$extensions": {
+                "com.workshopr.cssVar": "--intervention-cat-1"
+            }
+        },
+        "cat-2": {
+            "$value": "#991B1B",
+            "$type": "color",
+            "$description": "Conflict & Tension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--intervention-cat-2"
+            }
+        },
+        "cat-3": {
+            "$value": "#B91C1C",
+            "$type": "color",
+            "$description": "Participation",
+            "$extensions": {
+                "com.workshopr.cssVar": "--intervention-cat-3"
+            }
+        },
+        "cat-4": {
+            "$value": "#C73E3E",
+            "$type": "color",
+            "$description": "Time & Pacing",
+            "$extensions": {
+                "com.workshopr.cssVar": "--intervention-cat-4"
+            }
+        },
+        "cat-5": {
+            "$value": "#E54D4D",
+            "$type": "color",
+            "$description": "Focus & Clarity",
+            "$extensions": {
+                "com.workshopr.cssVar": "--intervention-cat-5"
+            }
+        },
+        "cat-6": {
+            "$value": "#F87171",
+            "$type": "color",
+            "$description": "Connection & Trust - lightest/soft",
+            "$extensions": {
+                "com.workshopr.cssVar": "--intervention-cat-6"
+            }
+        }
+    },
+    "facilitator": {
+        "primary": {
+            "$value": "{phase.facilitate}",
+            "$description": "#E54D4D",
+            "$extensions": {
+                "com.workshopr.cssVar": "--facilitator-primary"
+            }
+        },
+        "dark": {
+            "$value": "{phase.facilitate-dark}",
+            "$description": "#C73E3E",
+            "$extensions": {
+                "com.workshopr.cssVar": "--facilitator-dark"
+            }
+        },
+        "light": {
+            "$value": "{phase.facilitate-light}",
+            "$description": "#FECACA",
+            "$extensions": {
+                "com.workshopr.cssVar": "--facilitator-light"
+            }
+        },
+        "very-light": {
+            "$value": "{phase.facilitate-very-light}",
+            "$description": "#FEE2E2",
+            "$extensions": {
+                "com.workshopr.cssVar": "--facilitator-very-light"
+            }
+        },
+        "gradient": {
+            "$value": "linear-gradient(160deg, #1A0404 0%, #3B0A0A 40%, #7F1D1D 100%)",
+            "$type": "gradient",
+            "$extensions": {
+                "com.workshopr.cssVar": "--facilitator-gradient"
+            }
+        },
+        "shadow": {
+            "$value": "0 4px 14px rgba(229, 77, 77, 0.25)",
+            "$type": "shadow",
+            "$extensions": {
+                "com.workshopr.cssVar": "--facilitator-shadow"
+            }
+        }
+    },
+    "dna": {
+        "primary": {
+            "$value": "{brand.brand}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--dna-primary"
+            }
+        },
+        "dark": {
+            "$value": "{brand.ink}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--dna-dark"
+            }
+        },
+        "light": {
+            "$value": "#FCA5A5",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--dna-light"
+            }
+        },
+        "very-light": {
+            "$value": "{brand.soft}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--dna-very-light"
+            }
+        },
+        "cat-1": {
+            "$value": "#7F1D1D",
+            "$type": "color",
+            "$description": "Strengths - deepest",
+            "$extensions": {
+                "com.workshopr.cssVar": "--dna-cat-1"
+            }
+        },
+        "cat-2": {
+            "$value": "#B91C1C",
+            "$type": "color",
+            "$description": "Growth Areas",
+            "$extensions": {
+                "com.workshopr.cssVar": "--dna-cat-2"
+            }
+        },
+        "cat-3": {
+            "$value": "#C73E3E",
+            "$type": "color",
+            "$description": "Style",
+            "$extensions": {
+                "com.workshopr.cssVar": "--dna-cat-3"
+            }
+        },
+        "cat-4": {
+            "$value": "#E54D4D",
+            "$type": "color",
+            "$description": "History",
+            "$extensions": {
+                "com.workshopr.cssVar": "--dna-cat-4"
+            }
+        },
+        "cat-5": {
+            "$value": "#FCA5A5",
+            "$type": "color",
+            "$description": "Goals - lightest",
+            "$extensions": {
+                "com.workshopr.cssVar": "--dna-cat-5"
+            }
+        }
+    },
+    "training": {
+        "primary": {
+            "$value": "{brand.brand}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--training-primary"
+            }
+        },
+        "dark": {
+            "$value": "{brand.ink}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--training-dark"
+            }
+        },
+        "light": {
+            "$value": "{brand.soft}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--training-light"
+            }
+        },
+        "very-light": {
+            "$value": "{brand.tint}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--training-very-light"
+            }
+        }
+    },
+    "color": {
+        "orange-600": {
+            "$value": "#ea580c",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-orange-600"
+            }
+        },
+        "green-700": {
+            "$value": "#15803d",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-green-700"
+            }
+        },
+        "auth-primary": {
+            "$value": "#b02a37",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-auth-primary"
+            }
+        },
+        "auth-gradient-dark": {
+            "$value": "#c82333",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-auth-gradient-dark"
+            }
+        },
+        "purple-100": {
+            "$value": "#f3e8ff",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-purple-100"
+            }
+        },
+        "orange-100": {
+            "$value": "#ffedd5",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-orange-100"
+            }
+        },
+        "success": {
+            "$value": "#22C55E",
+            "$type": "color",
+            "$description": "Success status for icons, dots and fills that carry no text. 2.28:1 on white, so success text uses --color-success-ink or --color-success-darker",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-success"
+            }
+        },
+        "success-dark": {
+            "$value": "#16A34A",
+            "$type": "color",
+            "$description": "Heavier success icon or border. 3.30:1 on white: large text and icons only",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-success-dark"
+            }
+        },
+        "success-light": {
+            "$value": "#BBF7D0",
+            "$type": "color",
+            "$description": "Mid success tint for fills and glows. Text on it uses --color-success-ink (6.34:1)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-success-light"
+            }
+        },
+        "success-very-light": {
+            "$value": "#DCFCE7",
+            "$type": "color",
+            "$description": "Palest success fill, a success row or panel. Text on it uses --color-success-ink (7.0:1)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-success-very-light"
+            }
+        },
+        "warning": {
+            "$value": "#F59E0B",
+            "$type": "color",
+            "$description": "Warning status for icons, dots and fills that carry no text. 2.15:1 on white, so warning text uses --color-warning-ink",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-warning"
+            }
+        },
+        "warning-dark": {
+            "$value": "#D97706",
+            "$type": "color",
+            "$description": "Heavier warning icon or border. 3.19:1 on white: large text and icons only",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-warning-dark"
+            }
+        },
+        "warning-light": {
+            "$value": "#FDE68A",
+            "$type": "color",
+            "$description": "Mid warning tint for fills and borders. Text on it uses --color-warning-ink (5.69:1)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-warning-light"
+            }
+        },
+        "warning-very-light": {
+            "$value": "#F9EEC3",
+            "$type": "color",
+            "$description": "The highlight fill. Was #FEF3C7 (amber-100) until Sep 2026. Text on it uses --color-warning-ink; --color-warning-darker falls to 4.32:1 and fails AA.",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-warning-very-light"
+            }
+        },
+        "error": {
+            "$value": "#EF4444",
+            "$type": "color",
+            "$description": "Error status for icons, invalid-field borders and fills. 3.76:1 on white, so error text uses --color-error-dark or --color-error-ink",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-error"
+            }
+        },
+        "error-dark": {
+            "$value": "#DC2626",
+            "$type": "color",
+            "$description": "Error text on white (4.83:1) and the heavier error border. Only 3.95:1 on --color-error-very-light; use --color-error-ink there",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-error-dark"
+            }
+        },
+        "error-light": {
+            "$value": "#FECACA",
+            "$type": "color",
+            "$description": "Mid error tint for fills and the glow round an invalid field. Text on it uses --color-error-ink (5.57:1)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-error-light"
+            }
+        },
+        "error-very-light": {
+            "$value": "#FEE2E2",
+            "$type": "color",
+            "$description": "Palest error fill, an error row or panel. Text on it uses --color-error-ink (6.6:1)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-error-very-light"
+            }
+        },
+        "info": {
+            "$value": "#3B82F6",
+            "$type": "color",
+            "$description": "Info status for icons and fills that carry no text. 3.68:1 on white, so info text uses --color-info-dark",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-info"
+            }
+        },
+        "info-dark": {
+            "$value": "#2563EB",
+            "$type": "color",
+            "$description": "Info text and icons on white (5.17:1). Only 4.24:1 on --color-info-very-light; use --color-info-strong there",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-info-dark"
+            }
+        },
+        "info-light": {
+            "$value": "#BFDBFE",
+            "$type": "color",
+            "$description": "Mid info tint for fills and borders",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-info-light"
+            }
+        },
+        "info-very-light": {
+            "$value": "#DBEAFE",
+            "$type": "color",
+            "$description": "Palest info fill, an info row or panel. Text on it uses --color-info-strong (7.15:1)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-info-very-light"
+            }
+        },
+        "ink": {
+            "$value": "#2C2416",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-ink"
+            }
+        },
+        "ink-secondary": {
+            "$value": "#5C5242",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-ink-secondary"
+            }
+        },
+        "ink-muted": {
+            "$value": "#706965",
+            "$type": "color",
+            "$description": "Stone hue (25deg, 5% saturation) at the lightest step that clears AA on every surface it sits on: 5.39:1 on white, 5.16:1 on --bg-page, 5.04:1 on --bg-paper, 4.80:1 on --card-bg, 4.54:1 on --bg-paper-dark / --header-bg. Was #78716C (4.28:1 on --card-bg) until Oct 2026",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-ink-muted"
+            }
+        },
+        "ink-faint": {
+            "$value": "#A8A29E",
+            "$type": "color",
+            "$description": "⚠️ 2.52:1 on white, 2.41:1 on --bg-page — decorative only, never essential text",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-ink-faint"
+            }
+        },
+        "primary-on-white": {
+            "$value": "{brand.ink}",
+            "$description": "5.02:1 — use instead of --mainsite-primary for text on white",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-primary-on-white"
+            }
+        },
+        "ink-faint-accessible": {
+            "$value": "{color.ink-muted}",
+            "$description": "5.39:1 on white, 4.80:1 on --card-bg: use instead of --color-ink-faint for essential text",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-ink-faint-accessible"
+            }
+        },
+        "navy": {
+            "$value": "#1A2744",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-navy"
+            }
+        },
+        "navy-light": {
+            "$value": "#2E3D5C",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-navy-light"
+            }
+        },
+        "teal": {
+            "$value": "#0D9488",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-teal"
+            }
+        },
+        "teal-dark": {
+            "$value": "#0F766E",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-teal-dark"
+            }
+        },
+        "warning-darker": {
+            "$value": "#B45309",
+            "$type": "color",
+            "$description": "amber-700 — hover on warning-dark",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-warning-darker"
+            }
+        },
+        "error-strong": {
+            "$value": "#B91C1C",
+            "$type": "color",
+            "$description": "red-700 — error toast/badge",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-error-strong"
+            }
+        },
+        "error-darker": {
+            "$value": "#991B1B",
+            "$type": "color",
+            "$description": "red-800 — error text",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-error-darker"
+            }
+        },
+        "info-strong": {
+            "$value": "#1E40AF",
+            "$type": "color",
+            "$description": "blue-800 — info toast",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-info-strong"
+            }
+        },
+        "warning-surface": {
+            "$value": "#FFF7ED",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-warning-surface"
+            }
+        },
+        "warning-surface-border": {
+            "$value": "#FED7AA",
+            "$type": "color",
+            "$description": "Border of a --color-warning-surface panel",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-warning-surface-border"
+            }
+        },
+        "warning-surface-ink": {
+            "$value": "#9A3412",
+            "$type": "color",
+            "$description": "Text on a --color-warning-surface panel (6.88:1)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-warning-surface-ink"
+            }
+        },
+        "slate-900": {
+            "$value": "#111827",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-slate-900"
+            }
+        },
+        "success-surface": {
+            "$value": "#F0FDF4",
+            "$type": "color",
+            "$description": "green-50 — score/status surface",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-success-surface"
+            }
+        },
+        "success-darker": {
+            "$value": "#166534",
+            "$type": "color",
+            "$description": "green-800 — success text",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-success-darker"
+            }
+        },
+        "success-ink": {
+            "$value": "#065F46",
+            "$type": "color",
+            "$description": "Dark emerald — text on success backgrounds",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-success-ink"
+            }
+        },
+        "warning-ink": {
+            "$value": "#92400E",
+            "$type": "color",
+            "$description": "Dark amber — text on warning backgrounds",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-warning-ink"
+            }
+        },
+        "warning-ink-dark": {
+            "$value": "#78350F",
+            "$type": "color",
+            "$description": "Darker amber — headings on warning backgrounds",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-warning-ink-dark"
+            }
+        },
+        "error-ink": {
+            "$value": "#9A1F2B",
+            "$type": "color",
+            "$description": "Dark red — text on error backgrounds",
+            "$extensions": {
+                "com.workshopr.cssVar": "--color-error-ink"
+            }
+        }
+    },
+    "exercise": {
+        "light": {
+            "$value": "#C2DBFF",
+            "$type": "color",
+            "$description": "Mid exercise fill and border; clipped into sRGB, so about 4% less saturated than its red. Text on it uses --color-info-strong (6.18:1)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--exercise-light"
+            }
+        },
+        "very-light": {
+            "$value": "#DDEBFF",
+            "$type": "color",
+            "$description": "Palest exercise fill, an exercise row or panel. Text on it uses --color-info-strong (7.23:1)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--exercise-very-light"
+            }
+        }
+    },
+    "icebreaker": {
+        "light": {
+            "$value": "#C7E3BD",
+            "$type": "color",
+            "$description": "Mid icebreaker fill and border. Text on it uses --color-success-ink (5.54:1)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--icebreaker-light"
+            }
+        },
+        "very-light": {
+            "$value": "#E0EFDB",
+            "$type": "color",
+            "$description": "Palest icebreaker fill, an icebreaker row or panel. Text on it uses --color-success-ink (6.42:1)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--icebreaker-very-light"
+            }
+        }
+    },
+    "bg": {
+        "page": {
+            "$value": "#FAFAF9",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--bg-page"
+            }
+        },
+        "page-alt": {
+            "$value": "#FFFBF8",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--bg-page-alt"
+            }
+        },
+        "surface": {
+            "$value": "#FFFFFF",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--bg-surface"
+            }
+        },
+        "muted": {
+            "$value": "#F5F5F4",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--bg-muted"
+            }
+        },
+        "subtle": {
+            "$value": "#FAFAF9",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--bg-subtle"
+            }
+        },
+        "cool": {
+            "$value": "#F5F7FA",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--bg-cool"
+            }
+        },
+        "page-warm": {
+            "$value": "#FAF4ED",
+            "$type": "color",
+            "$description": "Slightly warmer than --bg-page, used for immersive detail pages",
+            "$extensions": {
+                "com.workshopr.cssVar": "--bg-page-warm"
+            }
+        },
+        "warm-muted": {
+            "$value": "#F5F3EF",
+            "$type": "color",
+            "$description": "Warm muted background, midpoint between --bg-muted and --bg-page",
+            "$extensions": {
+                "com.workshopr.cssVar": "--bg-warm-muted"
+            }
+        },
+        "paper": {
+            "$value": "#FAF7F2",
+            "$type": "color",
+            "$description": "Standard grid/paper overlay background used in Planner, DNA, and Academy",
+            "$extensions": {
+                "com.workshopr.cssVar": "--bg-paper"
+            }
+        },
+        "paper-dark": {
+            "$value": "#F0EBE3",
+            "$type": "color",
+            "$description": "Darker grid lines, panels, and borders for paper backgrounds",
+            "$extensions": {
+                "com.workshopr.cssVar": "--bg-paper-dark"
+            }
+        }
+    },
+    "header": {
+        "bg": {
+            "$value": "#F0EBE3",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--header-bg"
+            }
+        }
+    },
+    "gray": {
+        "50": {
+            "$value": "#FAFAF9",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--gray-50"
+            }
+        },
+        "100": {
+            "$value": "#F5F5F4",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--gray-100"
+            }
+        },
+        "200": {
+            "$value": "#E7E5E4",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--gray-200"
+            }
+        },
+        "300": {
+            "$value": "#D6D3D1",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--gray-300"
+            }
+        },
+        "400": {
+            "$value": "#A8A29E",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--gray-400"
+            }
+        },
+        "500": {
+            "$value": "#78716C",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--gray-500"
+            }
+        },
+        "600": {
+            "$value": "#57534E",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--gray-600"
+            }
+        },
+        "700": {
+            "$value": "#44403C",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--gray-700"
+            }
+        },
+        "800": {
+            "$value": "#292524",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--gray-800"
+            }
+        },
+        "900": {
+            "$value": "#1C1917",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--gray-900"
+            }
+        }
+    },
+    "border": {
+        "cool": {
+            "$value": "#E8ECF1",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--border-cool"
+            }
+        }
+    },
+    "platform": {
+        "meet": {
+            "$value": "#4CAF50",
+            "$type": "color",
+            "$description": "Google Meet green",
+            "$extensions": {
+                "com.workshopr.cssVar": "--platform-meet"
+            }
+        },
+        "meet-ink": {
+            "$value": "#2E7D32",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--platform-meet-ink"
+            }
+        },
+        "zoom": {
+            "$value": "#2196F3",
+            "$type": "color",
+            "$description": "Zoom blue",
+            "$extensions": {
+                "com.workshopr.cssVar": "--platform-zoom"
+            }
+        },
+        "zoom-ink": {
+            "$value": "#1565C0",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--platform-zoom-ink"
+            }
+        },
+        "zoom-bg": {
+            "$value": "#E3F2FD",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--platform-zoom-bg"
+            }
+        },
+        "inperson": {
+            "$value": "#FF9800",
+            "$type": "color",
+            "$description": "In-person orange",
+            "$extensions": {
+                "com.workshopr.cssVar": "--platform-inperson"
+            }
+        },
+        "inperson-ink": {
+            "$value": "#E65100",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--platform-inperson-ink"
+            }
+        },
+        "inperson-bg": {
+            "$value": "#FFF3E0",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--platform-inperson-bg"
+            }
+        }
+    },
+    "font": {
+        "heading": {
+            "$value": "'Fraunces', Georgia, serif",
+            "$type": "fontFamily",
+            "$extensions": {
+                "com.workshopr.cssVar": "--font-heading"
+            }
+        },
+        "body": {
+            "$value": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+            "$type": "fontFamily",
+            "$extensions": {
+                "com.workshopr.cssVar": "--font-body"
+            }
+        },
+        "normal": {
+            "$value": "400",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--font-normal"
+            }
+        },
+        "medium": {
+            "$value": "500",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--font-medium"
+            }
+        },
+        "semibold": {
+            "$value": "600",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--font-semibold"
+            }
+        },
+        "bold": {
+            "$value": "700",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--font-bold"
+            }
+        }
+    },
+    "text": {
+        "display": {
+            "$value": "2.875rem",
+            "$type": "dimension",
+            "$description": "paints 36.8px (nominal 46px) - Hero/display text",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-display"
+            }
+        },
+        "display-lg": {
+            "$value": "3.5rem",
+            "$type": "dimension",
+            "$description": "paints 44.8px (nominal 56px) - large hero headings",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-display-lg"
+            }
+        },
+        "display-xl": {
+            "$value": "4.5rem",
+            "$type": "dimension",
+            "$description": "paints 57.6px (nominal 72px) - extra-large hero headings",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-display-xl"
+            }
+        },
+        "timer-sm": {
+            "$value": "4rem",
+            "$type": "dimension",
+            "$description": "paints 51.2px (nominal 64px) - mobile countdown",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-timer-sm"
+            }
+        },
+        "timer-md": {
+            "$value": "5rem",
+            "$type": "dimension",
+            "$description": "paints 64px (nominal 80px) - tablet countdown",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-timer-md"
+            }
+        },
+        "timer-lg": {
+            "$value": "6rem",
+            "$type": "dimension",
+            "$description": "paints 76.8px (nominal 96px) - desktop countdown",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-timer-lg"
+            }
+        },
+        "h1": {
+            "$value": "2rem",
+            "$type": "dimension",
+            "$description": "paints 25.6px (nominal 32px)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-h1"
+            }
+        },
+        "h2": {
+            "$value": "1.5rem",
+            "$type": "dimension",
+            "$description": "paints 19.2px (nominal 24px)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-h2"
+            }
+        },
+        "h3": {
+            "$value": "1.25rem",
+            "$type": "dimension",
+            "$description": "paints 16px (nominal 20px)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-h3"
+            }
+        },
+        "h4": {
+            "$value": "1.125rem",
+            "$type": "dimension",
+            "$description": "paints 14.4px (nominal 18px)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-h4"
+            }
+        },
+        "body": {
+            "$value": "1rem",
+            "$type": "dimension",
+            "$description": "paints 12.8px (nominal 16px)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-body"
+            }
+        },
+        "ui": {
+            "$value": "0.9375rem",
+            "$type": "dimension",
+            "$description": "paints 12px (nominal 15px)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-ui"
+            }
+        },
+        "small": {
+            "$value": "0.875rem",
+            "$type": "dimension",
+            "$description": "paints 11.2px (nominal 14px)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-small"
+            }
+        },
+        "meta": {
+            "$value": "0.8125rem",
+            "$type": "dimension",
+            "$description": "paints 10.4px (nominal 13px)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-meta"
+            }
+        },
+        "caption": {
+            "$value": "0.75rem",
+            "$type": "dimension",
+            "$description": "paints 9.6px (nominal 12px)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-caption"
+            }
+        },
+        "micro": {
+            "$value": "0.6875rem",
+            "$type": "dimension",
+            "$description": "paints 8.8px (nominal 11px)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-micro"
+            }
+        },
+        "nano": {
+            "$value": "0.625rem",
+            "$type": "dimension",
+            "$description": "paints 8px (nominal 10px)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-nano"
+            }
+        },
+        "dark": {
+            "$value": "{color.ink}",
+            "$description": "Headings and primary text: titles, labels, the main line of a card. 15.3:1 on white",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-dark"
+            }
+        },
+        "default": {
+            "$value": "{color.ink-secondary}",
+            "$description": "Body copy and descriptions. 7.66:1 on white",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-default"
+            }
+        },
+        "muted": {
+            "$value": "{color.ink-muted}",
+            "$description": "Secondary text: meta lines, hints, timestamps. AA on every surface: 5.39:1 on white, 5.16:1 on --bg-page, 5.04:1 on --bg-paper, 4.80:1 on --card-bg, 4.54:1 on --bg-paper-dark",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-muted"
+            }
+        },
+        "faint": {
+            "$value": "{color.ink-faint}",
+            "$description": "Decorative only: placeholders and disabled text, never information. 2.52:1 on white; prefers-contrast: more swaps in the accessible value",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-faint"
+            }
+        },
+        "inverse": {
+            "$value": "#FFFFFF",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--text-inverse"
+            }
+        }
+    },
+    "leading": {
+        "tight": {
+            "$value": "1.2",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--leading-tight"
+            }
+        },
+        "snug": {
+            "$value": "1.35",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--leading-snug"
+            }
+        },
+        "normal": {
+            "$value": "1.5",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--leading-normal"
+            }
+        },
+        "relaxed": {
+            "$value": "1.625",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--leading-relaxed"
+            }
+        }
+    },
+    "tracking": {
+        "tight": {
+            "$value": "-0.02em",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--tracking-tight"
+            }
+        },
+        "normal": {
+            "$value": "0",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--tracking-normal"
+            }
+        },
+        "wide": {
+            "$value": "0.025em",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--tracking-wide"
+            }
+        }
+    },
+    "shadow": {
+        "xs": {
+            "$value": "0 1px 2px rgba(0, 0, 0, 0.04)",
+            "$type": "shadow",
+            "$extensions": {
+                "com.workshopr.cssVar": "--shadow-xs"
+            }
+        },
+        "sm": {
+            "$value": "0 1px 3px rgba(0, 0, 0, 0.06)",
+            "$type": "shadow",
+            "$extensions": {
+                "com.workshopr.cssVar": "--shadow-sm"
+            }
+        },
+        "md": {
+            "$value": "0 4px 6px rgba(0, 0, 0, 0.07)",
+            "$type": "shadow",
+            "$extensions": {
+                "com.workshopr.cssVar": "--shadow-md"
+            }
+        },
+        "lg": {
+            "$value": "0 10px 15px rgba(0, 0, 0, 0.08)",
+            "$type": "shadow",
+            "$extensions": {
+                "com.workshopr.cssVar": "--shadow-lg"
+            }
+        },
+        "xl": {
+            "$value": "0 20px 25px rgba(0, 0, 0, 0.10)",
+            "$type": "shadow",
+            "$extensions": {
+                "com.workshopr.cssVar": "--shadow-xl"
+            }
+        }
+    },
+    "radius": {
+        "sm": {
+            "$value": "4px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--radius-sm"
+            }
+        },
+        "md": {
+            "$value": "6px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--radius-md"
+            }
+        },
+        "lg": {
+            "$value": "8px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--radius-lg"
+            }
+        },
+        "xl": {
+            "$value": "12px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--radius-xl"
+            }
+        },
+        "2xl": {
+            "$value": "16px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--radius-2xl"
+            }
+        },
+        "full": {
+            "$value": "9999px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--radius-full"
+            }
+        }
+    },
+    "space": {
+        "0-5": {
+            "$value": "2px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--space-0-5"
+            }
+        },
+        "1": {
+            "$value": "4px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--space-1"
+            }
+        },
+        "1-5": {
+            "$value": "6px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--space-1-5"
+            }
+        },
+        "2": {
+            "$value": "8px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--space-2"
+            }
+        },
+        "2-5": {
+            "$value": "10px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--space-2-5"
+            }
+        },
+        "3": {
+            "$value": "12px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--space-3"
+            }
+        },
+        "3-5": {
+            "$value": "14px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--space-3-5"
+            }
+        },
+        "4": {
+            "$value": "16px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--space-4"
+            }
+        },
+        "4-5": {
+            "$value": "18px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--space-4-5"
+            }
+        },
+        "5": {
+            "$value": "20px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--space-5"
+            }
+        },
+        "6": {
+            "$value": "24px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--space-6"
+            }
+        },
+        "7": {
+            "$value": "28px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--space-7"
+            }
+        },
+        "8": {
+            "$value": "32px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--space-8"
+            }
+        },
+        "10": {
+            "$value": "40px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--space-10"
+            }
+        },
+        "12": {
+            "$value": "48px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--space-12"
+            }
+        },
+        "16": {
+            "$value": "64px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--space-16"
+            }
+        }
+    },
+    "transition": {
+        "fast": {
+            "$value": "150ms ease",
+            "$extensions": {
+                "com.workshopr.cssVar": "--transition-fast"
+            }
+        },
+        "base": {
+            "$value": "200ms ease",
+            "$extensions": {
+                "com.workshopr.cssVar": "--transition-base"
+            }
+        },
+        "slow": {
+            "$value": "300ms ease",
+            "$extensions": {
+                "com.workshopr.cssVar": "--transition-slow"
+            }
+        },
+        "interactive": {
+            "$value": "transform var(--duration-fast) var(--ease-default), box-shadow var(--duration-fast) var(--ease-default), background-color var(--duration-fast) var(--ease-default), border-color var(--duration-fast) var(--ease-default), color var(--duration-fast) var(--ease-default), opacity var(--duration-fast) var(--ease-default), visibility var(--duration-fast) var(--ease-default)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--transition-interactive"
+            }
+        }
+    },
+    "duration": {
+        "fast": {
+            "$value": "150ms",
+            "$type": "duration",
+            "$extensions": {
+                "com.workshopr.cssVar": "--duration-fast"
+            }
+        },
+        "base": {
+            "$value": "200ms",
+            "$type": "duration",
+            "$extensions": {
+                "com.workshopr.cssVar": "--duration-base"
+            }
+        },
+        "slow": {
+            "$value": "300ms",
+            "$type": "duration",
+            "$extensions": {
+                "com.workshopr.cssVar": "--duration-slow"
+            }
+        },
+        "enter": {
+            "$value": "300ms",
+            "$type": "duration",
+            "$description": "Elements appearing",
+            "$extensions": {
+                "com.workshopr.cssVar": "--duration-enter"
+            }
+        },
+        "exit": {
+            "$value": "200ms",
+            "$type": "duration",
+            "$description": "Elements disappearing",
+            "$extensions": {
+                "com.workshopr.cssVar": "--duration-exit"
+            }
+        },
+        "reveal": {
+            "$value": "800ms",
+            "$type": "duration",
+            "$extensions": {
+                "com.workshopr.cssVar": "--duration-reveal"
+            }
+        },
+        "reveal-lg": {
+            "$value": "1200ms",
+            "$type": "duration",
+            "$extensions": {
+                "com.workshopr.cssVar": "--duration-reveal-lg"
+            }
+        }
+    },
+    "ease": {
+        "default": {
+            "$value": "ease",
+            "$type": "cubicBezier",
+            "$extensions": {
+                "com.workshopr.cssVar": "--ease-default"
+            }
+        },
+        "in": {
+            "$value": "cubic-bezier(0.4, 0, 1, 0.2)",
+            "$type": "cubicBezier",
+            "$extensions": {
+                "com.workshopr.cssVar": "--ease-in"
+            }
+        },
+        "out": {
+            "$value": "cubic-bezier(0, 0, 0.2, 1)",
+            "$type": "cubicBezier",
+            "$extensions": {
+                "com.workshopr.cssVar": "--ease-out"
+            }
+        },
+        "in-out": {
+            "$value": "cubic-bezier(0.4, 0, 0.2, 1)",
+            "$type": "cubicBezier",
+            "$extensions": {
+                "com.workshopr.cssVar": "--ease-in-out"
+            }
+        },
+        "spring": {
+            "$value": "cubic-bezier(0.16, 1, 0.3, 1)",
+            "$type": "cubicBezier",
+            "$description": "Organic settle — pure deceleration, does NOT overshoot despite the name",
+            "$extensions": {
+                "com.workshopr.cssVar": "--ease-spring"
+            }
+        },
+        "reveal": {
+            "$value": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "$type": "cubicBezier",
+            "$extensions": {
+                "com.workshopr.cssVar": "--ease-reveal"
+            }
+        }
+    },
+    "animate": {
+        "fade-in": {
+            "$value": "var(--duration-enter) var(--ease-out)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--animate-fade-in"
+            }
+        },
+        "fade-out": {
+            "$value": "var(--duration-exit) var(--ease-in)",
+            "$description": "Duration and easing for an exit fade, as in transition: opacity var(--animate-fade-out). See motion.md",
+            "$extensions": {
+                "com.workshopr.cssVar": "--animate-fade-out"
+            }
+        },
+        "slide-up": {
+            "$value": "var(--duration-enter) var(--ease-spring)",
+            "$description": "Duration and spring easing for an entrance that rises into place. See motion.md",
+            "$extensions": {
+                "com.workshopr.cssVar": "--animate-slide-up"
+            }
+        },
+        "scale": {
+            "$value": "var(--duration-base) var(--ease-spring)",
+            "$description": "Duration and spring easing for a scale-in, such as a popover opening. See motion.md",
+            "$extensions": {
+                "com.workshopr.cssVar": "--animate-scale"
+            }
+        }
+    },
+    "stagger": {
+        "reveal": {
+            "$value": "120ms",
+            "$type": "duration",
+            "$extensions": {
+                "com.workshopr.cssVar": "--stagger-reveal"
+            }
+        }
+    },
+    "container": {
+        "xs": {
+            "$value": "480px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--container-xs"
+            }
+        },
+        "sm": {
+            "$value": "640px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--container-sm"
+            }
+        },
+        "md": {
+            "$value": "768px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--container-md"
+            }
+        },
+        "lg": {
+            "$value": "960px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--container-lg"
+            }
+        },
+        "xl": {
+            "$value": "1120px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--container-xl"
+            }
+        },
+        "2xl": {
+            "$value": "1280px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--container-2xl"
+            }
+        }
+    },
+    "grid": {
+        "min-sm": {
+            "$value": "200px",
+            "$type": "dimension",
+            "$description": "Compact tiles and stats: ws_grid min sm. Also the floor a growing ws_cluster item keeps before its row wraps",
+            "$extensions": {
+                "com.workshopr.cssVar": "--grid-min-sm"
+            }
+        },
+        "min-md": {
+            "$value": "280px",
+            "$type": "dimension",
+            "$description": "Cards, the ws_grid default",
+            "$extensions": {
+                "com.workshopr.cssVar": "--grid-min-md"
+            }
+        },
+        "min-lg": {
+            "$value": "360px",
+            "$type": "dimension",
+            "$description": "Wide cards with a paragraph or an image: ws_grid min lg",
+            "$extensions": {
+                "com.workshopr.cssVar": "--grid-min-lg"
+            }
+        },
+        "line-color": {
+            "$value": "rgba(44, 36, 22, 0.06)",
+            "$type": "color",
+            "$description": "Standard signature drafting grid-paper overlay line color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--grid-line-color"
+            }
+        }
+    },
+    "bp": {
+        "mobile": {
+            "$value": "480px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--bp-mobile"
+            }
+        },
+        "mobile-landscape": {
+            "$value": "640px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--bp-mobile-landscape"
+            }
+        },
+        "tablet": {
+            "$value": "768px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--bp-tablet"
+            }
+        },
+        "tablet-landscape": {
+            "$value": "960px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--bp-tablet-landscape"
+            }
+        },
+        "desktop-sm": {
+            "$value": "1120px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--bp-desktop-sm"
+            }
+        },
+        "desktop": {
+            "$value": "1280px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--bp-desktop"
+            }
+        }
+    },
+    "icon": {
+        "xs": {
+            "$value": "14px",
+            "$type": "dimension",
+            "$description": "Retired for icons: an icon is at least --icon-lg (DESIGN.md §8). Kept only because the native apps mirror it; never size an icon with it",
+            "$extensions": {
+                "com.workshopr.cssVar": "--icon-xs"
+            }
+        },
+        "sm": {
+            "$value": "16px",
+            "$type": "dimension",
+            "$description": "Retired for icons: an icon is at least --icon-lg (DESIGN.md §8). Kept only because the native apps mirror it; never size an icon with it",
+            "$extensions": {
+                "com.workshopr.cssVar": "--icon-sm"
+            }
+        },
+        "md": {
+            "$value": "20px",
+            "$type": "dimension",
+            "$description": "Retired for icons: an icon is at least --icon-lg (DESIGN.md §8). Kept only because the native apps mirror it; never size an icon with it",
+            "$extensions": {
+                "com.workshopr.cssVar": "--icon-md"
+            }
+        },
+        "lg": {
+            "$value": "24px",
+            "$type": "dimension",
+            "$description": "The smallest an icon is anywhere (DESIGN.md §8), an SVG from icon() or a font glyph",
+            "$extensions": {
+                "com.workshopr.cssVar": "--icon-lg"
+            }
+        },
+        "xl": {
+            "$value": "32px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--icon-xl"
+            }
+        },
+        "2xl": {
+            "$value": "48px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--icon-2xl"
+            }
+        }
+    },
+    "target": {
+        "min": {
+            "$value": "24px",
+            "$type": "dimension",
+            "$description": "AA floor (SC 2.5.8)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--target-min"
+            }
+        },
+        "comfortable": {
+            "$value": "44px",
+            "$type": "dimension",
+            "$description": "AAA / touch-first surfaces (SC 2.5.5)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--target-comfortable"
+            }
+        }
+    },
+    "focus": {
+        "ring-color": {
+            "$value": "#0284C7",
+            "$type": "color",
+            "$description": "The keyboard focus ring. Sky blue on purpose (decision D2): the one non-red accent, so focus is unmistakable. Keep it opaque; forced-colors mode swaps in Highlight",
+            "$extensions": {
+                "com.workshopr.cssVar": "--focus-ring-color"
+            }
+        },
+        "ring-halo": {
+            "$value": "rgba(2, 132, 199, 0.25)",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--focus-ring-halo"
+            }
+        },
+        "ring-offset": {
+            "$value": "2px",
+            "$type": "dimension",
+            "$description": "Gap between a control's edge and its focus ring",
+            "$extensions": {
+                "com.workshopr.cssVar": "--focus-ring-offset"
+            }
+        },
+        "ring-width": {
+            "$value": "2px",
+            "$type": "dimension",
+            "$description": "Focus ring thickness; 3px under prefers-contrast: more",
+            "$extensions": {
+                "com.workshopr.cssVar": "--focus-ring-width"
+            }
+        },
+        "ring": {
+            "$value": "var(--focus-ring-width) solid var(--focus-ring-color)",
+            "$description": "The whole ring as one value: outline: var(--focus-ring)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--focus-ring"
+            }
+        }
+    },
+    "overlay": {
+        "light": {
+            "$value": "rgba(255, 255, 255, 0.7)",
+            "$type": "color",
+            "$description": "White veil over content, lightest: the most of what is underneath shows through",
+            "$extensions": {
+                "com.workshopr.cssVar": "--overlay-light"
+            }
+        },
+        "medium": {
+            "$value": "rgba(255, 255, 255, 0.85)",
+            "$type": "color",
+            "$description": "White veil over content, for a frosted panel or a loading cover",
+            "$extensions": {
+                "com.workshopr.cssVar": "--overlay-medium"
+            }
+        },
+        "heavy": {
+            "$value": "rgba(255, 255, 255, 0.95)",
+            "$type": "color",
+            "$description": "White veil over content, almost opaque",
+            "$extensions": {
+                "com.workshopr.cssVar": "--overlay-heavy"
+            }
+        }
+    },
+    "backdrop": {
+        "light": {
+            "$value": "rgba(0, 0, 0, 0.3)",
+            "$type": "color",
+            "$description": "Dark scrim behind a panel or drawer, lightest",
+            "$extensions": {
+                "com.workshopr.cssVar": "--backdrop-light"
+            }
+        },
+        "medium": {
+            "$value": "rgba(0, 0, 0, 0.5)",
+            "$type": "color",
+            "$description": "Dark scrim behind a modal; --modal-backdrop uses it",
+            "$extensions": {
+                "com.workshopr.cssVar": "--backdrop-medium"
+            }
+        },
+        "heavy": {
+            "$value": "rgba(0, 0, 0, 0.7)",
+            "$type": "color",
+            "$description": "Dark scrim, heaviest, for a focus mode that hides the page",
+            "$extensions": {
+                "com.workshopr.cssVar": "--backdrop-heavy"
+            }
+        }
+    },
+    "z": {
+        "dropdown": {
+            "$value": "100",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--z-dropdown"
+            }
+        },
+        "sticky": {
+            "$value": "200",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--z-sticky"
+            }
+        },
+        "overlay": {
+            "$value": "1000",
+            "$type": "number",
+            "$description": "generic overlays / scrims (app uses 1000 widely)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--z-overlay"
+            }
+        },
+        "header": {
+            "$value": "1100",
+            "$type": "number",
+            "$description": "unified header / sticky topbars",
+            "$extensions": {
+                "com.workshopr.cssVar": "--z-header"
+            }
+        },
+        "modal-backdrop": {
+            "$value": "1100",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--z-modal-backdrop"
+            }
+        },
+        "modal": {
+            "$value": "1200",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--z-modal"
+            }
+        },
+        "tooltip": {
+            "$value": "1300",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--z-tooltip"
+            }
+        },
+        "dialog": {
+            "$value": "10000",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--z-dialog"
+            }
+        },
+        "dialog-high": {
+            "$value": "10001",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--z-dialog-high"
+            }
+        },
+        "dialog-highest": {
+            "$value": "10004",
+            "$type": "number",
+            "$extensions": {
+                "com.workshopr.cssVar": "--z-dialog-highest"
+            }
+        }
+    },
+    "button": {
+        "bg-primary": {
+            "$value": "{mainsite.gradient}",
+            "$type": "gradient",
+            "$description": "gradient, not flat — matches .ws-btn--primary",
+            "$extensions": {
+                "com.workshopr.cssVar": "--button-bg-primary"
+            }
+        },
+        "shadow-primary-hover": {
+            "$value": "{mainsite.shadow}",
+            "$description": "Shadow under a primary ws_button on hover",
+            "$extensions": {
+                "com.workshopr.cssVar": "--button-shadow-primary-hover"
+            }
+        },
+        "text-primary": {
+            "$value": "{text.inverse}",
+            "$description": "Text on a primary ws_button",
+            "$extensions": {
+                "com.workshopr.cssVar": "--button-text-primary"
+            }
+        },
+        "bg-secondary": {
+            "$value": "{bg.surface}",
+            "$description": "Secondary ws_button fill. .ws-btn does not read it; only a Synthesize mockup does",
+            "$extensions": {
+                "com.workshopr.cssVar": "--button-bg-secondary"
+            }
+        },
+        "text-secondary": {
+            "$value": "{color.ink}",
+            "$description": "Secondary ws_button text. .ws-btn does not read it; only a Synthesize mockup does",
+            "$extensions": {
+                "com.workshopr.cssVar": "--button-text-secondary"
+            }
+        },
+        "border-secondary": {
+            "$value": "{gray.300}",
+            "$description": "Secondary ws_button border. Nothing reads it yet",
+            "$extensions": {
+                "com.workshopr.cssVar": "--button-border-secondary"
+            }
+        },
+        "bg-ghost": {
+            "$value": "transparent",
+            "$description": "Ghost button fill. .ws-btn does not read it; Sidekick's .sk-btn--ghost does",
+            "$extensions": {
+                "com.workshopr.cssVar": "--button-bg-ghost"
+            }
+        },
+        "text-ghost": {
+            "$value": "{color.ink-secondary}",
+            "$description": "Ghost button text. .ws-btn does not read it; Sidekick's .sk-btn--ghost does",
+            "$extensions": {
+                "com.workshopr.cssVar": "--button-text-ghost"
+            }
+        },
+        "radius": {
+            "$value": "{radius.lg}",
+            "$description": "Button corner radius. .ws-btn does not read it; the planner's .btn (planner/index.php) does",
+            "$extensions": {
+                "com.workshopr.cssVar": "--button-radius"
+            }
+        }
+    },
+    "card": {
+        "bg": {
+            "$value": "#F7F1EA",
+            "$type": "color",
+            "$description": "Card surface: warm paper between --bg-paper (#FAF7F2) and --bg-paper-dark (#F0EBE3). White stays for modals, inputs and menus",
+            "$extensions": {
+                "com.workshopr.cssVar": "--card-bg"
+            }
+        },
+        "border": {
+            "$value": "{gray.200}",
+            "$description": "Card border, read by the ws_card family",
+            "$extensions": {
+                "com.workshopr.cssVar": "--card-border"
+            }
+        },
+        "shadow": {
+            "$value": "{shadow.sm}",
+            "$description": "Resting card shadow; app card styles read it, .ws-card does not",
+            "$extensions": {
+                "com.workshopr.cssVar": "--card-shadow"
+            }
+        },
+        "shadow-hover": {
+            "$value": "{shadow.md}",
+            "$description": "Card shadow on hover",
+            "$extensions": {
+                "com.workshopr.cssVar": "--card-shadow-hover"
+            }
+        },
+        "radius": {
+            "$value": "{radius.xl}",
+            "$description": "Card corner radius, read by the ws_card family",
+            "$extensions": {
+                "com.workshopr.cssVar": "--card-radius"
+            }
+        },
+        "padding": {
+            "$value": "{space.5}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--card-padding"
+            }
+        },
+        "padding-compact": {
+            "$value": "{space.3}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--card-padding-compact"
+            }
+        },
+        "padding-roomy": {
+            "$value": "{space.8}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--card-padding-roomy"
+            }
+        }
+    },
+    "input": {
+        "bg": {
+            "$value": "{bg.surface}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--input-bg"
+            }
+        },
+        "border": {
+            "$value": "{gray.200}",
+            "$description": "was --gray-300; .ws-input draws gray-200",
+            "$extensions": {
+                "com.workshopr.cssVar": "--input-border"
+            }
+        },
+        "border-hover": {
+            "$value": "{gray.300}",
+            "$description": "Input border on hover",
+            "$extensions": {
+                "com.workshopr.cssVar": "--input-border-hover"
+            }
+        },
+        "border-focus": {
+            "$value": "{mainsite.primary}",
+            "$description": "Input border while focused, alongside --input-ring",
+            "$extensions": {
+                "com.workshopr.cssVar": "--input-border-focus"
+            }
+        },
+        "text": {
+            "$value": "{color.ink}",
+            "$description": "Text typed into an input",
+            "$extensions": {
+                "com.workshopr.cssVar": "--input-text"
+            }
+        },
+        "placeholder": {
+            "$value": "{color.ink-faint}",
+            "$description": "Input placeholder text: decorative, never the label",
+            "$extensions": {
+                "com.workshopr.cssVar": "--input-placeholder"
+            }
+        },
+        "radius": {
+            "$value": "{radius.xl}",
+            "$description": "was --radius-lg; .ws-input draws 12px",
+            "$extensions": {
+                "com.workshopr.cssVar": "--input-radius"
+            }
+        },
+        "ring": {
+            "$value": "{mainsite.light}",
+            "$description": "Soft glow round a focused input",
+            "$extensions": {
+                "com.workshopr.cssVar": "--input-ring"
+            }
+        },
+        "ring-width": {
+            "$value": "3px",
+            "$type": "dimension",
+            "$description": "Width of --input-ring",
+            "$extensions": {
+                "com.workshopr.cssVar": "--input-ring-width"
+            }
+        }
+    },
+    "modal": {
+        "bg": {
+            "$value": "{bg.surface}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--modal-bg"
+            }
+        },
+        "border": {
+            "$value": "{gray.200}",
+            "$description": "Modal border. Nothing reads it yet",
+            "$extensions": {
+                "com.workshopr.cssVar": "--modal-border"
+            }
+        },
+        "shadow": {
+            "$value": "{shadow.xl}",
+            "$description": "Shadow under a ws_modal",
+            "$extensions": {
+                "com.workshopr.cssVar": "--modal-shadow"
+            }
+        },
+        "backdrop": {
+            "$value": "{backdrop.medium}",
+            "$description": "Scrim behind a ws_modal",
+            "$extensions": {
+                "com.workshopr.cssVar": "--modal-backdrop"
+            }
+        },
+        "radius": {
+            "$value": "{radius.2xl}",
+            "$description": "ws_modal corner radius",
+            "$extensions": {
+                "com.workshopr.cssVar": "--modal-radius"
+            }
+        }
+    },
+    "badge": {
+        "bg": {
+            "$value": "{bg.muted}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--badge-bg"
+            }
+        },
+        "text": {
+            "$value": "{color.ink-secondary}",
+            "$description": "ws_badge default text. Nothing reads it yet",
+            "$extensions": {
+                "com.workshopr.cssVar": "--badge-text"
+            }
+        },
+        "border": {
+            "$value": "{gray.200}",
+            "$description": "ws_badge default border. Nothing reads it yet",
+            "$extensions": {
+                "com.workshopr.cssVar": "--badge-border"
+            }
+        },
+        "radius": {
+            "$value": "{radius.sm}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--badge-radius"
+            }
+        }
+    },
+    "tooltip": {
+        "bg": {
+            "$value": "{gray.900}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--tooltip-bg"
+            }
+        },
+        "text": {
+            "$value": "{text.inverse}",
+            "$description": "Tooltip text, on --tooltip-bg",
+            "$extensions": {
+                "com.workshopr.cssVar": "--tooltip-text"
+            }
+        },
+        "radius": {
+            "$value": "{radius.md}",
+            "$description": "Tooltip corner radius",
+            "$extensions": {
+                "com.workshopr.cssVar": "--tooltip-radius"
+            }
+        }
+    },
+    "toast": {
+        "bg": {
+            "$value": "#7F1D1D",
+            "$type": "color",
+            "$extensions": {
+                "com.workshopr.cssVar": "--toast-bg"
+            }
+        },
+        "text": {
+            "$value": "{text.inverse}",
+            "$description": "Toast text, on the deep-red --toast-bg",
+            "$extensions": {
+                "com.workshopr.cssVar": "--toast-text"
+            }
+        },
+        "border": {
+            "$value": "transparent",
+            "$description": "Toast border. Nothing reads it yet",
+            "$extensions": {
+                "com.workshopr.cssVar": "--toast-border"
+            }
+        },
+        "shadow": {
+            "$value": "{shadow.xl}",
+            "$description": "Shadow under a toast",
+            "$extensions": {
+                "com.workshopr.cssVar": "--toast-shadow"
+            }
+        },
+        "radius": {
+            "$value": "{radius.xl}",
+            "$description": "Toast corner radius",
+            "$extensions": {
+                "com.workshopr.cssVar": "--toast-radius"
+            }
+        }
+    },
+    "paper": {
+        "grid-image": {
+            "$value": "linear-gradient(var(--grid-line-color) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line-color) 1px, transparent 1px)",
+            "$type": "gradient",
+            "$extensions": {
+                "com.workshopr.cssVar": "--paper-grid-image"
+            }
+        },
+        "grid-size": {
+            "$value": "24px 24px",
+            "$description": "Cell size for --paper-grid-image: background-size: var(--paper-grid-size)",
+            "$extensions": {
+                "com.workshopr.cssVar": "--paper-grid-size"
+            }
+        }
+    },
+    "divider": {
+        "color": {
+            "$value": "{gray.200}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--divider-color"
+            }
+        },
+        "strong": {
+            "$value": "{gray.300}",
+            "$description": "A divider that has to read clearly, a step darker than the default border",
+            "$extensions": {
+                "com.workshopr.cssVar": "--divider-strong"
+            }
+        }
+    },
+    "link": {
+        "color": {
+            "$value": "{phase.plan}",
+            "$extensions": {
+                "com.workshopr.cssVar": "--link-color"
+            }
+        },
+        "hover": {
+            "$value": "{phase.plan-dark}",
+            "$description": "Link colour on hover. Nothing reads it yet",
+            "$extensions": {
+                "com.workshopr.cssVar": "--link-hover"
+            }
+        },
+        "visited": {
+            "$value": "{phase.facilitate}",
+            "$description": "Visited link colour. Nothing reads it yet",
+            "$extensions": {
+                "com.workshopr.cssVar": "--link-visited"
+            }
+        }
+    },
+    "app": {
+        "bar-height": {
+            "$value": "60px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--app-bar-height"
+            }
+        },
+        "dock-height": {
+            "$value": "64px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--app-dock-height"
+            }
+        },
+        "dock-clearance": {
+            "$value": "96px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--app-dock-clearance"
+            }
+        },
+        "rail-width": {
+            "$value": "320px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--app-rail-width"
+            }
+        },
+        "rail-width-compact": {
+            "$value": "280px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--app-rail-width-compact"
+            }
+        },
+        "grid-col": {
+            "$value": "138px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--app-grid-col"
+            }
+        },
+        "grid-gutter": {
+            "$value": "20px",
+            "$type": "dimension",
+            "$description": "The gutter between page-grid columns, and the gap of .app-page and every .app-grid-N",
+            "$extensions": {
+                "com.workshopr.cssVar": "--app-grid-gutter"
+            }
+        },
+        "content-wide": {
+            "$value": "1244px",
+            "$type": "dimension",
+            "$description": "The page grid's full width: the content column of an /app/ view in a 1440 window",
+            "$extensions": {
+                "com.workshopr.cssVar": "--app-content-wide"
+            }
+        },
+        "rail": {
+            "$value": "296px",
+            "$type": "dimension",
+            "$extensions": {
+                "com.workshopr.cssVar": "--app-rail"
+            }
+        }
+    }
+}

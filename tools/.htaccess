@@ -1,0 +1,4 @@
+# Command-line checkers and generators: never run them from the web.
+# (Before 4 Nov 2026 /design-system/check-drift.php ran on any request and hung.)
+RewriteEngine On
+RewriteRule ^ - [F]
